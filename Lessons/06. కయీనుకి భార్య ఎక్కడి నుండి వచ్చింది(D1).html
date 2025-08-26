@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+			line-height:20px;
+            
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">6. కయీనుకి భార్య ఎక్కడి నుండి వచ్చింది?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+
+  
+నేటి ప్రపంచంలో బైబిల్ పై ప్రశ్నలు వేస్తే వణికిపోయే క్రైస్తవులు ఉన్నారు. క్రైస్తవులతో పాటు నాస్తిక, హేతువాదులు, ఇస్లాంలో కొందరికి తలెత్తిన ప్రశ్నే ఈ ప్రశ్న. ప్రపంచంలో మానవ కల్పిత గ్రంధాలు ఎన్నో ఉన్నా వాటిని తప్పు పట్టని నాస్తిక, హేతువాదులు, దేవుని చేత వ్రాయబడిన
+మహజ్ఞాన గ్రంథమైన బైబిల్ ను అర్ధం చేసుకొనక “అందని ద్రాక్ష పుల్లన అన్నట్టు” బైబిల్ పై నిందలు వేస్తున్నారు. క్రైస్తవ్యం మూగబోయిన పరిస్థితుల్లో క్రైస్తవుల తరపున నేనున్నాను అంటూ సింహగర్జన చేసిన శ్రీ పి.డి సుందరరావుగారు ఇటువంటి ప్రశ్నలకు సమాధానం చెప్పి అదే
+జ్ఞానాన్ని తమ పిల్లలకు నేర్పుతున్నారు. 
+    <br><br> <font color="blue">&nbsp;&nbsp;&nbsp I పేతురు 3:15, 16:</font><font color="deeppink"> “నిర్మలమైన మనస్సాక్షి కలిగినవారై, మీలో ఉన్న నిరీక్షణను గూర్చి మిమ్మును హేతువు అడుగు ప్రతివానికిని  సాత్వికముతోను.......మీద అపనింద వేయువారు సిగ్గుపడుదురు.”</font><br>&nbsp;&nbsp;&nbsp;   ఈ ప్రకారం హేతువడుగు ప్రతి ప్రశ్నకు సమాధానం చెప్పేవారిగా క్రైస్తవులు ఉండాలన్నదే దేవుని కోరిక.
+    <br><br> <font color="blue">&nbsp;&nbsp;&nbsp;అపొ|| కార్యములు 17:26, 27: </font><font color="deeppink">“యావద్భూమి మీద కాపురముండుటకు ఆయన యొకని నుండి ప్రతిజాతి మనుష్యులను సృష్టించి, వారు ఒకవేళ దేవునిని తడవులాడి కనుగొందురేమోయని.... ఆయన మనలో ఎవనికిని దూరముగా ఉండువాడు కాడు.”</font><br>&nbsp;&nbsp;&nbsp;   దేవుడు ఒకనీ
+(ఆదాము) నుండి ప్రతిజాతి మనుష్యులను సృష్టించెను. భూమి మీద పుట్టుకొస్తున్న కోటానుకోట్ల మనుష్యులందరికి ఆదామే తండ్రని బైబిల్ బోధించుచున్నది. ఆదాము, హవ్వల ప్రథమ గర్భఫలమే కయీననియు, అతడు తన తమ్ముడైన హేబెలును చంపి దేవుని సన్నిధి నుండి బయలుదేరి ఏదెనుకు తూర్పు దిక్కుననున్న నోదు దేశములో కాపురమున్నప్పుడు అతడు తనభార్యను కూడగా అతనికి కుమారుడు పుట్టెను <font color="blue">(ఆదికాండము 4:16,17)</font><br>&nbsp;&nbsp;&nbsp;   కయీనుకు భార్య ఎక్కడినుండి ఎవరివలన వచ్చినదనియు, ఏదెనుతోటకు తూర్పు దిక్కున నోదుదేశము ఎట్లువచ్చెను? అనే ప్రశ్న
+బైబిల్ చదువుచున్నవారికి కలుగును. ఆదామువలన కాక మరెవరివలనైన సంతతులు భూమిమీద వున్నవా? ఒకవేళ అట్టి సంతతులు భూమిమీద వున్నట్లయితే ఆదాము మొదటి మానవుడు కాడనియు, భూమిమీద పుట్టుకొస్తున్న వారంతా ఆదాము సంతతి అనుకొనుటకు ఆధారములు లేవనియు తలంచవచ్చు. బైబిల్ లోని మాటలను పరిశీలించగలిగితే
+    <br><br> <font color="blue">&nbsp;&nbsp;&nbsp ఆదికాండము 5:1-5: </font><font color="deeppink">“ఆదాము వంశావళి ఇదే. దేవుడు ఆదామును సృజించిన దినమున దేవుని పోలికెగా అతని చేసెను; మగవానిగాను ఆడుదానిగాను.... అప్పుడతడు మృతిబొందెను."</font><br>&nbsp;&nbsp;&nbsp;   ఆదామునుండి నోవాహుగారి వరకు 1000 సం||రాల ఆయుష్కాలమును దేవుడు నరులకిచ్చెను. ఆదాము 130వ ఏట షేతును, షేతు 105వ ఏట ఏనోషును, ఏనోషు 90 ఏళ్ళకే కెయినాను, కెయినాను 70 ఏళ్ళకే మహలేలును, మహలేలు 65 ఏళ్ళకే యెరెదును, యెరెదు 62 ఏళ్ళకే హనోకును కనెను. ఇలా మొదటి మానవుని కాలంలోని వారు తొలి వెయ్యి సం||రాలలోనే కుమారులను, కుమార్తెలను కనినట్లు తెలుస్తుంది.<br>
+&nbsp;&nbsp;&nbsp;ఉదా: ప్రస్తుతపు మానవ ఆయుష్షు పరిమాణం సుమారు 60,70 సం||రాల ఈ జీవితకాలాన్ని బట్టి మనిషి తన 20వ ఏటనే తండ్రి కావచ్చు. అతనికి 40 ఏండ్లు వచ్చినప్పటికి తన కుమారుడు తండ్రికావచ్చు. మరలా అతనికి 60 ఏండ్లు వచ్చినప్పటికి మనమడు తండ్రి కావచ్చు
+అధిక బలముండి 80 ఏండ్లు బ్రతికితే, తన మునిమనమడు తండ్రికావచ్చు. మనిషికి 80సం||రాలు వచ్చేసరికి 3 తరాలు చూడగలుగుతున్నారు. ఈ 3 తరాలలో వారి వారి గర్భముల నుండి ఎంతమంది పుట్టారో ఊహించవచ్చును. ప్రారంభకాలంలో మనుష్యులు సుమారు 1000 సం||రాలు బ్రతికినప్పుడు, ఆ కాలంలో వారు ఎంతమందిని కనగలరో
+సులువుగా లెక్కలు కట్టవచ్చును. కయీను, ఆదాము హవ్వలను విడిచి వెళ్ళిపోయిన తరువాత వీరు అనేకమంది కుమారులు, కుమార్తెలకు జన్మనిచ్చినట్లు బైబిల్ చెప్పుచున్నది. వాళ్ళు భూమిమీద వ్యాపించి యున్నప్పుడు వారిలో ఒక స్త్రీని కయీను నోదు దేశములో వివాహము చేసుకొనెను. ఇక్కడ మీకొక సందేహం కలుగవచ్చు. సొంత చెల్లిని వివాహము
+చేసుకొనవచ్చునా? ఆ కాలానికి వంశాభివృద్ధి కోసం చేసుకున్నారు. అదే విధంగా అబ్రహాముగారు తన భార్యనుగూర్చి ఈమె నా చెల్లి అని ప్రస్తావిస్తున్నారు  <font color="blue">(ఆదికాండము 20:12)</font><br>
+<font color="blue">అపో॥కార్యములు 17:30:</font><font color="deeppink"> “ఆ అజ్ఞానకాలములను దేవుడు చూచి చూడనట్టుగా ఉండెను; ఇప్పుడైతే అంతటను అందరును మారుమనస్సు పొందవలెనని మనుష్యులకు ఆ జ్ఞాపించుచున్నాడు." </font><br>&nbsp;&nbsp;&nbsp;  అది అజ్ఞానకాలము. ఆ కాలంలో తండ్రి చూచిచూడనట్టుగా ఉన్నాడు. అప్పటికి వారికి సహోదరిని వివాహం చేసుకోకూడదు అన్న ఆజ్ఞలేదు.
+    <br><br> <font color="blue">&nbsp;&nbsp;&nbspలేవీయకాండము 20:17:</font><font color="deeppink"> “ఒకడు తన సహోదరిని, అనగా తన తండ్రి కుమార్తెనుగాని తన తల్లి కుమార్తెనుగాని చేర్చుకొని .... దోషశిక్షను తాను భరించును.” </font><br>&nbsp;&nbsp;&nbsp;   ఇశ్రాయేలీయుల కాలంలో ఒకడు తన సహోదరిని వివాహము చేసుకొనకూడదనే ఆజ్ఞను ప్రవేశపెట్టడం జరిగింది. కయీను గారి భార్య, అబ్రాహాము గారి భార్య, వివాహం చేసుకునే కాలానికి ఆజ్ఞ జారీకాలేదు. ఆజ్ఞ రాకముందు చేసినది తప్పుకాదు. ఇశ్రాయేలీయులది మోషే కాలం.
+    <br><br> <font color="blue">&nbsp;&nbsp;&nbsp;లేవీయకాండము 18:6,8,11: </font><font color="deeppink">“మీలో ఎవరును తమ రక్తసంబంధుల.... ఆమె మానచ్చధనము తీయకూడదు"</font><br>&nbsp;&nbsp;&nbsp;   రక్త సంబంధికులను చేసుకొనకూడదు. భూమిమీద
+మనుష్యులు విస్తరించినందున తండ్రియింటివారిని వివాహము చేసుకోకూడదు. <br>&nbsp;&nbsp;&nbsp;ఉదా: పెళ్లి
+కార్డులపై పెండ్లి కుమారుడు, పెండ్లి కుమార్తె అని ముద్రించుట సహజం. ఇరువురి ముందున్న "పెండ్లి” అనేది తీసేసి చదివితే కుమారుడు, కుమార్తెగా మిగులుదురు. వీరు అన్నాచెల్లెలు కారా? ఆదాము సంతతిలోని ఒక స్త్రీ కయీనుకు భార్యయైనదని ఘంటాపదంగా చెప్పవచ్చు.
+    <br><br> <font color="blue">&nbsp;&nbsp;&nbsp; కీర్తనలు 126:6:</font><font color="deeppink"> “పిడికెడు విత్తనములను చేత పట్టుకొని యేడ్చుచుపోవు విత్తువాడు సంతోష గానము చేయుచు పనలు మోసికొనవచ్చును." </font><br>&nbsp;&nbsp;&nbsp;  పిడికెడు విత్తనాలు భూమిలో వేస్తేవిస్తారమైన పంటపండును. ఇది నమ్మగలిగితే ఆదామునుండి ఇలానే వచ్చారు. -
+ <br>&nbsp;&nbsp;&nbsp;ఉదా: ఒక గోధుమగింజ భూమిలోపడి అనేక గింజలనిస్తుంది. ఒకటికి ఒకటి కాస్తే, మనం తినగలమా? దేవుని దగ్గర ఆదామనే విత్తనం ఉంది. ఆ విత్తనంనుండి అనేక విత్తనాలు రావాలంటే భూగర్భం కావాలి. ఆదామును తయారు చేసిన వెంటనే తల్లి గర్భమైన హవ్వను చేశాడు. హావ్వను ఆదామునుండే తీసాడు. ఆరిన నేలమీద ప్రతీ ఒక్కరికి తండ్రి ఆదాము అయితే, జీవముగల ప్రతీ వానికిని తల్లి హవ్వ. వివాహాలలో స్త్రీ, పురుషులు ఇరువురు ఆదామునుండే వచ్చారు. అమెరికా అబ్బాయికి, ఇండియా అమ్మాయిని చేసినా వీరిరువురికి ఆది తల్లిదండ్రులు ఆదాము హావ్వలే. కయీను తనభార్యను వివాహము చేసుకున్నప్పుడు నోదు దేశం ఎట్లు వచ్చింది ? అనే ప్రశ్న కూడా మనుష్యులలో ఉంది. <br><br>&nbsp;&nbsp;&nbsp;బైబిల్ లోని మొదటి ఐదు కాండములను మోషేగారు వ్రాసారు. ఈయన క్రీ||పూ|| 1500 సం||ల కాలానికి చెందినవాడు. మోషే తనతో చెప్పిన దేవుని మాటలను వ్రాసెను.<font color="blue">(నిర్గమా 24:4) </font> ధర్మశాస్త్రమును వ్రాసిన మోషే<font color="blue">(లూకా 24:44)</font> యేసును
+గూర్చికూడా వ్రాసెను.<font color="blue">(యోహాను 5:46). </font><br><br>
+&nbsp;&nbsp;&nbsp;పై వాక్యములను బట్టి కాండములను వ్రాసిన మోషే గారు నిర్గమకాండములో పుట్టినా,తన పుట్టుక, నోవాహు జలప్రళయం, బాబెలు గోపురం, అబ్రాహాము, ఇస్సాకు, యాకోబు, ఇశ్రాయేలీయుల సంతానమునుగూర్చి కొంతవరకు ఆదికాండమును వ్రాసినప్పటికే ఏదేనుతోట తూర్పుదిక్కున నోదుదేశము విలసిల్లెను గనుక, దాని పేరును ఆదికాండములో వ్రాసెను.ఇక్కడ పాఠకులు గమనించవలసిన సూక్ష్మ విషయమేమనగా కయీను అక్కడకు వెళ్ళినప్పటికి అది నిర్జన ప్రదేశమే, మోషే వ్రాసినప్పటికి అది నోదుదేశంగా పిలువబడుచున్నది. గనుక తాను వ్రాస్తున్న ఆదికాండములో దానిని నోదుదేశంగా వివరించెను. <br>
+ &nbsp;&nbsp;&nbsp;ఉదా: 50సం||రాలక్రితం నిర్మానుష్యంగా ఉన్న ఎన్నో ప్రాంతాలు తరువాత ప్రజల
+ఆక్రమించుకొని పల్లెలుగా, పట్టణాలుగా మారుచున్నవి. 50 ఏళ్ళ క్రితం దానికి ఏ పేరు లేకపోయినప్పటికీ అది ఒక పట్టణంగా మారినప్పుడు దానికంటూ పేరుపెట్టి పిలవటం
+జరుగును. నోదుదేశం పుట్టుక కూడా అట్టిదే. కయీను వెళ్ళినప్పటికి అది నిర్మానుష్యమైనను మోషే వ్రాసేటప్పటికి అది నోదు దేశంగా పిలువబడుచున్నది.<br>
+&nbsp;&nbsp;&nbsp;నీతి: ఒక ప్రశ్నఅడిగితే అది మనజీవితానికి ఉపయోగపడేలా వుండాలి. కయీనుకుభార్య ఎక్కడినుంచి వచ్చింది? నోదు దేశము ఎలా వచ్చింది? అన్నది ముఖ్యం కాదు. మనంకయీనువంటి స్వభావము కలిగి వుండకూడదని దేవుడు కోరుకుంటున్నారు.<font color="blue">(1యోహాను 3:11)</font>
+
+
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>

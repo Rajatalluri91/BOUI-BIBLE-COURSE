@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+			line-height:20px;
+            
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">7.మానవ జన్మదినము రహస్యమా? </div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+
+ఈ నాడు ప్రపంచంలోని మనుష్యులు తమ జీవితాలని ఎంతో ఆనందంగా, సంతోషంగా గడపాలనుకుంటూ పండుగలు, పెళ్లిళ్ళు, పుట్టిన రోజుల వేడుకలు...... ఇలా చాలా అట్టహాసంగా జరుపుకుంటూ ఆనందోత్సాహాలలో తేలియాడుచున్నారు. పుట్టిన రోజులను జరుపుకుంటున్నారు
+తప్ప అది సరియైనదేనా? కాదా? అసలు మనిషి భూమి మీద ఎప్పుడు పుట్టాడు? ఎందుకు పుట్టాడు? ఎలా పుట్టాడు? ఆ పుట్టుక వెనుక కారణం ఏమిటో తెలుసుకోవటానికి ఏ ఒక్కరు ప్రయత్నించకపోగా మాకు మా జన్మదినము తెలుసు కనుకే పుట్టిన రోజు వేడుకలను జరుపుకుంటున్నాము అని అంటున్నారు. కాని వీరనుకుంటున్న పుట్టినరోజు సరియైనదేనా? కాదా? అని ఆలోచించి క్రైస్తవులమైన మనము బైబిల్ ని పరిశీలించగలిగితే.....
+ <br><br> <font color="blue">   కీర్తనలు 139:15:-</font><font color="deeppink"> నేను రహస్యమందు పుట్టిననాడు భూమి యొక్క ...</font> దావీదు గారు - నేను రహస్యమందు పుట్టానని అనుచున్నాడు. అంటే అతనొక్కడే రహస్యమందు పుట్టారా? లోకంలో ప్రతివారు రహస్యమందు పుట్టారా? ఈ మాట ఎందుకన్నారో చూద్దాం! ఇప్పుడు దావీదు గారు నా జన్మదినము రహస్యం అని ఎందుకన్నారో ఆలోచించే ముందు లోకంలోని వారు ఏమన్నంటున్నారో వారి మాటల్లో చూసినట్లైతే......
+<br><br>    1) మీ బైబిల్ ప్రకారంగా దేవుడు సృష్టిని చేసిన 6వ దినము ఆదామును కలిగించాడు.</font>
+<br><br>    2) ఒక అమ్మాయికి, అబ్బాయికి పెద్దలందరు కలిసి వివాహం చేసిన తరువాత మరునాడు ఆ అబ్బాయి పని నిమిత్తము విదేశాలకు వెళ్లిపోతే ఇక్కడున్న అమ్మాయి 40 రోజుల తర్వాత తాను గర్భవతినని తెలుసుకొనినప్పుడు ఆమె గర్భంలోనికి పెళ్లి అయిన రాత్రి వారిరువురు కూడుకున్నప్పుడే కదా అబ్బాయిలోని శుక్రకణం అమ్మాయి అండంలోనికి ప్రవేశించింది.</font> <br>    ఈ విషయం పెద్దలైన మాకు, పెండ్లి కుమారునికి, కుమార్తెకు శుక్రకణం ఎప్పుడు ప్రవేశించిందో మాకందరికి తెలుసునని చెబుతారు. కాబట్టి శుక్రకణం ప్రవేశించిన దినం కూడా మాకు
+తెలుసునని చెపుచున్నారు. ఇక్కడ సైన్స్ చెప్పిన విషయమేమిటంటే తల్లిలోనికి ప్రవేశించిన శుక్రకణం - తల్లి అండంలోనికి ప్రవేశించడానికి తల్లి అండం దగ్గర ఇంచుమించు 24 -72 గంటలు పాటు నిలిచివుంటుంది. ఆ అండంలోనికి ఎప్పుడు ప్రవేశించి, ఫలదీకరణం చెందుతుందో ఎవరికి తెలియదు.<br><br> 3) టెస్ట్ ట్యూబ్ బేబి - పిల్లలు కలగని దంపతులకు ఒక ఆశాకిరణంలాగా ఎన్నో టెస్ట్ ట్యూబ్ బేబి కేంద్రాలున్నాయి.  <br>   ఇందులో డాక్టర్లు - తల్లిలోని అండాన్ని, తండ్రిలోని శుక్రకణాన్ని సేకరించి ఒక ట్యూట్లో పెట్టి అండం, శుక్రకణం రెండు కలిశాక ఈ శరీరం నిర్మాణం కొరకు తిరిగి తల్లి గర్భంలోనికి ప్రవేశపెడతారు. ఇలా చేస్తున్న క్రమంలో శుక్రకణం, అండంతో కలిసి తల్లిగర్భంలోనికి ప్రవేశపెట్టిన దినము మాకు తెలిసిపోయింది. గనుక మానవ జన్మదినము రహస్యం కాదు అని అంటున్నారు. ఇక లోకంలోవున్న వారి మాటలు విన్నాక బైబిల్ లోని దావీదు గారు తన జన్మదినము రహస్యం అని అన్నాడు. గనుక ఎలా రహస్యమో బైబిల్ నే అడుగుదాం ....  <br><br> <font color="blue">   కీర్తనలు139:15, 16:- </font><font color="deeppink">నేను రహస్యమందు పుట్టిననాడు భూమి యొక్క ... </font>    అంటే దావీదు
+గారు పుట్టుక రహస్యం. భూమి యొక్క అగాధ స్థలములలో విచిత్రముగా నిర్మింపబడినాడు- దావీదు గారు తన దేహ నిర్మాణమును గూర్చి చెబుతూ - భూమి యొక్క అగాధ స్థలములలో నిర్మించారంట!  అంటే దావీదు గారి శరీర నిర్మాణమును మొదట భూమిలో జరిగెను.
+ <br><br> <font color="blue">   కీర్తనలు 139:13:- </font><font color="deeppink">తల్లి గర్భమందు నిర్మించినవాడవు నీవే</font>     అని మరల అంటున్నాడు. ఇక్కడ మనం తడబడవచ్చు. అదేమిటంటే భూమిలో నిర్మాణము జరిగెనా? తల్లి గర్భంలో జరిగెనా? అనే అనుమానం కలుగుతుంది ఇంకా బైబిల్ ను పరిశీలిస్తే.... దేవుడు యోబుకి ప్రశ్నవేస్తున్నాడు ఏమంటే....
+<br><br> <font color="blue">   యోబు 38:4:-</font><font color="deeppink"> భూమికి పునాదులు వేసినప్పుడు నీవెక్కడవుంటివి?</font>    
+<br> <font color="blue">   యోబు 38:21:-</font><font color="deeppink"> నీవు బహు వృద్ధుడవు నీవు అప్పటికే పుట్టియుంటివి. </font>  భూమికి పునాదులు
+వేయడం అంటే ఈ సృష్టి ఆరంభానికి ముందే యోబూ! నీ పుట్టుక జరిగిపోయెను అని దేవుడంటున్నాడు.
+<br><br> <font color="blue">   యిర్మీయా 1:4:- </font><font color="deeppink"> గర్భంలో నేను నిన్ను రూపింపక మునుపే నిన్ను నేను ఎరిగితిని. </font>   
+ఆయనను తల్లి గర్భంలో రూపింపకముందే దేవునికి తెలుసు. అప్పుడే యిర్మీయా గారిని ప్రవక్తగా చేయాలని నిర్ణయించుకున్నారు మొదటి మనిషి అయిన ఆదాము గూర్చి చూచినట్లైతే...
+<br><br> <font color="blue"> ఆదికాండము 2:7:</font><font color="deeppink"> దేవుడైన యెహోవా నేలమంటి నుండి నరుని నిర్మించి వాని
+నాసికా రంధ్రములో జీవవాయువును ఊదగా నరుడు జీవాత్మాయెను. </font>     ఆదాముగారి శరీరాన్ని నేలమంటితో నిర్మించారు. ఆత్మను దేవునిలో నుండి పంపి నరునిగా చేశాడు.
+<br><br> <font color="blue">   యోబు 10:9-11:-</font>   తండ్రియైన దేవుని హస్తములు  యోబుకి అవయవ నిర్మాణము చేసి రూపించారు. జిగటమన్నుతో నిర్మాణం జరిగింది. ఒకడు పాలుపోసినట్లు పోసి - జున్నుగడ్డపేరబెట్టునట్లు పేరబెట్టి - చర్మముతోను, మాంసముతోను, ఎముకలతోను, నరములతోను నన్ను నిర్మించిన సంగతి నాకు బాగా తెలుసని అంటున్నాడు.<br>
+ పై వచనములు పరిశీలించిన పిదప... ఆదాము, యోబు, దావీదు, యిర్మియా... వీరందరికి శరీర నిర్మాణము భూమి అంతర్భాగానవున్న మంటితో జరిగింది. మరి మనిషి భూమి మీదకు రావటానికి కూడా కారణం తండ్రే.
+<br><br> <font color="blue">   కీర్తనలు 71: 6: - </font><font color="deeppink">గర్భవాసినైనది మొదలుకొని నీవే నాకు ప్రాపకుడవైయుంటివి.తల్లి గర్భమునుండి నన్ను ఉద్భవింపజేసినవాడవు నీవే.</font>   
+<br><br> <font color="blue">   కీరనలు 71:7:-</font><font color="deeppink"> నేను అనేకులకు వింతగా ఉన్నాను. </font>    గర్భవాసి అంటే గర్భంలో నివాసమున్నాను అప్పుడు కూడా నన్ను రూపించింది నీవే తండ్రి. నీవు ఈ మానవ శరీరం ఒక వింతగా చేశావని అంటున్నాడు. ప్రపంచంలో 7 వింతలున్నాయి. అవి మనుష్యులు కట్టుకున్నవి కనుక వారికి అవి వింతలుగా కనిపిస్తున్నాయి. అవి పడగొడితే మరల కట్టవచ్చును. గానీ దేవుడు కట్టిన వింత - మనిషి శరీర నిర్మాణం - దీన్ని పడగొడితే ఎవరూ తిరిగి కట్టలేరు. కనుక <br><br> <font color="deeppink"> కీర్తన139:16 :- </font> దావీదు గారికి తండ్రియైన దేవుడు మనిషిని చేసిన విధానం చూస్తే భయం, ఆశ్చర్యం కలుగుతుంది. కానీ, వీరందరూ భూమికి పునాదులు వేయబడక ముందే వున్నారు. ఎక్కడ, ఎలా వున్నారు? చూద్దాం!
+<br><br> <font color="blue">   కీర్తనలు 90:1:-</font><font color="deeppink"> ప్రభువా తరతరములకు నివాస స్థలము నీవే... </font>  తరతరములు తండ్రిలో
+ఉన్నామని, నివాస స్థలం అంటే మనం భూమ్మీద పుట్టకముందు తండ్రిలో నివసించేవారము.<br>
+ ఉదా: భూమ్మీద పిల్లలకు తలిదండ్రులున్నారు. వారు వారి పిల్లలను స్కూల్ లో
+చేర్పించేటప్పుడు పిల్లవాని తండ్రి పేరునే నమోదు చేస్తారు. తల్లి పేరు కాదు. ఎందుకంటే ఆ పిల్లవానిని కన్నది తండ్రి గనుక. కాని పిల్లల్ని 9నెలలు మోసి కనేది తల్లి కదా! అని అనవచ్చు. భూమి మీద పుట్టిన ప్రతి మనిషికి శరీరం ఇచ్చేది తల్లి - ఆత్మ తండ్రిలో నుండి వచ్చును.
+<br><br> <font color="blue">   హెబ్రి7:9, 10:-</font> అబ్రహాము గారు రాజులను సంహరించి తిరిగి వస్తుండగా మెల్కీసెదెకు
+గారి దశమ భాగాన్ని ఇచ్చెను. అప్పుడు అబ్రహాము గర్భంలో లేవి గారున్నారు.
+<br><br> <font color="blue">   మత్తయి 1:2:- </font><font color="deeppink"> అబ్రహాము ఇస్సాకును కనెను, ఇస్సాకు యాకోబును కనెను. యాకోబు యూదాను అతని అన్నదమ్ములను కనెను. </font>   
+<br><br> <font color="blue">   లూకా 3:38: -</font><font color="deeppink"> కేయినాను ఎనోషుకు, ఎనోషు, షేతుకు, షేతు ఆదాముకు, ఆదాము దేవునికి కుమారుడు. పై వచనములను బట్టి పిల్లలను కనేది పురుషులని, వీరందరూ కూడా దేవుని నుండే వచ్చిన వారు.</font> దేవునికి పుట్టినవారు. భూమి మీద పుట్టుకొస్తున్న ప్రతి మనిషి ఆదాము నుండి వచ్చినవారే. ఆ ఆదాము దేవుని కుమారుడు. పురుషులు పిల్లలని కంటే వారికి శరీరం ఇచ్చే కర్మాగారం తల్లి యొక్క గర్భం. కనుక దేవుడు ఆదిలో ఆదాము ద్వారా భూమి మీదకి ప్రతి ఒక్కరు రావాలని ఒక్కసారే మానవ శరీరమును జిగటమంటితో నిర్మించి తండ్రుల గర్భములలో శుక్రకణములగా భద్రపరిచారు. ఒక వ్యక్తి భూమి మీద పుట్టక ముందు తండ్రిలోను, తన తండ్రి పుట్టక ముందు అతడు అతని తండ్రిలోను (తన తాతలోను) ఏలాగున్నారో అలాగే
+ప్రతి ఒక్కరు మొదటి మానవుడైన ఆదాములో అందరున్నారు.
+ <br><br> <font color="blue">   అపో||కార్యములు 17:26-27:</font><font color="deeppink"> యావద్భూమి మీద కాపురముండుటకు ఆయన ఒకని నుండి ప్రతిజాతి మనుష్యులను సృష్టించెను. </font>    ఆదాము గారి ద్వారానే రావాలి. కనుక శరీరం రూపొందటానికి ఆది తల్లియైన హవ్వను దేవుడు ఆదాము ప్రక్కటెముక నుండి కలిగించారు. ఒక మంచి సంధర్భం బైబిల్ లో చూడగలిగితే.....
+<br><br> <font color="blue">   హెబ్రి 11:3: - </font>ఈ ప్రకృతి యావత్తు ప్రపంచములు దేవుని వాక్యం వలన నిర్మాణమైనవి.
+దేవుని వాక్యం = దేవుని మాట. ఎవరు? యేసు క్రీస్తు వారు.
+<br><br> <font color="blue"> యోహాను 1:1:-</font><font color="deeppink"> ఆదియందు వాక్యముండెను. వాక్యం దేవుని యొద్ద వుండెను.</font> <br>   ఆ వాక్యమే యేసుక్రీస్తు వారు. యేసు తండ్రితో పాటు ప్రకృతిని చేసిన తరువాత ఒక్కసారే ఆదాముతో పాటు
+మనుష్యులందరు భూమి మీదకి వచ్చేశారు. ఇదీ రహస్యమే. కానీ, యేసుక్రీస్తు వారు తండ్రి దగ్గరే ఉన్నారు. 2000సం||ల క్రితం భూమి మీదకి పని నిమిత్తం వచ్చారు. <br><br> <font color="blue"> రోమా 8:29: -</font><font color="deeppink"> ఎందుకనగా తన కుమారుడు అనేక సహోదరులలో జ్యేష్ఠుడగునట్లు దేవుడెవరని ముందు ఎరిగినవారు తన కుమారునితో సారూప్యము గలవారవుటకు వారిని ముందుగా నిర్ణయించెను.</font> <br>   యేసు క్రీస్తు వారే జ్యేష్ఠుడు తండ్రికి. ఆయన పరలోకంలో
+తండ్రితోవున్నాడు.కనుక తండ్రి పనిలో భాగమైవున్న యేసు 2000 సం||ల క్రితం భూమి మీదకు రావటానికి శరీరం కావాలి. ఆ శరీరాన్ని తల్లి గర్భం మాత్రమే తయారు చేయగలదు.
+<br><br> <font color="blue">   మత్తయి 1:21,22: -</font><font color="deeppink"> కన్యక గర్భం ధరించి కుమారుని కనును.</font>  ఎందుకంటే యేసు ఆత్మ పరలోకపు తండ్రి దగ్గరుంది. యేసు జననం పరలోకంలో జరిగింది. భూమి మీదకి రావటానికి అతనికొక శరీరం కావాలి కనుక తల్లి అవసరమైనది. అలాగే భూమి మీద పుడుతున్న
+మానవులందరి పుట్టుక జగత్తు పునాది వేయబడక మునుపే ప్రేమ చేత తండ్రి క్రీస్తులో ఏర్పర్చుకొనెను. బైబిల్ మనిషి జన్మదినం రహస్యం అంటే అది ఎప్పటికి బయలుపరచబడదు.
+తల్లి గర్భంలోనికి శుక్రకణం ప్రవేశించింది జన్మదినం కాదు. అంతకు ముందే మన తండ్రులు, తాత ముత్తాతల గర్భాలలో ఉన్నామని గుర్తించి మనుష్యులందరి జననాలు పరలోకంలోని
+తండ్రి దగ్గరే జరిగాయి. ఆదికాండములో ఆదామును చేసినప్పుడు కేవలం శరీర నిర్మాణం మాత్రమే జరిగినది. <br><br>
+<font color="blue">ముగింపు:- </font>సహజంగా చెట్టుకి కొన్ని కోట్లలో పూత పూస్తుంది. కాని, పండ్లు మారేది
+వందలుగా మాత్రమే. మిగిలినదంతా నేల రాలిపోతుంది. అలాగే తండ్రిలో నుండి తల్లిలోనికి ప్రవేశించే శుక్రకణాల సంఖ్య సుమారుగా 50 కోట్లకు పైగా ఉంటాయి. ప్రవేశించిన
+శుక్రకణాలన్ని శరీరాన్ని ధరించుకొనలేవు. పిండముగా మారేది దేవునికే తెలుసు. శుక్రకణముగా ఉన్న నీవు నీ తల్లి గర్భములోనికి ఎలా ప్రవేశించావు అనేది నీ జన్మ దినము యొక్క రహస్యం.
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>

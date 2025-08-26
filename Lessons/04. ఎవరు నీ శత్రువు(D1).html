@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+			line-height:20px;
+            
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">4.ఎవరు నీ శత్రువు?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+
+ఈ రోజు సమాజంలో మనుష్యులను ఎవరు నీ శత్రువు? అని అడిగితే... మా ఇంటివారే మాకు శత్రువు అని, ఒకరు- మా ప్రక్కింటి వారి మాకు శత్రువు అని, మరొకరు మా ప్రక్క ఊరు వారే మాకు శత్రువు అని చెబితే, మా ప్రక్క దేశమైన పాకిస్తాన్ వారే మాకు శత్రువు అని ఇండియా చెబుతుంది. రాజకీయ నాయకులనడిగితే మా ప్రత్యర్థి పార్టీయే మాకు
+శత్రువు అని అంటారు. ఇంతకీ మనుష్యులందరూ చెబుతున్న సమాధానాలు కరెక్టేనా? ఎవరి వలన మాకు ప్రమాదం
+పొంచి ఉందో వారే మా శత్రువు అంటుంటారు. కవులైతే తన కోపమే తన శత్రువు అన్నారు... కోపమొక్కటేనా మన శత్రువు? కామ, క్రోద, మద, మత్సర్యం, ఈర్ష్య, ద్వేషమనే
+దుర్గుణాలున్నాయి. కోపమొక్కటే మన శత్రువైతే మిగిలినవి మన మిత్రులా?      <font color="blue">   (యాకోబు 4:1-3)  </font><br><br>ఏ విషయమైన బైబిల్ ను బట్టి ఆలోచిస్తే... మనకు సరైన సమాధానం దొరుకుతుంది.<br>   
+ఎందుకంటే మనిషి బ్రతుకు పుస్తకం బైబిల్ ను అడిగితే...
+   <br><br> <font color="blue">    మార్కు7:21,22: </font><font color="deeppink"> “లోపలినుండి, అనగా మనుష్యుల  హృదయములోనుండి దురాలోచనలును, జారత్వములును, దొంగతనములును, నరహత్యలును, వ్యభిచారములును, లోభములును, చెడుతనములును, కృత్రిమమును, కామవికారమును, మత్సరమును, దేవదూషణయు, అహంభావమును, అవివేకమును వచ్చును."</font> శరీరము నుండి కోపమొక్కటే కాదు. ఇన్ని భయంకరమైనవి వస్తున్నప్పుడు మనం ధరించుకున్న మన శరీరమే మన శత్రువు. అందుకే
+పౌలుగారు మాట్లాడుతూ....<br><br><font color="blue">రోమా 7:18, 19:</font><font color="deeppink"> “నాయందు, అనగా నా శరీరమందు మంచిది. ఏదియు నివసింపదని నేనెరుగుదును. మేలైనది చేయవలెనను కోరిక నాకు కలుగుచున్నది గాని, దానిని చేయుట నాకు కలుగుటలేదు నేను చేయగోరు మేలుచేయక చేయగోరని కీడు చేయుచున్నాను. </font>పౌలుగారు నాయందు అనగా నా శరీరమందు అంటున్నారంటే నేను వేరు, నా శరీరం వేరు అని అర్ధమౌతుంది.<br> 
+
+ఉదా: నా ఇల్లు అన్నామంటే నేను వేరు, నా ఇల్లు వేరు అని
+అర్ధమౌతుంది. అలాగే మనం doctor దగ్గరకెళ్ళినప్పుడు నా కన్ను బాగోలేదనో, నా చేయి బాగోలేదనో, చివరకు నా ఒంట్లో బాగోలేదనో చెబుతుంటాము. నా కన్ను, నా చేయి, నా
+ఒళ్ళు అంటున్నావు, ఇంతకీ నీవెవరవు? మనిషి అనగా శరీరము, ఆత్మ కలయిక. పైకి కంటికి కనబడే ఈ శరీరాన్ని దేవుడు నేలమంటి నుండి తీసాడు, గాని లోపల ఈ శరీరాన్ని
+నడిపించే ఆత్మ మాత్రం దేవునిలోనుండి వచ్చినది.     <font color="blue">   (ఆది 2:7). </font><br>    అందుకే పౌలుగారు నాయందు అని చెప్పి, నేను అంటే ఈ శరీరం అనుకుంటారేమో అని, అనగా నా శరీరమందు అని చెప్పడం జరిగింది. అంటే శరీరం, ఆత్మ కలయికే - మనిషి. ఆ శరీరం మన్నైనది వెనుకటివలే మన్నైపోతుంది. కాని ఆత్మ మాత్రం తాను దయచేసిన దేవునియొద్దకు మరలిపోవును. శాశ్వతంగా
+వుండేది ఆత్మ.    <br><br> <font color="blue">     యెహాను 6:63:</font><font color="deeppink"> “ఆత్మయే   జీవింపచేయుచున్నది. శరీరము కేవలము నిష్ప్రయోజనము."</font>    భూమిమీద వున్న ప్రతీ మనిషి నిష్ప్రయోజనమైపోయే శరీరము కోసమే
+ఆలోచిస్తున్నారు తప్ప, ఆ శరీరాన్ని జీవింపచేసే ఆత్మ కోసం ఎవరూ ఆలోచించట్లేదు. ఆత్మ దేవునిలో నుండి వచ్చింది. మళ్ళీ ఆయన దగ్గరకు, పరలోకము వెళ్ళాలంటే ఏం చేయాలి? అనే ఆలోచన లేదు. ఈ రోజు శాస్త్రం ఎంతో ఎత్తుకు ఎదిగింది. ఒకప్పుడు ఎంత దూరమైనా కాలినడకను వెళ్ళే మనిషి ఆ తరువాత కాలంలో సైకిల్, మోటర్ సైకిల్, బస్సులు, కార్లు, ట్రయిన్లు..... విమానాలు ద్వారా గాలిలోనే ఎగర గలుగుతున్నాడు. అలాగే ఒకప్పుడు కరెంటు వుండేది కాదు. ఆ తరువాత కరెంటు రావటమే కాదు ఎన్నో ఎలక్ట్రికల్ వస్తువులు వచ్చేసాయి.<br>
+  ఉదా:- Fridge, A.C, T.V.....etc. అంటే శాస్త్రం ఎంతో గొప్పగా ఎదిగింది. అయితే ఈ శాస్త్రవేత్తలు కనుగొన్నవన్నీ దేనికి అని మనం ఆలోచిస్తే, కేవలం ఈ శరీరం భూమిమీద బ్రతికున్నంతవరకూ ఈ 60,70 ఏళ్ళు జీవితం కోసమే గాని, ఆత్మను పరలోకానికి చేర్చలేవు. ఈ శరీరం ఎంత భయంకరమైనదంటే బ్రతికున్నంతవరకూ ఈ శరీరంకోసమే ఆలోచింపచేయిస్తూ చివరకు ఆత్మ ఉన్నదన్న విషయాన్నే మరిపింపచేస్తూ కడవరకూ తన కోరికలనే తీర్చుకుంటూ చివరకు ఆత్మను భయంకర నరకానికి నెట్టేస్తుంది. అంతటి భయంకరమైనది ఈ శరీరము. ఈ రోజు మనిషి అనుకుంటున్నాడు తనకు కనబడే వేరొక శరీరాలు తమకు శత్రువు అని, కాని తాను ఎంతో ప్రేమించుకుంటూ ఉదయం లేచినది మొదలు రాత్రి నిద్రపోయే వరకూ ప్రయాస పడుతున్న, తను ధరించుకున్న తన శరీరమే తన శత్రువు అని అనుకొనుటలేదు. ఎందుకంటే శరీరం ఎప్పుడూ దాని కోరికలు కోసమే ఆత్మను వాడుకుంటుంది. శరీరానికి సంతోషాన్నిచ్చే కార్యక్రమాలైతే వెంటనే బయలుదేరుతుంది. కానీ అదే ఆత్మను రక్షించే కార్యక్రమాలైతే (సువార్త సభలు) అసలు సిద్ధపడదు. ఎన్నో కారణాలు చెబుతుంది. అందుకే యేసుక్రీస్తువారు ఆత్మ సిద్ధమేకాని శరీరం బలహీనం అన్నారు.
+   <br><br> <font color="blue">     గలతీ 5:17: </font><font color="deeppink">శరీరము ఆత్మకును ఆత్మ  శరీరమునకును విరోధముగా ఆపేక్షించును. </font>   
+ ఇవి యొకదానికొకటి వ్యతిరేకముగా ఉన్నవి గనుక  మీరేమి చేయనిచ్చయింతురో వాటిని చేయకుందురు".  అందుకే పౌలుగారు మాట్లాడుతూ.....   <br><br> <font color="blue">  రోమా 7:18, 19:</font><font color="deeppink">“మేలైనది చేయవలెనను కోరిక నాకు కలుగుచున్నది గాని, దానిని చేయుట నాకు కలుగుటలేదు.నేను చేయగోరు మేలుచేయక  చేయగోరని కీడు చేయుచున్నాను." </font> దేవుని పని చేయాలని వున్నా ఈ శరీరం చేయనీయట్లేదు. ఈ లోకంలో చూసినదంతా కావాలి అని దాని కోరికలే తీర్చుకుంటుంది.
+    <br><br> <font color="blue">    యోహాను 2:16, 17:</font><font color="deeppink">   "లోకములో ఉన్నదంతయు, అనగా శరీరాశయు నేత్రాశయు 
+జీవపుడంబమును తండ్రివలన పుట్టినవి కావు, అవి లోకసంబంధమైనవే. లోకమును దాని ఆశయు గతించిపోవుచున్నవి గాని, దేవుని చిత్తమును జరిగించువాడు నిరంతరమును నిలుచును."  </font>   గనుక శరీరము తాత్కాలికమైనది (60,70సం||లు) కానీ, ఆత్మ శాశ్వతమైనది. అలాంటి ఆత్మ కోసం ఈ భూమిమీద శరీరంలో వుండగానే ఆలోచించి దేవుని కోసం బ్రతకకపోతే ఈ శరీరం అర్ధాంతరంగా ఆత్మను అగ్నికి ఆహుతిచేస్తుంది. గనుక మనలను నిత్యాగ్నిదండనకు గురి చేయుచున్నది మనం ధరించుకున్న మన శరీరమే-మన శత్రువు.అందుకే పౌలుగారు బాధపడుచూ....  <br><font color="blue">రోమా 7:24: </font><font color="deeppink"> “అయ్యో, నేనెంత దౌర్భాగ్యుడను? ఇట్టి మరణమునకు లోనగు శరీరమునుండి నన్నెవడు విడిపించును?" </font> అని అంటున్నారు. మరి ఇంత భయంకర శరీరం నుండి మనకు విడుదల లేదా? మన శత్రువు బారినుండి మనలను ఎవరు విడిపిస్తారు? అని మనం బైబిల్ ను బట్టి ఆలోచిస్తే.....మనకు తప్పక విడుదల వుంది. మరి మనం ఏమి చేయాలని బైబిల్ చెబుతుంది?   <br><br> <font color="blue">      రోమా 8: 12,13:</font><font color="deeppink">కాబట్టి  సహోదరులారా, శరీరానుసారముగా ప్రవర్తించుటకు మనము శరీరమునకు ఋణస్థులము కాము. మీరు శరీరానుసారముగా   ప్రవర్తించినయెడల చావలసినవారై యుందురు  గాని ఆత్మచేత శరీర క్రియలను  చంపినయెడల జీవించెదరు." </font>
+అంటే మనం ఆత్మచేత శరీర క్రియలను చంపాలి. అప్పుడు మనం పరలోకములో నిత్యమూ జీవిస్తాము.    <br><br> <font color="blue">  రోమా 8:5.6; </font><font color="deeppink"> శరీరానుసారులు  శరీరవిషయముల మీద మనస్సునుంతురు, 
+ఆత్మానుసారులు ఆత్మవిషయముల మీద మనస్సునుంతురు,   శరీరానుసారమైన మనస్సు మరణము. ఆత్మానుసారమైన   మనస్సు జీవమును సమాధానమునై యున్నది."  </font> 
+గనుక శరీరానుసారంగా మనం నడిస్తే ఈ శరీరము మనలను నరకానికి తీసుకుపోతుంది. అదే ఆత్మానుసారంగా మనం జీవిస్తే పరలోకములో కూడా నిత్యమూ జీవిస్తాము. గనుక ఈలోకంలో మనుష్యులనుకుంటున్న శత్రువులు కొంతకాలమే, లేక బ్రతికున్నంత వరకే శత్రువులుగా వుండగలరేమో, లేక శరీరానికి హాని చేయగలరు గాని, అసలైన శత్రువైన మన శరీరం మనలను నిత్యమూ కాలుతూ వున్న నిత్యాగ్ని దండనకు గురి చేస్తుంది. గనుక మనం ధరించుకున్న మన శరీరమే మనకు శత్రువు. ఆ శత్రువు బారినుండి మనం తప్పింపబడాలంటే ఎప్పుడూ ఆత్మ కోసం, ఆత్మల తండ్రియైన దేవుని కొరకు ఆలోచిస్తూ ఆత్మచేత శరీర క్రియలను చంపిన
+యెడల మనం నిత్యమూ జీవించగలము.
+   <br><br> <font color="blue">     యాకోబు 1:21: </font><font color="deeppink">“అందుచేత సమస్త కల్మషమును,   విర్రవీగుచున్న దుష్టత్వమును మాని, లోపల నాటబడి మీ ఆత్మలను రక్షించుటకు శక్తిగల   వాక్యమును సాత్వికముతో అంగీకరించుడి." </font><br> 
+
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>

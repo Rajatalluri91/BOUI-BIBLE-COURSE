@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+			line-height:20px;
+            
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">3. మనుష్యులు తండ్రియైన దేవునిని<br>&nbsp;&nbsp;&nbsp;చూడగలరా?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+
+
+నేటి క్రైస్తవ సమాజంలో వినబడుతున్న ఒక భయంకరమైన, బైబిల్ కు భిన్నంగా మాట్లాడే మాటే దేవుడు మాకు కనిపించాడు. మెల్లనైన స్వరముతో నన్ను పేరు పెట్టి పిలిచాడు. ఆయన స్వరమును విన్నాను అని ఎంతోమంది సాక్ష్యాలు చెబుతుంటారు. అసలు దేవుడు అందరికి కనబడతాడా? కొందిరికే కనబడతాడా? అందరికి దేవుడు కన్న తండ్రి అయినప్పుడు మనమందరం ఆయన కుమారులైనప్పుడు కొందరికే కనిపించాడు అనటం ఎంతవరకు వాస్తవం. ఒక తండ్రి తన కడుపున పుట్టిన కుమారులను సమానముగా చూస్తాడే గాని ఒకరిని ఎక్కువగా, ఒకరిని తక్కువగా చూడడు. అలాగే తండ్రి అయిన దేవుడు కూడా తన బిడ్డలయందు పక్షపాతం చూపించరు. మానవ శరీరానికి కొంత వెలుగు చూడగలిగి, కొంత శబ్దాన్ని వినగలిగే శక్తిని మాత్రమే దేవుడు ఇచ్చాడు. దేవుని స్వరం ఉరుమువంటిది అయినప్పుడు ఆయన స్వరూపం చూడలేనిదైనప్పుడు తండ్రిని ఎలా చూడగలరు? ఆయన సర్వం ఎలా వినగలరు? ఆయన
+కలుగచేసిన సూర్యుడినే సూటిగా చూడలేని మనిషి తండ్రిని చూశాము అనటం ఎంత హస్యాస్పదం? కనుక దేవుడు మనిషికి కనబడతారా? మనిషి నేత్రాలు ఆయనను చూడగలిగినంత శక్తిగలవా? ఆలోచిద్దాం. దేవుడు ఈ వాక్యాన్ని ఇవ్వడం వెనుక తండ్రి సంకల్పం ఏంటంటే వాక్యము విషయంలో మోసపోకూడదు. ధనం విషయంలో మోసపోయినా పర్వాలేదు, బ్రతికుంటే దానికన్నా ఎక్కువ సంపాదించుకోవచ్చు. ఉద్యోగం విషయంలో మోసపోయినా పర్వాలేదు, అంతకంటే మంచి ఉద్యోగం వస్తుంది. కాని వాక్యము విషయంలో మోసపోతే, నిత్యాగ్ని దండనకు వెళ్ళి ఏడ్పుతో, పండ్లు కొరుకుచు భయంకరమైన బాధ అనుభవించాల్సిన పరిస్థితి వస్తుంది. అందుకే తండ్రి ఒక హెచ్చరికను జారి చేసారు.    <br><br> <font color="blue"> మార్కు 4:24:</font><font color="deeppink"> మరియు ఆయన - "మీరేమి వినుచున్నారో జాగ్రత్తగా చూచుకొనుడి!” </font>  మీకు ఎవరు చెప్తున్నారో అనటం లేదు. మీకేం చెబుతున్నారో అన్న దానిపై శ్రద్ధ పెట్టాలి. కారణం వినబడుతున్నది అంతా నిజం కాదు. మెరిసేదంతా బంగారం కాదు అని ఎలా అనుకుంటామో, అలాగే సమాజంలో వినిపిస్తుంది అంతా వాస్తవం
+కాదని ఈ మాటను బట్టి అర్ధం చేసుకొనగలం. అలాగే బోధకులు ఈ సమాజమును ఏ విధంగా మోసగిస్తున్నారంటే దేవున్ని చూడాలంటే ఉపవాసం ఉండి కన్నీటితో ప్రార్ధించాలని, మోకాళ్ళూని ఉపవాసంతో ప్రార్థించాలని ఇలాంటివి చెప్పి నేడున్న బోధకులు క్రైస్తవులను మోసగించుచున్నారు.
+ఇంతకి దేవుడు ఎలా ఉంటారు?   <br><br> <font color="blue"> యోహాను 4:24:</font><font color="deeppink"> “దేవుడు ఆత్మ గనుక.......</font>   అనగా ఆయనకు శరీరం లేదు. ఆయన కనబడడు. ఆయన ఆత్మ.”<br> 
+
+ఉదా: ఒక ఫ్యాన్ తిరుగుతుంటే దానంతట అది తిరగదు. దాని వెనుక విద్యుత్ శక్తి ఉంది. అది కనబడకపోయినా దాని శక్తిని మనం అనుభవిస్తున్నాం. విద్యుత్ శక్తిని చూసాం అనే వారిని మతిచెలించిన వారుగా
+పరిగణిస్తాం. అలాగే ఆత్మ అయిన తండ్రిని చూసామనే వారు కూడా ఈ కోవకు చెందినవారే. అందుకే ఆయన అదృశ్యుడు కనుకనే ఆయన అదృశ్యలక్షణాలు ప్రకృతిలో పెట్టాడు. అందుకే
+పౌలుగారు రోమీయులకు వ్రాస్తూ.    <br><br> <font color="blue"> రోమా 1:20: </font><font color="deeppink">“ఆయన అదృశ్య లక్షణములు, అనగా ఆయన నిత్యశక్తియు దేవత్వమును
+జగదుత్పత్తి మొదలుకొని సృష్టింపబడిన వస్తువులను ఆలోచించుట వలన తేటపడుచున్నవి"</font>
+ 
+ మనం ప్రకృతిని చూస్తే ఆయన లక్షణాలు మనకు కనబడతాయి.  <br>ఉదా: సూర్యుడు కొన్ని వేల సం||లు గా గా మండుతూనే ఉన్నాడు. నిత్యశక్తి ఆయన లక్షణం. మరి ఆయన లక్షణాలు కలిగివున్న సూర్యుడినే సూటిగా చూడలేని మనం, తండ్రిని ఎలా చూడగలం? అసలు తండ్రిని ఎవరైన చూశారా? అని ఆలోచిస్తే....    <br><br> <font color="blue"> యోహను 5:37: </font><font color="deeppink">“మీరు ఏ కాలమందైనను ఆయన స్వరము వినలేదు. ఆయన స్వరూపము చూడలేదు." </font>   ఏ కాలమందైనను అంటే అది పాత నిబంధన కాలమా? క్రొత్త నిబంధన కాలమా? పితరుల కాలమా? మోషే కాలమా? క్రీస్తు కాలమా? ఏ కాలంలో అయినా ఆయన స్వరూపం చూడలేదు, ఆయన స్వరం వినలేదు అని పై వచనాన్ని బట్టి గ్రహించగలం. ఇక భక్తులలో కొందరు తండ్రిని చూసినట్టుగా, తండ్రితో మాట్లాడినట్టుగా చూడగలం.    <br><br> <font color="blue"> ఆదికాండము 32:30 </font><font color="deeppink">"యాకోబు - నేను ముఖాముఖిగా దేవుని చూచితిని అయినను నా ప్రాణము దక్కినది."</font>   నేను ముఖాముఖిగా దేవుని చూచితిని అయినను నా ప్రాణాలు
+దక్కినవని యాకోబుగారు చెప్పినట్టు చూడగలం. ఇంతకీ ఆయన చూసింది. దేవునినేనా? ఇంకెవరినైనా చూసి దేవుడని భ్రమపడుచున్నారా?
+<br><br> <font color="blue">   హోషేయా 12:3,4 </font><font color="deeppink">“తల్లి గర్భమందు యాకోబు తనసహోదరుని మడిమెను పట్టుకొనెను,
+మగసిరి కలవాడై అతడు దేవునితో పోరాడెను. అతడు దూతతో పోరాడి జయమొందెను."</font>  
+ఇంతకీ యాకోబుగారు పోరాడింది దూతతోనా? దేవునితోనా? ఏ మనిషి దేవునితో పోరాడి జయమొందలేడు. కనుక పోరాడింది దూతతోనే గాని దేవునితో కాదు. ఒక మనిషితో పోరాటానికి దేవుడు అవసరం లేదు. ఉదాహరణకు పరలోకములో అపవాదితో యుద్ధానికి మిఖాయేలు, దూతలనే పంపాడు గాని తండ్రి వెళ్ళలేదు.
+   <br><br> <font color="blue"> ఆదికాండము 18:1: </font><font color="deeppink">“మరియు మమ్రే దగ్గరనున్న సింధూర వనంలో యెహోవా అతనికి కనబడెను."</font>   ఈ ఒక్క మాట చూసి కనిపించింది దేవుడే అని నిర్ణయానికి రాకూడదు. క్రింది మాటను కూడా చదవగలిగితే ముగ్గురు మనుష్యులు వచ్చినట్లుగా కనబడుతుంది. ఆ ముగ్గురు
+మనుష్యులు అనగా దేవదూతలు. అనగా అబ్రహాముకు కనబడింది తండ్రి కాదు. మరొక సంధర్భం చూచినట్లైతే...
+   <br><br> <font color="blue">   నిర్గమకాండము 3:2-4: </font><font color="deeppink">“ఒక పొద నడిమిన అగ్నిజ్వాలలో యెహోవా దూత అతనికి ప్రత్యక్షమాయెను."</font><br>   <font color="blue"> 4వ వచనంలో </font>దేవుడు ఆ పొద నడిమినుండి మోషే అని పిలిచెనని చెప్పబడింది. పైన యెహోవా దూతని, క్రింద దేవుడని ఉంది. ఇంతకి వచ్చిందెవరు? దీనికి సమాధానం క్రొత్త నిబంధనలో మనం చూడగలం.
+   <br><br> <font color="blue">   అపొ॥కార్యాలు 7:30: </font><font color="deeppink">“ఒక పొదలోని అగ్నిజ్వాలలో ఒక దేవదూత అతనికి కనబడెను."</font>  
+అనగా కనబడినది దేవదూతే. తండ్రి కాదు. అసలు ఇంతకి తండ్రియైన దేవుని చూస్తే బ్రతుకుతారా?
+   <br><br> <font color="blue">   నిర్గమకాండము 33:20:</font><font color="deeppink"> “ఏ నరుడును నన్ను చూచి బ్రతుకడనెను."</font>    మరి ఈరోజు చూస్తామని చెప్పేవారికి ఇదొక కనువిప్పును కలుగజేసే మాట. దీనిని బట్టి ఎవరైనా దేవుడు కనిపించాడని చెప్పుకుంటే చెప్పడానికి కూడా వారు బ్రతికి ఉండరు.<br><br> <font color="blue"> ఆదికాండము3:9,10:</font><font color="deeppink">“దేవుడైన యెహోవా ఆదామును పిలిచి నీవు ఎక్కడ ఉన్నావనెను."
+అందుకతడు - నేను తోటలో నీ స్వరము వినినప్పుడు దిగంబరిగానుంటిని గనుక భయపడి దాగుకొంటిననెను. </font> ఆదాము యెహోవా స్వరము విని ఎలా తట్టుకొనగలిగాడు? అంటే వినినది తండ్రి స్వరము కాదు. ఆ కాలంలో ఎవరు వచ్చినా దేవుడు అనే భావించేవారు.    <br><br> <font color="blue">   న్యాయాధిపతులు 6:22. </font><font color="deeppink">"గిద్యోను, ఆయన యెహోవా దూత అని తెలుసుకొని అహహా నా యేలినవాడా, యెహోవా, ఇందుకే కదా నేను ముఖాముఖిగా యెహోవా దూతను 
+చూచితిననెను." </font>   
+ఇక్కడ గిద్యోనుగారు దేవదూతని యెహోవా అని యేలినవాడా అని సంబోధిస్తున్నారు. అంటే వచ్చింది దేవుడు కాదు. <br> ఉదా: ప్రభుత్వం ఒక జీ.ఒ ను పాస్ చేస్తే, దానిని నిర్వర్తించే బాధ్యతను ఆయా ప్రభుత్వ శాఖల్లో పనిచేసేవారు శాసనంగా నెరవేర్చుటలో భాగమవుతారు. అలాగే దేవుడు చెప్పిన మాటను దేవదూతలు ఆ రోజుల్లో మానవుల దగ్గరకు దేవుని మాటను తెచ్చేవారు. అందుకే ప్రభువు సెలవిచ్చునదేమనగా అనేవారు. ఆనాడు మన పితరులు, భక్తులు ఎవరు వచ్చినా తండ్రి అనుకొనేవారు. అందుకే తండ్రి తన ఉనికిని గూర్చి తెలియజేస్తూ కొన్ని మాటలు చెప్పటం జరిగింది. తండ్రి కనబడి చెప్పవలసిన అవసరత లేదు.
+   <br><br> <font color="blue">    1తిమోతి :6:16: </font><font color="deeppink">"సమీపింపరాని తేజస్సులో ఆయన మాత్రమే వసించుచూ అమరత్వంగలవాడై ఉన్నాడు."</font>  
+   <br> <font color="blue">    1యోహాను 4:12: </font><font color="deeppink">"ఏ మానవుడునూ, ఎన్నడునూ దేవుని చూచి ఉండలేదు. "</font>  
+ఎన్నడునూ అనగా అది మోషే కాలం కావచ్చు, నోవాహు కాలం కావచ్చు, ఏ మానవుడు ఆయనను చూడలేదు. కనుక దేవుడు కనిపిస్తాడు అనే వారికి ఆయన కనబడరని బైబిల్ లో అనేక రుజువులు వ్రాయటం జరిగింది. ఇక దేవునిని వదిలేసి క్రీస్తు కనిపించాడు అని కొందరు మాట మార్చారు. మరి క్రీస్తు కనబడతారా?
+   <br><br> <font color="blue">    1కొరింధి 15:8:</font><font color="deeppink"> "అందరికీ కడపట అకాలమందు పుట్టిన నాకును కనబడెను."</font>  
+అపొస్తలుడైన పౌలుగారికే కడపట అనగా చివరిగా కనబడ్డారు. నేడు క్రీస్తు మాకు కనబడ్డారు అనటంలో వాస్తవం లేదని మనకు అర్ధం అయ్యింది. కనుక క్రీస్తుకూడా కనబడరు. పై
+వచనాలు గమనిస్తే క్రీస్తు అందరికి కనబడి ఆకరికి పౌలుకి కనబడ్డారు. కడపట కాలంలో యేసుని చూసిన పౌలుగారు ఒకమాట అంటున్నారు.
+   <br><br> <font color="blue">    2కొరింధి 5: 16:</font><font color="deeppink"> "కావున ఇకమీదట మేము క్రీస్తును శరీరరీతిగా ఎరిగియుండినను ఇక మీదట ఆయనను అలాగు ఎరుగము" </font>   అని మొదటి శతాబ్దంలో యేసును చూచిన పౌలుగారు ఇక మీదట క్రీస్తును శరీర విషయమై తెలిసిన వారిగా ఉండనని చెప్తే 20వ శతాబ్దంలో పుట్టినవారు యేసును చూసాం అంటే అది నిజమా? ఇక ఒక అద్భుతం అయిన విషయాన్ని చెప్పాలనుకుంటున్నాను. చూచి నమ్మినవారికంటే చూడకనమ్మువారు ధన్యులు అని ఉంది. అంటే ఆయన మనకు కనబడి మన ధన్యత పోగొడతారా? కనుక తండ్రి కనబడడు. అందుకే ధర్మశాస్త్రాన్ని కూడా దేవదూతల ద్వారా ఇవ్వటం జరిగింది.   <font color="blue">   (అపొ॥ కార్యాలు 7:53). </font>   
+   <br><br> <font color="blue">    మత్తయి 5:8: </font><font color="deeppink">"హృదయ శుద్ధిగలవారు ధన్యులు వారు దేవునిని చూచెదరు."</font>   మనిషి దేవుని కోసం బ్రతికినప్పుడే, ఆయనను చనిపోయిన తర్వాత నీతిమంతులు మాత్రం పరలోకములో చూడగలరు. బ్రతికుండగా ఆయనను చూడలేరు. భూమిమీద దేవుని ఇష్టాన్ని నెరవెర్చి పరదైసు నుండి క్రీస్తు 2వ రాకడ తర్వాత పరలోకములోకి వెళ్ళిన తర్వాత మాత్రమే అందరిని చూడగలరు. దేవుడు కనబడదు. వచ్చినవారంతా దేవదూతలే. వాక్యానికి భిన్నంగా ఎవరు చెప్పినా అది తప్పు. వారికి మరి కఠినమైన తీర్పు ఉంటుంది. క్షమాపణ కోరి మారితే
+వారికి మంచిది. లేదా కటిక చీకటిగల బిలములో పడక తప్పదు. తస్మాత్ జాగ్రత్త!
+
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+			line-height:20px;
+            
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">11. విశ్వాసం అనగా నేమి? <br>&ensp;&emsp; దానిని ఎలా పరీక్షించుకోవాలి?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+
+
+
+750 కోట్ల మంది ఉన్న ప్రపంచ జనాభాలో ప్రతి ఒక్కరు ఏదో ఒక విశ్వాసాన్ని కలిగి ఉంటారు. వీరిలో 350 కోట్ల మంది క్రీస్తును నమ్మి క్రైస్తవులుగా పిలువబడుచున్నారు. వీరినే
+పరిశుద్ధులు, విశ్వాసులు అంటారు. విశ్వాసులు అని పేరు పెట్టుకున్న వారిని దాని అర్ధం ఏమిటని ప్రశ్నిస్తే నమ్ముటయే విశ్వాసం అంటారు. ఏ విధమైన నమ్మకం? అది రోగాలు
+పోతాయని, ఉద్యోగం వస్తుందని, పిల్లలు పుడతారని నమ్మటమా? ఇలాంటి నమ్మకంలోనైన అందరూ ఒక్కటిగా జీవిస్తున్నారా? అంటే ఈనాడు క్రైస్తవ్యం కొన్నివేల శాఖలుగా చీలిపోయింది. ఒకరు లూధరన్, మరొకరు పెంతెకోస్తు, రోమన్ కేథలిక్స్ గా, బాప్టిస్టులుగా రకరకాల ఫెలోషిప్లుగా, డినామినేషన్ గా, గ్రూపులుగా చీలిపోయారు. విశ్వాసం అనే పదానికి అర్థం తెలియక ఎవరి విశ్వాసం వారిదంటూ ఎదురు చెబుతారు. ఎలాంటి విశ్వాసాన్ని కలిగి ఉండాలో ఎరుగని స్థితిలో క్రైస్తవ్యం జీవిస్తుంది. <br> విశ్వాసం అంటే ఏంటి? దీని గురించి “బైబిల్” ఏం చెప్తుంది. మనం ఎలాంటి విశ్వాసాన్ని
+కలిగి ఉండాలి? మనుష్యులు చెప్పే దానిని మనం వినకూడదు. బైబిల్ విశ్వాసం గూర్చి ఏం చెబితే అలాగే నడుచుకోవాలి. విశ్వాసం ఎన్ని రకాలని బైబిల్ చెప్తుంది? <br><br> <font color="blue">  ఎఫెస్సి4:5 </font><font color="deeppink">ప్రభువు
+ఒక్కడే, విశ్వాసం ఒక్కటే, దేవుడు ఒక్కడే </font> అయినప్పుడు ఎందుకు మీ విశ్వాసం మీది, మా విశ్వాసం మాది అని అనేక శాఖలుగా చీలిపోయి క్రైస్తవ్యాన్ని కుక్కలు చింపిన విస్తరిలా చేశారు. మరియమ్మను కొందరు గుణదలమాత అనీ, యెహోవా సాక్షులు, యేసును నమ్మేవారు కొందరు ఇలా ఎవరికి నచ్చినట్లు వారి నమ్మకాలలో ఉన్నారు. <br><br>
+
+<font color="green">విశ్వాసం అంటే ఏమిటీ?</font>
+<br><br> <font color="blue">  హెబ్రి11:1:-</font><font color="deeppink"> విశ్వాసమనునది నిరీక్షింపబడువాటి యొక్క నిజ స్వరూపమును, అదృశ్యమైనవి యున్నవనుటకు రుజువునైయున్నది. </font><br>  అదృశ్యమైనవి ఉన్నవని నమ్మటమే విశ్వాసం. పరలోకం, నరకం, దేవుడు, దెయ్యం ఇవేవి కనబడవు అయినా నమ్మాలి చనిపోయిన తరువాత మరో లోకం ఉందని నమకాన్ని కలిగి ఉండాలి అదే విశ్వాసం. ఈనాడున్న బోధకులు బైబిల్ లోని విశ్వాసమును గూర్చి చెప్పి ప్రజలను మార్చుటలేదు. కనుక మారే వారు కూడా పై వాటిపై విశ్వాసంతో మారటం లేదు, శరీర అవసరాల కోసమే, దేవునిని, క్రీస్తును అంగీకరిస్తున్నారు.
+ఉదా: తల్లి బిడ్డతో - ఒక వ్యక్తిని చూపించి ఇతడే మీ తండ్రి అంటే నమ్ముతున్నాం (చూడకపోయినా) <br><br> <font color="blue">  1 పేతురు 1:8-9:-</font><font color="deeppink"> మీరాయనను చూడకపోయినను ఆయనను ప్రేమించుచున్నారు. ఇప్పుడు ఆయనను కన్నులారా చూడకయే విశ్వసించుచు, మీ
+విశ్వాసమునకు ఫలమును అనగా ఆత్మరక్షణను పొందుచు, చెప్పనశక్యమును మహిమా యుక్తమునైన సంతోషము గలవారై ఆనందించుచున్నారు. </font> యేసును చూడకుండా ప్రేమించవచ్చును. ఆయన చెప్పిన మాటలు నమ్మి ఆ ప్రకారము జీవించినట్లైయితే మన విశ్వాసమును కాపాడుకొని ఆత్మరక్షణను ఫలము పొందగలము.
+<br><br> <font color="blue"> రోమా8:24:-</font><font color="deeppink"> ఏలయనగా
+మనము నిరీక్షణ కలిగిన వారమై రక్షింపబడితిమి. నిరీక్షింపబడునది కనబడునప్పుడు, నిరీక్షణతో పనియుండదు, తాను చూచుచున్న దానికొరకు ఎవడు నిరీక్షించును?.</font> మనం దేని కోసం
+నిరీక్షణ కలిగి ఉన్నామో, అవి కళ్ళ ముందుకు వచ్చేస్తే దాని కోసం నిరీక్షణ ఎందుకు? బాప్తీస్మము - రొట్టె - ద్రాక్షారసం తీసుకోవాలి అంటే నిరీక్షించాలంటారు. వీటి కోసం కాదు పరలోకం కోసం నిరీక్షణ కలిగి ఉండాలి. ఈనాటి క్రైస్తవులు ఆస్తుల కోసమో, ఉద్యోగాలొస్తాయని, పిల్లలు పుడతారని, శరీర అవసరాలు తీరుతాయని దొంగ సాక్ష్యాలు విని దేవున్ని విశ్వసించుచున్నారు. అది చాలా తప్పు. ఎందుకంటే రోగం మరల రావచ్చు, శ్రమలు రావచ్చు. అప్పుడు నమ్మకం
+పొగొట్టుకుంటారు.
+<br><br> <font color="blue">  రోమా 10:8:-</font><font color="deeppink"> అదేమని చెప్పుచున్నది - వాక్యము నీయొద్దను, నీ నోటను నీ
+హృదయములలోను ఉన్నది, అది మేము ప్రకటించు విశ్వాసవాక్యమే..</font>
+రోమీయులకు వ్రాస్తూ అపోస్తులుడైన పౌలు గారు ఏం చెప్పుచున్నారో చూద్దాం. యేసు ప్రభువని నోటితో ఒప్పుకొని, ఆయనను తండ్రియైన దేవుడు మృతులలో నుండి లేపెనని మీ హృదయమందు విశ్వసించిన యెడల రక్షింపబడతారు అనెను.<br><br><font color="blue">రోమా 10:17:- </font><font color="deeppink">కాగా వినుట వలన విశ్వాసము కలుగును, వినుట క్రీస్తును గూర్చిన మాటవలన కలుగును.</font> వినుట వలన విశ్వాసం కలుగును, విన్నది కూడ క్రీస్తును గూర్చిన మాటలు (వాక్యం) వలన కలుగుతుంది. మరే సంగతులు వినినను కలుగదు.<br><br> <font color="blue">   లూకా17:5: -</font><font color="deeppink"> అపొస్తలులు - మా విశ్వాసము వృద్ధిపొందించుమని ప్రభువుతో చెప్పగా. అపొస్తలులు - యేసు క్రీస్తు వారిని మా విశ్వాసమును వృద్ధిపొందింపమని అడుగుచున్నారు..</font>  కాని నేటి క్రైస్తవులైతే మా రోగాలు తీయమని, వ్యాపారాలు అభివృద్ధి
+పరచమని, వారి అవసరాలు తీరిపోవాలని ప్రార్థనలు చేయమని బోధకులను అడుగుదురు. కనుక మనం విశ్వాసము కలవారమై వున్నామో లేదో మనల్ని మనమే పరీక్షించుకోవాలి. ఏలాగంటారా... ఒక మనుష్యుని సంగతులు ఆ మనుష్య ఆత్మకే తప్ప మరెవరికి తెలియదు.
+కాబట్టి <br><br> <font color="blue">  1కొరింధి 11:28:- </font><font color="deeppink">కాబట్టి ప్రతి మనుష్యుడు తన్ను తానే పరీక్షించుకొనవలెను..</font> ప్రతి
+మనుష్యుడు తన్ను తానే పరీక్షించుకోవాలి. ఈ అవకాశం మనిషికి భూమ్మిద ఉన్నప్పుడు మాత్రమే వుంటుంది. అలా పరిక్షించుకోని యెడల విశ్వాసమనే ముసుగులో వాక్య విరుద్ధమైన క్రియలను బట్టి నరకానికి పోగలరు. అయితే కొందరు వారి విశ్వాసాన్ని చూచుకోకుండా ఎదుటివారి విశ్వాసాలు గూర్చి వ్రేలెత్తి చూపుదురు.<br><br> <font color="blue"> లూకా 18:9-14:-</font> యేసుక్రీస్తు వారు చెప్పిన ఉపమానము - పరిసయ్యుడు ప్రార్థన చేస్తూ ఇతర మనుష్యుల వలెనూ, సుంకరి వలెను అని ఎదుటివారి ప్రవర్తన కించపరిచే విధంగా మాట్లాడుతున్నాడు.సుంకరి అయితే తన గూర్చి తాను ఏడ్చుచూ, రొమ్ము కొట్టుకొనుచూ దూరంగా నిలబడి ప్రార్థన చేస్తున్నప్పుడు. దేవుడు సుంకరి విశ్వాసాన్ని మెచ్చుకొన్నట్లు తెలుస్తుంది. <br><br>
+
+Blood test, X-ray, Scanning, Sugar
+test, B.P test అన్నింటిని టెస్ట్ చేయటానికి పరికరాలు ల్యాబ్ టెక్నీషియన్స్ ఉన్నారు. మరి విశ్వాసాన్ని దేనితో పరీక్షించుకొనగలమంటే క్రైస్తవుల <font color="green">scanning machine “బైబిల్".</font>
+<br><br> <font color="blue">  యాకోబు 2:17, 18.</font> ఇక్కడేమంటున్నారంటే - విశ్వాసం వుంటే చాలదు, దానితో క్రియలు వుండాలి. క్రియలు లేకపోతే ఆ విశ్వాసమునకు అర్థం లేదు. విశ్వాసమునకు క్రియలు లేకుంటే ఒంటిగావుండి మృతమైనది అగును. కనుక మన పితరుడైన అబ్రాహాము ఏలాగున్నారో చూద్దాం. <br><br> <font color="blue">  యాకోబు 2:21,22: .</font>  అబ్రాహాముగారు తన కుమారున్ని బలి అర్పించటానికి సిద్ధపడెను ఆ విధంగా విశ్వసించిన ఆయన క్రియలు ద్వారా దేవున్ని మహిమ పరచి, విశ్వాసులకు తండ్రి అయ్యారు. <br><br> <font color="blue">  హెబ్రీ 11:10: -</font><font color="deeppink"> ఏలయనగా దేవుడు దేనికి శిల్పియు నిర్మాణకుడునై యున్నాడో, పునాదులుగల ఆ పట్టణముకొరకు అబ్రాహాము ఎదురుచూచుచుండెను..</font>  అబ్రాహాము, ఇస్సాకు, యాకోబులు దేవుని యందు విశ్వాసముంచి భూమ్మీద కష్టపడి సుఖాలను కోరుకోకుండా, కనబడని పరలోకం (పునాదులుగల ఆ పట్టణం) కొరకు ఎదురుచూసారు. మన విశ్వాసమునే కాకుండా చేసే క్రియలు కూడా విశ్వాసమూలమైనవో కావో చూసుకోవాలి.<br><br> <font color="blue">  గలతీ 6:4:-</font><font color="deeppink">
+ప్రతివాడును తాను చేయుపనిని పరీక్షించి చూచుకొనవలెను. అప్పుడు ఇతరునిబట్టి కాక తననుబట్టియే అతనికి అతిశయము కలుగును..</font> ప్రతీవాడు తాను చేయుపనిని పరీక్షించుకోవాలి. నీవు చేయుచున్న పని దేవునిదా? కాదా? వాక్యాను సారాముగా వుందా? లేదా? అని
+చూసుకోవాలి. <br> &emsp;ఉదా:- విదేశాల నుండి ఫండ్స్ రప్పించుకున్నవారు, తాము చేస్తున్నది
+దేవుని పని అని అనుకొనుచున్నారు కానీ అది వాక్యానికి విరుద్ధమైన పని. కాబట్టి మనం చేసే పని బైబిల్ లో వ్రాయబడిన భక్తులు చేసిన పనితో వారి విశ్వాసముతో సరిపోతుందా? లేదా? అని వాక్యాన్ని పరిశీలన చేసుకోవాలి. అపొస్తలుడైన పౌలుగారు అంటున్న మాటలు....... <br><br> <font color="blue">  II తిమోతి 4:7:-</font><font color="deeppink"> మంచి పోరాటము పోరాడితిని, నా పరుగు కడముట్టించితిని, విశ్వాసము కాపాడుకొంటిని. </font> ఇందునుబట్టి క్రైస్తవులైన ప్రతి ఒక్కరు వాక్యసంబంధమైన పోరాటము పోరాడుతూ, అంతము వరకు సహించుచూ, విశ్వాసమును ప్రతిక్షణం కాపాడుకొంటూ, ఎన్ని ఆటంకాలు ఎదురైనా దేవుని పనిని నెరవేరుస్తూ జీవకిరీటం పొందాలి. అలా పొందిన వారిని బైబిల్ లో అనేక మందిని చూడవచ్చును. <br><br> <font color="blue">  దానియేలు 3:16–20:-</font>
+షద్రకు, మెషాకు, అబెద్నెగో అను వారు అగ్నిగుండంలో పడవేసినా దేవున్ని విడిచి పెట్టలేదు..<br> 
+<br><br> <font color="blue">  హెబ్రీ 11:1-40: - </font> ఈ అధ్యాయంలో మనకు సృష్టి ప్రారంభ విశ్వాస వీరుడైన హేబెలు నుండి ఎందరెందరో విశ్వాస వీరుల జాబితా చూస్తే వారు విశ్వాసమును కలిగి ఎన్ని గొప్ప కార్యాలు చేసి ఎలా జయించారో ఎలా పరదైసు చేరారోనన్నది మనకు గోచరం కాగలదు.  అప్పుడే మనం కూడా పరదైసు (వాగ్దానఫలము)కు, పిమ్మట పరలోక ప్రవేశం దొరకగలదు. స్తెఫెను, పౌలుగారు, అపోస్తలులు, సమ్సోను, దావీదు, మోషే, యెఫ్తా, యెహోషువా ఇలా ఇంకా అనేక మంది మహా భక్తులు, త్యాగశీలులు, వీరులు, తమ విశ్వాసాన్ని కాపాడుకుంటూ దేవుని పనిలో ఈ భూమ్మీద ప్రాణాలు విడిచి పెట్టి - నిత్యజీవం ను పొందారు. వీరిలో వున్న విశ్వాసం నేటి క్రైస్తవుల్లో వుందోలేదో వారే చూచుకోవాలి. ఎందుకంటే యేసుక్రీస్తు వారు మనకు జాగ్రత్త చెప్పుచున్నారు. <br><br> <font color="blue">  లూకా18:8:-</font><font color="deeppink"> ఆయన వారికి త్వరగా న్యాయము తీర్చును,వారి విషయమే గదా ఆయన దీర్ఘశాంతము చూపుచున్నాడని మీతో చెప్పుచున్నాను. అయినను మనుష్య కుమారుడు వచ్చునప్పుడు ఆయన భూమి మీద విశ్వాసము కనుగొనునా?.</font>
+ఆయన రెండవ రాకడలో భూమి మీద విశ్వాసము కనుగొనునా అని అంటున్నారు. యేసే అలా అన్నారంటే యేసు మాటల బట్టి విశ్వాసుల సంఖ్య తగ్గాలి, కానీ రోజు రోజుకి క్రీస్తును అంగీకరించే వారి సంఖ్య పెరుగుతుందంటే వారు నిజమైన విశ్వాసాన్ని కలిగియున్నారో, సమస్యలు వస్తే క్రీస్తును విడిచిపెట్టే వారిగా యున్నారో ఆలోచించండి. <br><br> <font color="blue">  మత్తయి 10:22:-</font><font color="deeppink">
+అంతమువరకును సహించినవాడు రక్షింపబడును..</font>  అంతము వరకు నమ్మకంగా వుంటేనే రక్షింపబడతామని తెలుసుకొనవలెను.<br><br> <font color="blue">   2కొరింథి 13:5:-</font><font color="deeppink"> మీరు భ్రష్టులు కాని యెడల యేసుక్రీస్తు మిలోనున్నాడని మిమ్మును గూర్చి మిరే యెరుగరా?.</font><br> 
+<font color="green">నీతి: విశ్వాసము అంటే అదృశ్యమైనవి వున్నాయని నమ్మటం. అవి కూడా
+ఆత్మసంబంధమైనవి (పరలోకం, తండ్రియైన దేవుడు, యేసుక్రీస్తు, పాతాళం, నరకం, పనివారైన దేవదూతలు). విశ్వాసమును, వాక్యంతో పరీక్షించుకోవాలి, అంతము వరకు కాపాడుకోవాలి, క్రియలతో కూడిన విశ్వాసమును కల్గివుండాలి.</font>
+
+
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>

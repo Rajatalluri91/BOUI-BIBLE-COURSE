@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+            line-height:20px;
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+	a{
+       
+       color:deeppink;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">5. దేవుని నివాసం <br> &nbsp;మనుష్యులలో ఉన్నదా?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+  
+దేవుడు సాక్ష్యాత్తు జగత్ రక్షకుడు. ఈయన ఆత్మ అనగా కనబడని మహాశక్తి (గ్రేట్ ఎట్రాక్టర్). ఈ మహా విశ్వాన్ని తన కనుసన్నలతో కాపాడుతూ త్రిప్పుతున్న శక్తి. శక్తికి కూడా నివాసస్థలము కావాలంట. ఈయనకు ఆకాశ మహాకాశాలే పట్టజాలవు మరి అయితే మనుష్యులలో ఆయన నివాసం ఏలాగు ఉండగలదు? అని మనం ఆలోచిస్తే శక్తి అనుకుంటే ఎవరి దగ్గరకైనా రాగలదు, ఉండగలదు. అలా పరమాత్మలో నుండి జీవాత్మగా ఈ శరీరాల్లోకి మనం వచ్చాం. ఎందుకు మంటి నుండి తీసి ఈ శరీరాల్లోకి జీవాత్మను మనకు పంపాడు అంటే  మనలో తండ్రి భాగం వుంది. తండ్రి తన భాగాన్ని ఎందుకు ఇచ్చాడు? చెప్పండి. -
+  <br><br> <font color="red">  కీర్తనలు 16:5:- </font><font color="deeppink">యెహోవా నా స్వాస్థ్య భాగము నా పానీయ భాగము నీవే, నా భాగమును కాపాడుచున్నావు. యెహోవా నీవే నా భాగం. </font>(అని దావీదు గారు వ్రాసారు).మన లోక తండ్రుల మనస్సు ఆలోచిస్తే నేను కన్నాను కనుక కొడుకుతో- నీ వద్ద నేను ఉంటాను అంటారు. ఇది న్యాయం, ధర్మం అనుకుంటే అసలు వీరు మనల్ని కన్నారా? అంటే మన కన్నతండ్రి వీరి గర్భాల
+గుండా బయటకు తెచ్చాడు అంతే. అయినా వీరే పిల్లలపై అధికారం చెలాయించి మరీ పెంచుతారు. చివరి వరకు వీరి వద్దే కన్ను మూయాలనుకుంటారు గానీ వీరిని వృద్ధాశ్రమం(ఓల్డేజ్ హోమ్స్) లో వేసేస్తాము. అప్పుడు మన లోక తల్లిదండ్రులు తీరని వేదనకు గురై మరణిస్తారు. మరి మనం పరిశుద్ధుని భాగమై యుండి ఆ తండ్రికి తలవంపులు తెచ్చి, పట్టించుకోకుండా పోతుంటే కన్న కడుపు రగిలి మనల్ని చూస్తుంటే మండిపోతుంది అంటున్నారు...
+  <br><br> <font color="red">  యిర్మియా 23:11-</font><font color="deeppink">నా మందిరములో వారి చెడుతనం నాకు కనబడెను.</font> ఇక్కడ దేవుని మందిరం అంటే మానవ దేహమని అర్థం.   <br><br> <font color="red">  కీర్తనలు 78:60,69 -</font><font color="deeppink"> షిలోహు మందిరమును తాను మనుష్యులలో సంస్థాపన చేసిన గుడారమును ఆయన విడిచిపెట్టెను.</font> ఇక్కడ తాను సంస్థాపన చేసిన గుడారమన్నా, తాను కట్టించిన మందిరమన్నా మనమే అని అర్థం చేసుకోవాలి.
+మరి పాతనిబంధన కాలంలో దావీదు గారు తండ్రీ మీకొక మందిరాన్ని కడతాను అని ప్రేమతో అడిగినప్పుడు, నా కొరకు ఎలాంటి మందిరం కడతావు నాయనా! అని అన్నారు. మనం భూమి మీద తీసుకున్న దేవుని కొరకైన ఆలోచనలు పరలోకంలో సంచలనాలు కలిగించాలి. ఖర్చుపెడితే తండ్రి కొరకే పెట్టాలి సుమా! కొసరి కొసరి పెట్టడం,కొంత పెట్టడం కాదండి. ఉన్నదంతా ఇవ్వాలి.   <br><br> <font color="red">  2 సమూయేలు 7:6 -</font><font color="deeppink"> ఐగుప్తులోనుండి నేను ఇశ్రాయేలీయులను  రప్పించిన నాటనుండి నేటివరకు మందిరములో నివసింపక డేరాలోను గుడారములోను నివసించి సంచరింతును. </font>దావీదు పరిపాలన ముందు దేవుని మందసం ఎక్కడెక్కడ ఉండేదో ఇక్కడ
+చదివితే తెలుస్తుంది. ఇశ్రాయేలీయుల కాలంలో డేరాలలో, గుడారాలలో దేవుని మందసం ఉండేది. దేవుడు దావీదుతో-నా కుమారుడైన సొలొమోను “నా నామ ఘనత కొరకు” ఒక మందిరం కట్టించును అని సెలవిచ్చెను.
+  <br><br> <font color="red">  2 సమూయేలు 7:13,</font><font color="deeppink"> యోహాను 2:20:-</font><font color="deeppink"> అతడు నా నామ ఘనత కొరకు ఒక మందిరమును కట్టించును; అతని రాజ్య సింహాసనమును నేను నిత్యముగా స్థిరపరచెదను. </font>అయితే సొలొమోను దేవుని కొరకు బంగారు దేవాలయాన్ని గొప్పగా 46 సంవత్సరాలు కట్టించెను. అయినప్పటికీ  దేవుడు ఇందులో ఉంటాడా? అంటే మనం మొదట వ్రాసినట్లు ఆకాశ మహాకాశాలు పట్టజాలవు
+తండ్రీ నీ ఆకారానికి అని అన్నది సొలొమోను గారే. మరెందుకు కట్టాడో తెలియజేస్తూ...
+  <br><br> <font color="red">  2 దిన 2:6:-</font><font color="deeppink"> ఆకాశమును మహాకాశమును ఆయనను పట్టజాలవు, ఆయనకు మందిరమును కట్టించుటకు చాలినవాడెవడు? ఆయన సన్నిధిని ఆయనకు మందిరమును కట్టించుటకైనను నేనే మాత్రపువాడను? ధూపము వేయుటకే నేను ఆయనకు మందిరమును కట్ట దలచియున్నాను.</font> అని అన్నారు. దేవుడు పరలోకంలో అత్యున్నత సింహాసనంపై
+ఆసీనుడైనవాడు. భూమిపై తన సన్నిధి డేరాల్లో ఉండటానికే ఇష్టపడ్డాడు. దావీదు మాట కాదనలేక
+కట్టమన్నాడు. మరి సొలొమోను గారు ప్రార్థన చేస్తూ- దయచేసి నీ కనుచూపు ఈ మందిరంపై ఉండాలని విన్నవించుకున్నాడు. ఎందుకంటే ఆయన మానవ హస్తకృతాలయాల్లో ఉండడు కాబట్టి. నేడైతే మనతో, మనలో ఉంటానంటున్నాడు. అంటే దేవుడుండే నివాసం మనమే, దేవునికి ఆరాధన జరుగవలసిన మందిరం మనమే....<br><br> <font color="red">  యోహాను 4:24:-</font><font color="deeppink"> దేవుడు ఆత్మ గనుక ఆయనను
+ఆరాధించువారు ఆత్మతో, సత్యముతో ఆరాధించవలెను.</font>
+మనం ఆత్మతో, సత్యముతో ఆరాధించాలంటున్నాడు. ఆరాధన-పని, ఆ పని కూడా వాక్యము యొక్క పని అయివుండాలి. సత్ క్రియలు అనేవి మన దేహంతో చేస్తే తండ్రిని ఆరాధించినట్లే. (తండ్రి కొరకు పని చేసినట్లే)... అలాంటి వారిలోకి వచ్చి నివసిస్తాడండీ...మనం దేవుని నివాసంగా ఉండాలని దేవుడు కట్టుకుంటే మరి ఆ తండ్రికి పిల్లలుగా, తండ్రినుండి వచ్చిన భాగాలమైన మనం ఈ రోజు తండ్రిలా ఉన్నామా? మనలో అన్నీ తండ్రికి విరుద్ధమైన కార్యాలే. తండ్రి మనకు పంచి ఇచ్చిన భాగాన్ని(ఆత్మను) ఆర్పేసుకున్నాం. ఇలాంటి వారి వద్దకు
+వచ్చి ఉంటాడా? ఒక వేళ వచ్చి ఉండటానికి మనము ఖాళీగా ఉంచామా? వచ్చివుండే ప్రదేశం మన హృదయం, దీని నిండా చెత్త పేరుకుపోయింది. వీటిని తీసి పారేస్తేనే తండ్రి మనలో కొలువైవుంటాడు. అప్పుడు మనం లోకంలో దైవాలుగా కనబడతాము. మనమెవరమూ అలా
+కనబడటం లేదంటే, కారణం లోపం మనలోనే ఉంది. సరిచేసుకోవలసినది మనమే. మనం ఎంత సేపూ పైనున్న అలంకరణ బాగుందా? లేదా? అని చూస్తాం.మరి ఆనాడు చూస్తే...
+  <br><br> <font color="red">  1దిన 22:14-</font><font color="deeppink"> ఇదిగో నా కష్టస్థితిలోనే ప్రయాసపడి యెహోవా మందిరము కొరకు రెండు లక్షల మణుగుల బంగారమును, పది కోట్ల మణుగుల వెండిని తూచ శక్యము కానంత విస్తారమైన ఇత్తడిని ఇనుమును సమకూర్చియున్నాను.</font> దావీదు తన కష్ట స్థితిలోనే బంగారంను మందిరం కొరకు సమకూర్చాడని వ్రాయబడివుంది. మనమైతే దేవుని కొరకు ఇవ్వాలంటే ఎంతో ఆలోచిస్తాం. అలాగే దేవుని పని చేయమన్నా ఖాళీ లేదండీ, ఈ నెల చాలా ఇబ్బందిగా ఉందండీ, నా పరిస్థితి దేవునికి తెలుసని సున్నితంగా చెపుతారు. అసలు మన దగ్గర డబ్బులు లేనప్పుడే దేవుడు తనకు ఇవ్వడం చూస్తాడు. సమయం ఇచ్చేది కూడా దేవుడే కదండీ. ఆనాడు లేవీయులకున్న “అనుదిన బలి", నేడున్న యాజకులైన క్రైస్తవులకు “అనుదిన పని” గా
+నిర్ణయించాడు.   <br><br> <font color="red">  ఎఫెసీ 2:22-</font><font color="deeppink"> ఆయనలో మీరు కూడా ఆత్మమూలముగా దేవునికి నివాసస్థలమై యుండుటకు కట్టబడుచున్నారు.</font> ఇందుకే దేవుని నివాస స్థలంగా కట్టబడుచున్నారు అన్నాడు. యేసుక్రీస్తు ప్రభువు యెరూషలేము దేవాలయముకు వెళ్ళేసరికి రైతుబజారు
+అయిపోయింది. అలా చేసేసారు. వ్యాపారం చేయడానికి అనువైన చోటుగా అనుకోని మార్చుకున్నారు. రూకలు మార్చువారు (sensex) కలరు. అప్పుడు యేసు త్రాళ్ళతో కొరడాలు చేసి బల్లలు పడద్రోసాడు. ఇక్కడ వ్యాపారం కాదు వాక్యం ఉండాలి అని యేసుక్రీస్తు వారు కట్టడాన్ని చూడలేదు గానీ దేవాలయాన్ని కట్టాలనుకున్న దావీదు మనస్సును చూసి బాధపడిపోయాడు. అలాగే దేవుని పోలికగా చేసిన దేవుని నివాసాలైన వారు అనతి కాలంలోనే చెడిపోయారు<font color="red">(ఆది 6:5).</font><br>
+విదేశాలలో అయితే ఆన్ లైన్ చర్చ్ లు కలవు. చర్చ్ కు వెళ్ళనవసరం లేదు. ఇంట్లోనే కంప్యూటర్ ముందు కూర్చుంటే చాలు. ఆరాధన కనబడిపోతుంది. దీనిలో వారు ఏకీభవిస్తారు. మన దేశంలోనైతే చర్చిలను షాపింగ్ కాంప్లెక్స్ లుగా చేసి అద్దెలకిస్తున్నారు.మరియు సినిమా హాల్స్ గా కూడా మార్చేసారు. దేవుని ఇల్లు, నివాసం, ఆలయం, మందిరం, గుడారం అన్నా మనమే.
+  <br><br> <font color="red">  2కొరింథీ 6:18-</font><font color="deeppink">మనము జీవముగల దేవుని ఆలయమైయున్నాము; అందుకు దేవుడీలాగు
+సెలవిచ్చుచున్నాడు నేను వారిలో నివసించి సంచరింతును, నేను వారి దేవుడనై యుందును వారు నా ప్రజలైయుందురు కావున వారు వారి మధ్య నుండి బయలు వెడలి ప్రత్యేకముగా ఉండుడి;</font><br><br> <font color="red">  1కొరింథీ 3:16- </font><font color="deeppink">మీరు దేవుని ఆలయమై యున్నారనియు, దేవుని ఆత్మ మీలో
+నివసించు చున్నాడనియు మీరెరుగరా? ఎవడైననూ దేవుని ఆలయమును పాడుచేసిన యెడల దేవుడు వానిని పాడుచేయును.</font> దేవుని ఆలయము పరిశుద్ధమై యున్నది. మీరు ఆ ఆలయమై యున్నారు. దేవుని నివాసంగా మనం లేనప్పుడు దేవున్ని ఎరుగని తరము
+మనమే. సాతాను దేవుని నివాసంలో కూర్చున్నది. ఆది నుండేనని మనకు తెలుసు. దేవతలుగా ఉన్నవారిని ప్రశ్నించి వారిని దెయ్యాలుగా మార్చి వారిలో నివాసం ఏర్పాటు చేసుకుంది. ఈ దేవాలయాన్ని కష్టపడి చేసింది దేవుడైతే దుష్టశక్తి దేవుని ఇంట కూర్చుంది.   <font color="red">  (2థెస్స 2:4-</font><font color="deeppink"> ఏద
+దేవుడనబడునో(దేవుని ఆలయంలో),ఏది పూజింపబడునో,దానినంతటినీ ఎదిరించుచూ,
+దాని కంతటికి పైగా వాడు తన్నుతానే హెచ్చించుకొనుచు తాను దేవుడనని తన్ను కనపరచుకొనుచూ దేవుని ఆలయంలో కూర్చుండును గనుక ఏ విధముగానైనను ఎవడును మిమ్మును మోసపరచనియ్యకుడి).</font>
+  <br><br> <font color="red">  యెషయా 6:3-</font><font color="deeppink"> వారు సైన్యములకధిపతియగు యెహోవా పరిశుద్దుడు, పరిశుద్దుడు, పరిశుద్దుడు. సర్వలోకము ఆయన మహిమతో నిండియున్నదని గొప్ప స్వరముతో గాన ప్రతిగానములు చేయుచుండిరి.</font> సర్వలోకము ఆయన మహిమతో నిండియున్నదని చెప్పబడింది. మరి దేవుని బాగమైన మనము ఆయనకు మహిమకరంగా ఉండటం లేదు. పైగా ఆయననే
+త్రోసివేస్తున్నాం. ఇలా ఉంటే పరలోకం ఇయ్యడు.  <br><br> <font color="red">   హోషేయ 9:8-</font><font color="deeppink"> ఎఫ్రాయీము నా దేవుని
+యొద్దనుండి వచ్చు దర్శనములను కనిపెట్టును. ప్రవక్తలు తమ చర్య అంతటిలోనూ వేటకాని వల వంటివారై ఉన్నారు. వారు దేవుని మందిరములో శత్రువులుగా ఉన్నారు.</font> దేవుని మందిరములో శత్రువులుగా ఉన్నారు అంటున్నాడు. మనలో ఉండవలసిన దేవుడు
+మనల్ని విడిచి వెళ్ళిపోతే మన గతేంటి చెప్పండి.  <br><br> <font color="red">  యెహెజ్కేలు 8:6-</font><font color="deeppink"> అంతట ఆయన నాతో ఈలాగు సెలవిచ్చెను. నరపుత్రుడా! వారు చేయుదానిని నీవు చూచుచున్నావు గదా! నా పరిశుద్ద స్థలమును నేను విడిచిపోవునట్లుగా ఇశ్రాయేలీయులు ఇక్కడ చేయు అత్యధికమైన హేయకృత్యములు చూచితివా? ఈ తట్టుతిరిగిన యెడల వీరికంటే మరి అధికమైన హేయక్రియలు చూచెదవు. </font>నా పరిశుద్ధ స్థలమును నేను విడిచిపోవునట్లుగా ఇశ్రాయేలీయులు హేయ కృత్యములు చేసారు అంటున్నాడు. “బలులు అర్పించు మందిరం మనమే” అనగా దేవుని పని ఆయన
+ఇంటి ద్వారా అనగా మన దేహం ద్వారా జరగాలి. అప్పుడే దేవుని నివాసముగా మనం ఉన్నట్లు గానీ, నేటి మనుష్యులలో దేవుడు నివసించుట లేదనే ఖండితంగా చెప్పవచ్చు. అయితే దేవుడు తన ఆత్మను పంచాడు. మనలో ఉన్నది ఆయన భాగమే గానీ దాన్ని కడకు నిత్యాగ్ని పాలు చేసి మన చేజేతులారా త్రోసేస్తున్నాం. నేరాల సంఖ్య కూడా రోజు రోజుకి పెరిగిపోతుంది. క్రైస్తవులైన వారు ఇప్పటికైనా మేల్కొంటే మంచిదని నా అభిప్రాయం....
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>
+

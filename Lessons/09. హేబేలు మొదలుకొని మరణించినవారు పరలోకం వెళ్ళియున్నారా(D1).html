@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+			line-height:20px;
+            
+        }
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">9. హేబేలు మొదలుకొని  <br>&emsp;&ensp; మరణించినవారంతా పరలోకం వెళ్ళియున్నారా?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+
+
+నేడు ప్రపంచంలో వున్న క్రైస్తవులలో కాని, హైందవులలో కాని ఒక చెడ్డ నమ్మకం ఉంది. మరణించినవారంతా స్వర్గసుఖాలు అనుభవించటానికి పరలోకం వెళ్ళియున్నారని నమ్ముట ఆనవాయితి. మరణించిన వారి పేరట సంతాప సభలు పెట్టి పరమందు వారి ఆత్మకు శాంతి కలగాలని దేవున్ని ప్రార్ధించుచున్నారు. ప్రభువుని నమ్మి క్రైస్తవ కుటుంబంలో
+పుట్టిన వారు సయితము ఈ విధంగా ప్రవర్తించుట వారి తెలివి తక్కువ తనానికి నిదర్శనం. బైబిల్ పరిశోధించక పోవుటయే దీనికి కారణం. మరణించిన వారి విషయంలో క్రైస్తవులకున్న
+ఆలోచన మరణించగానే పరలోకం వెళ్ళిపోతున్నారు అనుకుంటున్నారు. బ్రతికున్న వాడు ఇంకా పరలోకం వెళ్ళలేదు. ముందుగా చనిపోయిన వాడు ఎలాంటివాడైన,
+స్వర్గస్థులయ్యారు అనటంలో ఎంత వాస్తవం వుంది. మనం బైబిల్ ని నమ్మాలి కాని మనుష్య మాటలను నమ్మకూడదు. <b>మనుష్య మాటలో లేదు నిత్యజీవం, దేవుని మాటలో వుంది నిత్యజీవం. </b><font color="blue">   (యోహాను 5:39) </font> <br>    భూమిమీద మొదటి జననం ఆదాము ద్వారా జరిగినా మరణం మాత్రం హేబేలుతో ప్రారంభమయ్యింది హేబెలు  నీతిమంతుడు. కయీను తన తమ్ముణ్ని చంపిన నరహంతకుడు. హేబెలు దేవునికి ఇష్టమైన బలి ఇచ్చి నీతిమంతుడిగా కనబడుతున్నాడు. ముందుగా మరణించిన
+నీతిమంతుడైన హేబెలు మొదలుకొని నేటి వరకు మరణించిన నీతిమంతులు అందరూ ఎక్కడికి వెళ్ళిపోయారు? ఎక్కడ ఉన్నారు? <br><br>
+
+మరణించగానే స్వర్గస్థులైరి అని చెప్పుట తప్పు.
+మరణం అనగా ఆత్మ శరీరాన్ని విడిచిపెట్టడం. ఆత్మ దేహాన్ని వదిలిన తరువాత ఎవరికి కనబడదు. కనబడని ఆత్మ స్వర్గానికి వెళ్ళింది అని వీరికి ఎలా తెలుసు? అసలు మరణం తరువాత ఏం జరుగుతుంది?
+<br><br> <font color="blue">   ఆదికాండము 25:8:- </font><font color="deeppink">అబ్రాహాము నిండు వృద్ధాప్యమునకు వచ్చినవాడై మంచి ముసలి తనమున ప్రాణము విడిచి మృతిబొంది తన పితరుల యొద్దకు చేర్చబడెను. </font> అబ్రాహాము
+175 సం||రాలు బ్రతికి ముసలివాడై చనిపోయి పితరుల యొద్దకు చేర్చబడ్డాడు. పరలోకం అన్నాడా? పితరుల యొద్దకు అన్నాడా? అబ్రహాము చనిపోయి పితరుల యొద్దకు చేరిపోయాడు. పరలోకం కాదు. ఈయన గర్భాన్న పుట్టిన ఇస్సాకు గూర్చి బైబిల్ లో పరిశీలిస్తే....
+<br><br> <font color="blue">   ఆదికాండము 35:28,29: -</font><font color="deeppink"> ఇస్సాకు బ్రతికిన దినములు నూట ఎనుబది సంవత్సరములు. ఇస్సాకు కాలము నిండిన వృద్ధుడై ప్రాణము విడిచి మృతి పొంది తన పితరులయొద్దకు
+చేర్చబడెను.  </font> ఇస్సాకు 180 సం||రాలు కాలం నిండిన వృద్ధుడై మృతిపొంది పితరుల యొద్దకు వెళ్ళెను. కాని పరలోకం వెళ్ళినట్టు లేదు. యాకోబు గూర్చి చూస్తే....
+<br><br> <font color="blue">   ఆదికాండము 49:33: - </font><font color="deeppink"> యాకోబు తన కుమారుల కాజ్ఞాపించుట చాలించి మంచము మీద తన కాళ్ళు ముడుచుకొని ప్రాణము విడిచి తన స్వజనుల యొద్దకు చేర్చబడెను. </font> 
+యాకోబు కాళ్ళు ముడుచుకొని చనిపోయి పితరుల యొద్దకు చేరెను. అబ్రాహాము, ఇస్సాకు, యాకోబు, నోవాహు, హనోకు వీరందరు పితరుల యొద్దకు చేర్చబడిరి. హేబెలుకు పితరులు లేరు. ఆయనే ప్రారంభకుడు. నీతిమంతులందరు ఒక చోటికి వెళ్ళిపోయారు అని అర్ధమయ్యింది.
+<br><br> <font color="blue"> అపొ కార్యములు 13:22:-</font><font color="deeppink"> అతడు నా ఇష్టానుసారుడైన మనుష్యుడు, అతడు నా ఉద్దేశ్యములన్నియు నెరవేర్చునని అతనిని గూర్చి సాక్ష్యమిచ్చెను. </font> 
+దావీదు నీతిమంతుడు అంతేకాక దేవుని చేత నా ఇష్టానుసారుడైన మనుష్యుడు అనిసాక్ష్యం పొందినవాడు. దేవుని ఉద్దేశ్యములు అన్ని నెరవేర్చినవాడు. ఇలాంటి దావీదు కూడా చనిపోయాడు. ఉద్దేశ్యాలు అన్ని నెరవేర్చిన దావీదు పరలోకం వెళ్ళాలి. ఆయన కూడా పరలోకం వెళ్ళలేదు.
+<br><br> <font color="blue">  అపొ కార్యములు 2:34:-</font><font color="deeppink">
+దావీదు పరలోకమునకు ఎక్కిపోలేదు. </font>  
+దావీదు వెళ్ళలేదంటే నోవాహు, హనోకు, అబ్రాహాము, ఇస్సాకు, యాకోబు ఎవరు పరలోకం వెళ్ళలేదు. మరణించినవారు పరలోకం వెళ్ళకపోతే, బ్రతికున్న వారు పరలోకం వెళ్ళాము అంటే సులువుగా మనం నమ్మేస్తాము. నిజం నమ్మము గాని అబద్ధాన్ని వేగంగా నమ్ముతాము. యేసు అన్న మాట సత్యం చెబితే నమ్మరు. <font color="blue">   (యోహాను 8:43) </font><br><br> ఇప్పటి వరకు పరలోకం ఎవరు వెళ్ళలేదు    కాని ఒక్క యేసు మాత్రమే పరలోకం వెళ్ళినట్లు మనం బైబిల్ లో చూడగలం.
+<br><br> <font color="blue">   యోహాను3:13:-</font><font color="deeppink"> మరియు పరలోకము నుండి దిగివచ్చినవాడే, అనగా పరలోకములో ఉండు మనుష్య కుమారుడే తప్ప పరలోకమునకు ఎక్కిపోయిన వాడెవడును లేడు. </font>   యేసు క్రీస్తు
+పరలోకం వెళ్ళాడు. ఇది ఆయనే స్వయంగా చెబుతున్న మాట. మరణించినవారు పరలోకం వెళ్ళలేదు. అలాగని భూమిమీద లేరు. అటు పరలోకంలో లేక ఇటు భూమిమీద లేక మరి ఎక్కడ వున్నారు?
+<br><br> <font color="green">   మనకు 3 లోకాలు:</font><br>
+<font color="blue">1.పరలోకం 2. భూలోకం 3. పాతాళలోకం </font> <br>   
+మరణించిన నీతిమంతులు పాతాళ లోకంలో ఉండాలి. అదేంటి ఇంత బ్రతుకు బ్రతికి పాతాళం వెళ్ళటానికా అంటారా? దేవుడు అన్యాయస్తుడు కాడు. మరణించినవారు పాతాళం వెళుతున్నారంటే వారి కోసం అక్కడ ఏదో ఏర్పాటు చేసే ఉంటాడు.
+<br><br> <font color="blue">   లూకా 16:22: -</font><font color="deeppink"> ఆ దరిద్రుడు చనిపోయి దేవదూతల చేత అబ్రహాము రొమ్మున
+(ఆనుకొనుటకు) కొనిపోబడెను. ధనవంతుడు కూడా చనిపోయి పాతిపెట్టబడెను. </font> ధనవంతుడు - లాజరు ఇది కథ అంటారు. బైబిల్ లో కథలు వుండవు. యదార్థగాథ. లాజరు చనిపోయి అబ్రాహాము రొమ్మున ఆనుకోబడ్డాడు. అబ్రాహాము గారు అక్కడ ఉంటే మిగిలిన నీతిమంతులందరు అక్కడే ఉన్నారు. ధనవంతుడు చనిపోయాడు అతడు పాతాళంలో భాదపడుతున్నాడు. దేవుని కోసం బ్రతికినవారు పాతాళం వెళుతున్నారు. దేవుని కోసం బ్రతకని వారు పాతాళం వెళుతున్నారు. పాతాళంలో ఇద్దరు వున్నారు. లోకం ఒక్కటే. ప్రదేశాలు, ప్రాంతాలు వేరు. <br> <font color="green">   ఉదా: 1.ప్రపంచం ఒక్కటే, దేశాలు వేరు. </font> <br>   <font color="green">   2.దేశం ఒక్కటయినా రాష్ట్రాలు వేరు.  </font> <br>   <font color="green">   3.రాష్ట్రం ఒక్కటయినా జిల్లాలు వేరు.  </font>    <font color="deeppink">   <br><br>పాతాళంలో 2 ప్రాంతాలు వున్నాయి.  </font> <br>  <font color="green">   1.నెమ్మది పొందుస్థలం </font> <br>  <font color="green">   2.యాతనపడు స్థలం (నరకం లేక వేదనకరమైన స్థలం). </font> <br>   లాజరు నెమ్మది
+పొందుతున్నాడు. ధనవంతుడు యాతన పడుతున్నాడు. ఈ రెండు స్థలాలను వేరు చేసేది అగాధం. <br><br>
+
+
+నెమ్మదిపొందు స్థలానికి ఏమైన పేరు వుందా?
+<br><br> <font color="blue">   లూకా 23:43:-</font><font color="deeppink"> అందుకాయన వానితో - నేడు నీవు నాతో కూడా <b>పరదైసులో </b> ఉందువని నిశ్చయముగా నీతో చెప్పుచున్నాననెను. </font> సిలువపై దొంగతో యేసు అంటున్నమాట నేడు నీవు నాతో కూడా పరదైసులో వుందువు. పరలోకం అన్నాడా? పరదైసు అన్నాడా? రెండు ఒక్కటి కాదు. రెండు ఒకటి అయితే యేసు పలికిన మాట తప్పు అవుతుంది. యేసు తప్ప పరలోకం ఎవరు వెళ్ళలేదని అన్నాడు. పరదైసు భూమి మీద లేదు. పాతాళంలో నీతిమంతులు ఉన్న చోటుని నెమ్మది పొందు స్థలం అంటే ఆ స్థలం పరదైసుగా పిలువబడుతుంది. విశ్రాంతి చోటు.
+<br><br> <font color="blue">   యోహాను 20:17:-</font><font color="deeppink"> యేసు ఆమెతో నేను ఇంకను తండ్రి యొద్దకు ఎక్కిపోలేదు గనుక నన్ను ముట్టుకొనవద్దు. </font> నేనింకా తండ్రి యొద్దకు ఎక్కిపోలేదు. యేసు మరణించగానే వెళ్ళింది పరలోకం కాదు. పాతాళంలోని ఒక భాగమైన పరదైసుకు వెళ్ళాడు. పరదైసు అన్నది పాతాళంలో ఒక భాగం. హేబెలు మొదలుకొని మరణించిన నీతిమంతులు అందరూ పరదైసులో వున్నారు. ఎప్పటి వరకూ అంటే యేసు రెండవ వరకు అక్కడే వుండాలి. కొన్నివందల సం||రాలుగా ఎదురుచూస్తున్నారు.
+<br><br> <font color="blue">   హెబ్రీ 11:39,40:-</font><font color="deeppink"> వీరందరు తమ విశ్వాసము ద్వారా సాక్ష్యము పొందినవారైనను, మనము లేకుండా సంపూర్ణులు కాకుండా నిమిత్తము, దేవుడు మనకొరకు మరి శ్రేష్ఠమైన దానిని ముందుగా సిద్ధపరచెను గనుక వీరు వాగ్దానఫలము అనుభవింపలేదు. </font> ఈ అధ్యాయంలో విశ్వాస వీరుల జాబితాలో వీరు వాగ్దాన ఫలం అనుభవించలేదు. ఎందుకంటే మనము లేకుండా వారు సంపూర్ణులు కారు. వాగ్దానఫలం అనగా పరలోకం అనుభవించలేదు అని అంటున్నారు.
+<br><br> <font color="blue">   ప్రకటన 6 : 10,11 : -</font><font color="deeppink"> “ వారు నాథా, సత్యస్వరూపీ, పరిశుద్ధుడా, యెందాక తీర్పుతీర్చకయు, మా రక్తము నిమిత్తము భూనివాసులకు ప్రతిదండన చేయకయు ఉందువని బిగ్గరగా కేకలు వేసిరి..... మరియు వారివలెనే చంపబడబోవు వారి సహదాసుల యొక్కయు సహోదరుల యొక్కయు లెక్క పూర్తియగు వరకు ఇంకా కొంచెము కాలము విశ్రమింపవలెనని వారితో చెప్పబడెను. ”</font> పరదైసులో ఉన్న నీతిమంతులు దేవున్ని అడుగుతున్నారు ఎంతవరకు తీర్పుతీర్చకుండా ఉంటావు అని కేకలు వేస్తున్నారు. అప్పుడు దేవుడు మీవలె చంపబడబోవు వారి సహదాసుల లెక్క పూర్తికావాలి, అప్పటివరకు కొంచెంకాలం విశ్రమించండి అని చెప్పెను. పరలోకము వెళ్ళాలంటే మార్గము తెలిసిన యేసే మనలని తీసుకొని వెళ్ళాలి.
+
+ <br><br> <font color="blue">  యెహాను 14 : 6 </font><font color="deeppink">“యేసు - నేనే మార్గమును, సత్యమును, జీవమును. నా ద్వారానే తప్ప యెవడును తండ్రియొద్దకు రాడు.”</font> నేనే మార్గం, నా ద్వారానే తండ్రియొద్దకు వెళ్ళాలి, నేను లేకుండా మీరు రాలేరు. అని యేసుచెబితే ఈరోజు బోధకులు సులువుగా పరలోకము వెళ్ళాను అంటున్నారు.
+ అంటున్నారు. నెమ్మదిపొందు స్థలానికి వెళ్ళాలంటే భూమిమీద నెమ్మది లేకుండా ఉండాలి. మనకి బాధలు ఉంటాయి. ఇవన్నీ అంతం వరకు సహించాలి. అప్పుడు పరదైసుకి వెళతావు.. 
+ 
+ <br> &emsp;<font color="red">ఉదా:</font> దినకరన్ బోధకుడు మీకు తెలుసు. ఈయనకి ఒక రోజు కలలో దూతవచ్చి ఈయనని పరలోకము తీసుకొనివెళ్ళి అక్కడ వదిలేసిందట. దినకరన్ అటు, ఇటు చూస్తే పేతురు గారు కనిపించారట. ఈయన మిరేంటి ఇక్కడవున్నారు అని అడిగి యేసుక్రీస్తువారు ఎక్కడ ఉన్నారు అని అడిగితే పేతురు గారు - పరదైసుకి ఆవల ఉన్నారు అని చెప్పారట. ఇంతకీ ఆవల ఏముందని మనము నేర్చుకొన్నామంటే, పాతాళము ఉంది. ఎన్ని తప్పులు ఉన్నాయో చూడండి. <br>ఇందులో <br>1. దినకరన్ బ్రతికుండగా పరలోకము వెళ్ళుట తప్పు.<br> 2. పేతురుగారు పరలోకములో ఉండుట తప్పు. <br>3. యేసుక్రీస్తువారు పాతాళములో ఉండుట తప్పు. <br>
+ 4. ఇది విని నమ్ముట మనతప్పు.<br>  ఈ దినకరన్ శిక్ష విధించు యేసుకే శిక్ష వేసేశాడు. యేసు పరలోకము నుండి భూమిమీద పుట్టి చనిపోయిన తరువాత పాతాళానికి వెళ్ళి మరలా భూమి మీదకు వచ్చి అందరు చూస్తుండగా తండ్రి యొద్దకు పరలోకానికి ఆరోహణమాయెను. మనము కూడా పరలోకము నుండి భూమి మీదకు వచ్చాము, ఇక్కడ నుండి పాతాళానికి వెళ్ళాలి. యేసు రెండవ రాకడలో నీతిమంతులు భూమి మీదకు వచ్చి అక్షయశరీరాలు ధరించుకొని యేసు ద్వారా నిత్యజీవము పరలోకము చేరుతాము. అనీతిమంతులు నిత్యశిక్షకు అనగా నరకానికి జారిపోతారు. మనము పరలోకము నుండి వచ్చాము కాబట్టి పరలోకము వెళ్ళటానికి సాధన చేయాలి. కాబట్టి హేబెలు మొదలుకొని ఇప్పటి వరకు మరణించిన నీతిమంతులు పరలోకము వెళ్ళలేదు. పరదైసులో ఉన్నారు.
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+            line-height:20px;
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+      /* Light mode styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode .header,
+body.light-mode .footer {
+    background-color: #aeaeae;
+    color: #4500ae;
+}
+
+body.light-mode .lesson-name {
+    color: #4500ae;
+}
+
+body.light-mode .toggle {
+    background: #ccc;
+}
+
+body.light-mode .toggle::before {
+    background: white;
+}
+
+body.light-mode a {
+    color: deeppink;
+}
+
+body.light-mode .footer label {
+    color: black;
+}
+
+body.light-mode div.e {
+    background: #bdbdbd8c;
+    color: #5000ff;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .header,
+body.dark-mode .footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .lesson-name {
+    color: #bb86fc;
+}
+
+body.dark-mode .toggle {
+    background: #333;
+}
+
+body.dark-mode .toggle.active {
+    background: #03dac5;
+}
+
+body.dark-mode .toggle::before {
+    background: white;
+}
+
+body.dark-mode a {
+    color: #ff6ec7;
+}
+body.dark-mode c {
+    color: #00d9ff;
+}
+
+body.dark-mode .footer label {
+    color: #e0e0e0;
+}
+
+body.dark-mode div.e {
+    background: #2c2c2c;
+    color: #bb86fc;
+}
+
+body.dark-mode input[type="range"] {
+    background: #444;
+}
+
+body.dark-mode input[type="range"]::-webkit-slider-thumb {
+    background: #bb86fc;
+}
+
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+	a{
+       
+       color:deeppink;
+       }
+   c{
+       
+       color:green;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">02. పరలోకం నరకం నిజంగా ఉన్నాయా?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+భూమి మీద పుట్టిన ప్రతి మనిషి మరణించక తప్పదు. అలా మరణించిన వారు ఎక్కడికివెళతారు? అనేక మందిలో మరణం గూర్చి అనేక సందేహాలు కలవు. అవేవనగా మనిషిచనిపోయిన తరువాత వారి ఆత్మ గాలిలో కలిసిపోతుందని, కోరికలు తీరకపోతే భూమి
+మీదనే తిరుగుతారని, మిగిలిపోయిన కక్షలు, కోపాలు చనిపోయాకనెరవేర్చుకోవచ్చని
+కొంతమంది అనుకుంటే, కొందరేమో మంచి పనులు, పుణ్యకార్యాలు చేసినట్లయితే చనిపోతేస్వరం(పరలోకం)వెళ్లవచ్చును, చెడ్డకార్యాలు చేస్తే నరకానికి వెళతాం అని అంటుంటారు.స్వర్గం, నరకం ఉన్నాయని నమ్మేవారు కొందరైతే అవేవి లేవనేవారు కొందరున్నారు. వీటిని
+గూర్చి చెపితే, వారు వినటానికి కూడా ఇష్టపడరు. వారి ఉద్దేశము భూమి మీద సుఖంగాబ్రతికితే అదే స్వర్గమని, బాధలతో బ్రతికితే అదే నరకమని భావిస్తున్నారు. స్వర్గమంటే-ఆనందకరమైన లోకం, నరకమంటే-బాధలు, దు:ఖం మాత్రమే ఉంటాయని అనుకుంటేమరి భూమి మీద మనుష్యుల్లో సుఖదు:ఖాలు కలిసివుంటాయి. కాని స్వర్గం, నరకం ఎన్నటికినీ
+కలవవు.   <br>   ఉదా:- అమెరికాను, ఇండియాను కలిపి చూపలేము. అమెరికాను చూడాలంటేఅక్కడకు వెళ్లాలి. 
+అలాకాకపోతే ప్రపంచపటంలో చూడవచ్చును. అలాగే భూమి మీదున్నవారుస్వర్గం గాని, నరకం గాని చూస్తేనే నమ్ముతాము అనడం వెర్రితనం. 
+ఎందుకంటే అవి కనిపించేలోకాలు కావు.   <br> 
+<c>  1)పరలోకం</c>   <br> 
+<c>  2)భూలోకం</c>   <br>
+<c>  3)పాతాళం(నరకం).</c><br>  ఈ 3 మూడు లోకాలు దేవుని
+వలన కలిగాయి. దేవుడున్నది పరలోకంలో, మనుష్యులున్నది భూలోకంలో, తప్పు చేస్తే
+చేరిపోయేది నరకం. అలాగున అనుకొన్నట్లైతే భూమి మీద యేసు క్రీస్తు వారున్నప్పుడు
+పరలోకం, నరకం గూర్చి మాట్లాడుతున్నారు. కనుక వీటిని గూర్చితెలుసుకోవాలంటే బైబిల్ నుఅడగాలి.
+  <br>
+<a>  మత్తయి 5:3 “ఆత్మవిషయమై దీనులైనవారు ధన్యులు పరలోక రాజ్యము వారిది."</a> ఇక్కడమనము చూడగలిగితే...... అప్పుడాయన నోరు తెరిచి ఇలాగు బోధిస్తున్నారు. ఆత్మ విషయమైనదీనులైనవారు ధన్యులు పరలోక రాజ్యము వారిది. అంటే భూమి మీద దేవుని కొరకు బ్రతికితే
+పరలోకరాజ్యము వారిదని అంటున్నాడు. ఒకవేళ పరలోకరాజ్యమే లేకుంటే యేసు పరలోకము
+ఉందని చెప్పిన మాట తప్పు అవుతుంది. పరలోకము గూర్చి బైబిల్ లో చెప్పబడిన మాటలు
+తప్పు అవుతుంది. యేసు చెప్పిన ప్రతి మాట జీవం కలిగినది, అన్ని తూచ తప్పకుండాజరుగుతాయి. ఆయన మనల్ని ప్రేమించి మనకొరకు తన ప్రాణమును పెట్టెను. ప్రాణము
+పెట్టిన వ్యక్తి మనలను మోసం చేస్తాడా? అబద్దాలు చెప్తాడా? చెప్పడు. అలాగే యేసు నరకం
+గూర్చికూడామాట్లాడుతున్నారు. <br>
+<a>  మత్తయి 23:33 “సర్పములారా! సర్పసంతానమా, నరకశిక్షను* మీరేలాగు తప్పించుకొందురు?" </a>అని అంటున్నాడు. దేవుడు మనల్ని ప్రేమించి ఇచ్చేది పరలోకం,
+అయితే కోపంతో ఇచ్చేది నరకం. యేసును నమ్మితే ఆయన మాటల్లోని ఈ రెండులోకాలను
+కూడా నమ్మాలి. మనిషి కొరకు భూమితో పాటు సంతోషపడడానికి పరలోకం, తప్పులు చేస్తే
+నరకం అనే మహాలోకాలను దేవుడు కలిగించాడు. నేడు భూమి ఉన్న విశ్వంలో క్రింద మూడవ
+లోకమైన పాతాళం ఉంది. ఈ పాతాళంలో నరకం, అగాధం, పరదైసు ఉన్నవి. ఇవి లేవుఅని నిరూపించాలని అనుకుంటే మనం వెళ్లి చూసి చెప్పాలి. అలాంటి అవకాశం లేదు
+ఇంకా బైబిల్ ను చదివినట్లైతే...
+ <br>
+<a>  అపా||కా 7:54,55,56 "అయితే అతడు పరిశుద్ధాత్మతో నిండుకొనినవాడై ఆకాశమువైపు
+తేరిచూచి, దేవుని మహిమను యేసు దేవుని కుడిపార్శ్వమందు నిలిచియుండుటయు చూచి,
+ఆకాశము తెరవబడుటయు, మనుష్యకుమారుడు దేవుని కుడిపార్శ్వమందు నిలిచియుండుట
+చూచుచున్నానని చెప్పెను."</a> ఇక్కడ మనము చూసినట్లైతే, సైఫనుగారు చంపబడటానికి ముందు
+ఆకాశం చీల్చబడి పరలోకంలో తండ్రి కుడిపార్శ్వమున యేసు కూర్చుండి ఉండటం
+కనిపించింది. దీనిని బట్టి పరలోకం మనకు కనబడుతున్న ఆకాశం ఆవలవుందని అర్థం
+చేసుకోవాలి. ఈ రెండు మహా లోకాలు భూమి మీద లేవు. <br>ఉదా:-భూమి మీద అతిధులు,అధిపతులును గౌరవించడానికి అతిధిగృహాలేలాగున్నవో అలాగే నేరస్తులు ఉండడానికి
+కారాగారములున్నవి. అలాగే దేవుడు కూడా నీతిమంతులకొరకును,
+దోషులకొరకును రెండు
+మహాలోకాలు సిద్ధపరిచెను.
+ <br>
+<a>  యెషయా 14:15 “నీవు పాతాళమునకు నరకములో ఒక మూలకు త్రోయబడితివే."</a>
+పాతాళంలో నరకముంది. ఈ పాతాళం భూమి క్రింది లోకంలో ఉంది.
+  <br>
+<a>లూకా 16:25 "అందుకు అబ్రహాము కుమారుడా, నీవు నీ జీవితకాలమందు నీకిష్టమైనట్లు
+సుఖము అనుభవించితివి, అలాగుననే లాజరు కష్టము........... నీవు యాతనపడుచున్నావు."</a>
+అబ్రహాముగారికి ధనవంతునికి మధ్య 3వలోకంలో జరుగుతున్న సందర్భములో పాతాళంలో
+ధనవంతుడున్నాడు, లాజరు పరదైసులోనున్నాడు. నెమ్మదిపొందు స్థలం, యాతనపడు స్థలం, 
+కటిక చీకటిగల బిలములు ఈ మూడు 3వ లోకంలోనున్నవి.
+  <br>
+<a>పేతురు 2:4 "దేవదూతలు పాపము చేసినప్పుడు దేవుడు వారిని విడిచిపెట్టక,
+పాతాళలోకమందలి కటిక చీకటిగల బిలములలోనికి త్రోసి, తీర్పుకు కావలిలో ఉంచబడుటకు
+వారిని అప్పగించెను."</a>దేవదూతలగూర్చి మాట్లాడుచున్నారు. దేవదూతలు దేవునిపై తిరుగుబాటు
+చేసినందున వారిని దేవుడు పాతాళంలోని కటిక చీకటిగల బిలములలోనికి (ఒకమూలకు),
+తోసెను. ఎవరు తప్పుచేసినా వారిని తప్పక నరకంలో పడవేస్తారు. ఆ శిక్ష దేవదూతలకైనా 
+సరే, దేవుని మాటలను గౌరవించక, తప్పుగా నడుచుకొనే ఎవరినైనా నరకంలోకి నెట్టివేస్తారు.
+భూమి మీదున్న మనిషి పరలోకం, నరకం లేవని అనుకొని జీవించి చనిపోయిన తరువాత
+అవి ఒకవేళ ఉంటే చాలా ప్రమాదముంది. పరలోకం, నరకం ఉన్నాయని నమ్మి చనిపోతే
+పరలోకం, నరకం లేకపోతే మనిషికేమి నష్టం లేదు. ఇక్కడ లేవన్న ప్రతివారు నరకానికి
+వెళ్లిపోతున్నారు. ప్రతి ఒక్కరు భూమి మీదకి వచ్చారు, వచ్చారంటే వచ్చిన చోటుంది.
+ <br>
+<a>  కీర్తనలు 90:1 "ప్రభువా, తరతరములనుండి మాకు నివాసస్థలము నీవే."</a>తరతరములకు 
+నివాస స్థలము మనకు తండ్రి. ఆయన ఉన్న లోకం పరలోకము. ఇది తెలుసుకోకుండా
+మనుష్యులు కానరాని లోకాలకు వెళ్ళిపోతున్నారని అనుకుంటున్నారు.   <br>   ఉదా:-ప్రయాణికులు
+బస్సులో బయలుదేరిన తరువాత ఆ బస్సుకు ప్రమాదం ఏదైనా జరిగి అందులో ఎవరైనా
+మరణిస్తే వారి కొరకు వార్తాపత్రికల్లో కానరాని లోకాలకు వెళ్ళిపోయారని వ్రాస్తుంటారు.</a>
+భూమి నాశనం కావచ్చు గాని, దేవుని మాటలు ఖచ్చితంగా నెరవేరుతుంటాయి.  <br>
+<a>  ప్రసంగి 10:14 “నరుడు చనిపోయిన తరువాత ఏమిజరుగునో ఎవరు తెలియజేయుదురు?”</a>
+వారు బుదిహీనులవలె భూమిమీద ప్రయాసపడి నరకానికి జారిపోతారని వాక్వముసెలవిచ్చుచున్నది. 
+కనుకనే బుద్ధి జ్ఞానములు కలవారైతే ఏం చేస్తారో చెబుతున్నారు.
+<br>
+<a>  సామెతలు 15:24 “క్రిందనున్న పాతాళమును తప్పించుకొనవలెనని బుద్ధిమంతుడు పరమునకు పోవు జీవమార్గమున నడుచుకొనును."</a>
+ క్రిందనున్న పాతాళమును తప్పించుకొని
+పరమునకుపోవు జీవమార్గమును పయనించెదరు. కాబట్టి భూమి మీదున్నప్పుడే వివేకము
+కలవారై చక్కగా దేవుని గూర్చి తెలుసుకొని పయనించాలి. అలా లేనివారి కోసం పాతాళం
+అపరిమితంగా తన నోరు తెరచి కాచుకొని ఉంటుంది.
+ <br>
+<a>  యెషయా 14:9 “నీవు ప్రవేశించుచుండగానే నిన్ను ఎదుర్కొనుటకై క్రింద పాతాళము నీ విషయమై కలవరపడుచున్నది. 
+అది నిన్ను చూచి ప్రేతలను రేపుచున్నది..... వారి వారి సింహాసనములమీదనుండి లేపుచున్నది." </a>
+పాతాళములోనికి వెళ్ళేవారి విషయమై పాతాళము
+కలవరపడుచు, పేతలను రేపుతుదంట! ఎందుకంటే ఒకప్పుడు వాక్యము పరిపూర్ణం కానప్పుడు
+పాతాళము, నరకం గూర్చి అందరికి తెలిసి ఉండకపోవచ్చును. కానీ ఇప్పుడైతే మనకొరకు
+యేసు క్రీస్తు వారు 2000 సం||ల క్రితం భూమి మీదకు వచ్చి మనుష్యులు ఎలా బ్రతకాలో
+చూపి, అందరికీ తండ్రి దగ్గరకు పరలోకం ఎలా వెళ్ళాలో చెప్పి, అలాగున బ్రతికి మరణించి
+3వ దినమున సజీవునిగా తిరిగి లేచి పరమునకు వెళ్ళిన యేసు క్రీస్తు వారు శకపురుషునిగా,
+యుగపురుషునిగా మనుష్యులందరికి మార్గదర్శకంగానున్నారు. ఇంత జరిగాక కూడా యేసును
+నమ్మక, వాక్యము గుర్తించక మనిషి అవిధేయుడుగా బ్రతికి మరణిస్తే ఇలాంటి వారికోసం
+పాతాళం తప్పక పేతలను రేపుతుంది. కాబట్టి మనిషి భూమి మీదున్నప్పుడు సుఖదు:ఖాలు
+ఏలాగున్నవో అలాగే ఆ వ్యక్తి భూమి మీద బ్రతికి మరణించిన తరువాత అతని ఆత్మకు
+భూమిపై ఉండే శక్తి ఉండదు. అది పరదైసుకైనా వెళ్ళాలి లేకుంటే పాతాళంలోని నరకానికైనా
+వెళ్ళాలి.  <br>   ఉదా: మానవ శరీరంతో చంద్రమండలంపై అడుగు పెట్టలేము. చంద్రునిపై నిలబడాలి
+అంటే ఈ శరీరానికి 500 కోట్ల రూపాయలు విలువగల సూట్ ఉండాలి. </a>భూమి మీద తప్ప,
+ఈ శరీరం మరోగ్రహం పై నిలబడలేదు. అలాగే మరణించిన తరువాత ఆత్మ భూమి మీదఉండదు. 
+ఆ ఆత్మ అయితే పరదైసుకైనా వెళ్ళడానికి సిద్ధపడాలి. లేకుంటే మనిషి చేసిన
+తప్పువలన నరకానికైనా వెళ్ళాలి తప్ప, చనిపోయిన తరువాత గాలిలో కలిసిపోతాం.చనిపోతే
+నరకం, స్వర్గం లేదనుకోవటం అవివేకం. పరలోకం, నరకం గూర్చి వ్యక్తుల సాక్ష్యాలే కాకుండా,
+వ్రాతపూర్వక ఆధారాలు(66 పుస్తకాలు) ఉన్నాయి. కనిపించని పరలోకం నమ్మారు, దీనికోసం
+అనేక మంది శ్రమలు పొందారు ఆనాటి భక్తులు, ప్రవక్తలు, శిష్యులు దృశ్యమైనవి అనిత్యములు,
+అదృశ్యమైనవి నిత్యములు. కనిపించేదంతా ఒకనాడు కనిపించకుండాపోతుంది. మరి పరలోకం,
+నరకం - నిత్యం ఉండే లోకాలు. కనుక నిత్యమూ అనుభవించే పరలోకం కోసం మనం
+అనుభవించే బాధలు చిన్నవి అది పొందినప్పుడు కష్టం అంతా మర్చిపోతాం. <br>
+ఉదా: తల్లిబిడ్డను కన్నప్పుడు ఎంతో కష్టపడినా బిడ్డ పుట్టాక ఆ బాధంతా మర్చిపోతుంది. నమ్మండి
+పరలోకం చేరండి.
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Toggle theme and store preference
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        const isDark = body.classList.contains('dark-mode');
+
+        if (isDark) {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            toggle.classList.remove('active');
+            localStorage.setItem('theme', 'light');
+        } else {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            toggle.classList.add('active');
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+
+    // Apply saved theme on load
+    window.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme');
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            body.classList.remove('light-mode');
+            toggle.classList.add('active');
+        } else {
+            body.classList.add('light-mode');
+            body.classList.remove('dark-mode');
+            toggle.classList.remove('active');
+        }
+    });
+</script>
+
+
+
+
+</body>
+</html>

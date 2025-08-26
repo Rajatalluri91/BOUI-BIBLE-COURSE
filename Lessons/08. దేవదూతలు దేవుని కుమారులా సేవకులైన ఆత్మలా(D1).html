@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+			line-height:20px;
+            
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">8.దేవదూతలు దేవుని కుమారులా? <br> &emsp; సేవకులైన ఆత్మలా?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+
+
+ప్రియమైన దేవుని వారలారా, క్రీస్తు చనిపోయి నేటికి సుమారు 2000 సం||రాలు అయినప్పటికి క్రైస్తవ్యం ప్రపంచ నలుమూలలా తన ఉనికిని ఎంత పటిష్టం చేసికొనినదో మనకి తెలుసు. ఇంతగా విస్తరించుచున్న క్రైస్తవ్యపు ప్రారంభాన్ని పరిశీలించినట్లయితే ఎందరో తమ ధన, మాన, ప్రాణాలను సమర్పించి, త్యాగ శీలులుగా విశ్వాసవీరులుగా మనకు చరిత్రలో ఎందురో కనబడుచున్నారు. అటువంటి క్రైస్తవ కుటుంబములో పుట్టి, క్రైస్తవ్యానికే కళంకం తెచ్చే విధంగా నేటి బోధకులున్నారు. కన్నతండ్రి కలలను నాశనం చేస్తూ క్రీస్తు ఆశయాలను సమాధి చేస్తున్నారు. సాతాను బోధకు ఆకర్షితులై, వాక్యాన్ని కలిపి చెరిపివేస్తూ, అమాయక ప్రజలనే మోసగించుచున్నారు. గొర్రెచర్మాలను ధరించి కూరమైన తోడేళ్ళుగా మారి కడకు సేవకులైన దూతలను, కుమారులని అపార్థంచేసికొని, కనీసజ్ఞానం లేనివారి జాబితాలలో చేరిపోయారు. ఇలా వారి బోధలలో చిక్కుకున్నవారిని కాపాడే మా ప్రయత్నమే ఈ పాఠం .ముందుగా వారు ఆధారం చేసికొనిన వచనాలు చూసినట్లయితే..<br><br> <font color="blue">   యోబు 1:6,7 - </font><font color="deeppink">దేవదూతలు యెహెూవా సన్నిధిని నిలచుటకై వచ్చిన దినమొకటి తటస్థించెను. </font>    (దేవదూతలు అని Put note దేవుని కుమారులని ఉంది.)
+<br><br><font color="blue"> యోబు 38:7- </font><font color="deeppink">ఉదయ నక్షత్రములు ఏకముగా కూడి పాడినప్పుడు దేవదూతలందరును ఆనందించి జయధ్వనులు చేసినప్పుడు....</font> <br>   
+పై వచనాలను చూసి, దేవదూతలు దేవుని కుమారులని అపార్థం చేసికొనుచున్నారు. ఇదే అనుమానం మీకు కలుగవచ్చు. అయితే ఇక్కడ బైబిల్ ని తర్జుమా చేయుటలో జరిగినపొరపాటు. ఇటువంటి తర్జుమా లోపాలు మనకు బైబిల్ లో చాలా కనబడతాయి. ఉదాహరణకు రెండు సందర్భాలు చూద్దాం. <br><br> <font color="blue">  మత్తయి 13:56 </font><font color="deeppink">ఇతని అక్కచెల్లెండ్రందరు మనతోనే యున్నారు కారా? ఇతనికి ఈ
+కార్యములన్నియు ఎక్కడనుండి వచ్చెనని చెప్పుకొని ఆయన విషయమై అభ్యంతరపడిరి.</font>  ఈ వచనంలో మన అక్క చెల్లెండ్రు అని ఉంది. క్రీస్తే మరియకు మొదటి కుమారుడు. అయితే అతనికి అక్క ఉన్నదనుటలో న్యాయం ఎంతవరకు ఉన్నదో మీరైనా గమనించగలరు.
+<br><br> <font color="blue">  కొలస్సీ 2:18- </font><font color="deeppink">“అతి వినయాసక్తుడై దేవదూతారాధన యందు ఇచ్చకలిగి, “తాను
+చూచిన వాటిని గూర్చి" గొప్పగా చెప్పుకొనుచు...”</font> <br>   
+ 'చూచినవాటిని గూర్చి' అనునది పుట్ నోట్ లో చూస్తే 'చూడనివాటిని గూర్చి' అని ఉంది. కనుక బైబిల్ ని చదివిన వారు ఇలాంటి సందర్భాలను చూసి అపార్ధం చేసికొనక గ్రహించుట ఎంతైనా అవసరం. కనుక యోబు గ్రంధంలోని మాట తర్జుమా లోపం అని మనకు అర్థం అయింది. <br>
+ 
+ ఇక అసలు దేవ దూతలు ఎవరు? వాటి పుట్టుక ఏవిధంగా జరిగింది అని వాటిని గూర్చిన పూర్తి వివరణ మనం బైబిల్ నందు చూడగలం.<br><br>
+<font color="green">దేవదూతల పుట్టుక:-</font>
+<br><br> <font color="blue">  కీర్తనలు 148:2,5 -</font><font color="deeppink"> ఆయన ఆజ్ఞ ఇయ్యగా అవి పుట్టెను.</font> సూర్యుడు కలుగును గాక అని అనగానే కలిగెను. చంద్రుడు కలుగును గాక అనగా చంద్రుడు కలిగెను. దేవుని మాటవలన దేవదూతలు కలిగెను. సృష్టిలో కనబడు ప్రతీది ఈ విధంగానే కలిగాయి. ఇలా పుట్టిన వీటిని
+తండ్రి విభజించారు.<br><br> <font color="blue"> హెబ్రీ 1:7 </font><font color="deeppink">తన దూతలను వాయువులనుగాను, తన సేవకులను అగ్ని జ్వాలలుగాను చేసుకొనువాడు. </font> గాలి దేవదూత, అగ్ని దేవదూత, భూమి దేవదూత, నీరుకూడా దేవదూత.
+<br><br> <font color="blue">  ప్రకటన:16:6 </font><font color="deeppink">జలముల దేవదూత చెప్పగా వింటిని. </font> <br> అయితే కేవలం ఇవి మాత్రమే దేవదూతలు కాదు.<br><br> <font color="blue">   ప్రకటన 5:11 </font><font color="deeppink">కోటానుకోట్లు దేవదూతలు. </font> కోటానుకోట్లు అనగా పండ్లు,
+అంతరిక్షం, పక్షులు, నక్షత్రాలు, పువ్వులు, చెట్లు మొత్తం దేవదూతలే. భూమిమీద పుట్టిన మనుష్యులందరికీ సేవచేయడానికే వాటిని కలిగించడం జరిగింది. <br><br> <font color="blue">  హెబ్రీ 1:14</font><font color="deeppink">
+పరిచారము చేయుటకే పంపబడిన సేవకులైన ఆత్మలు కారా?</font> దేవదూతలు జన్మయొక్క ఉద్దేశ్యం, వాటి పుట్టుక రహస్యం మనమే, మనకోసమే అవి పుట్టాయి. ఒక తండ్రి తనకు పుట్టబోయే బిడ్డకోసం తనకు కావాల్సిన సమస్తాన్ని ముందుగా ఎలాగైతే సిద్దపరుస్తాడో, అదేవిధంగా మన కన్నతండ్రి మనకు సేవకులు అవసరం అని మన నిమిత్తం చేయుట జరిగింది. అయితే వాటిలో బాధ్యతలు కలిగిన దేవదూతలు కూడా ఉన్నాయి.<br><br>
+<font color="green">దేవదూతలు వాటియొక్కవిధులు:-</font>
+<br><br> <font color="blue">  ఎఫెసీ 3:8 </font><font color="deeppink"> పరలోకములో ప్రధానులకును అధికారులకును, సంఘము ద్వారా తన
+యొక్క నానావిధమైన జ్ఞానము ఇప్పుడు తెలియబడవలెనని ఉద్దేశించి...</font> వారిలో ప్రధానులు అధికారులు ఉన్నారు. దేవదూతలలో కొన్ని రకములైన నిర్వాహకులుగా నిర్ణయింపబడ్డాయి. వారిలో ప్రధానులు, అధికారులు, ఇంకా సమాచారం తెచ్చేదూతలు, యుద్ధం చేసే దూతలు కూడా ఉన్నాయి. ఈ క్రింది వచనాలు పరిశీలించినట్లయితే...
+<br><br> <font color="blue">  యూదా 1:9.</font><font color="deeppink"> ప్రధానదూత అయిన మిఖాయేలు యుద్ధం చేసేవారికి అధిపతి. </font>   
+<br><br> <font color="blue">  ప్రకటన 12:7, 1థెస్స  4:16</font><font color="deeppink"> ప్రధానదూత శబ్దం. సమాచారం దూతలు.</font> 
+<br><br> <font color="blue">  లూకా 1:11-14. </font><font color="deeppink"></font>   గబ్రియేలు దూత యోహాను పుట్టుక గూర్చి వారి తండ్రికి వచ్చి తెలిపింది.
+<br><br> <font color="blue">  దానియేలు 9:21.</font><font color="deeppink"> యుద్ధం చేసే దూతలు.</font>   
+<br><br> <font color="blue">  హెబ్రీ 1:11,14</font><font color="deeppink"> పరిచారం చేయుటకు పంపబడిన సేవకులైన ఆత్మలు కారా?</font>   
+<br><br> <font color="blue">  కీర్తనలు 103:21 </font><font color="deeppink">ఆయనచిత్తము నెరవేర్చు ఆయన పరిచారకులారా? </font><br>    పై సందర్భాలను బట్టి దేవదూతలు ఆయనకు అప్పగింపబడిన విధులపై ఎంత బాధ్యత కలిగియున్నాయో మనకు అర్ధమగుచున్నది. కానీ ఇది మాత్రమే కాకుండా అవి మనకు కావలి వారుగా కూడా యున్నారు.
+<br><br> <font color="blue">  కీర్తనలు 37:7</font><font color="deeppink"> యెహోవాయందు భయభకులు గలవారి చుట్టూ ఆయన దూత కావలియుండి వారిని రక్షించును. </font> ఈ ప్రపంచంలో ఎవరికీ ఇంతటి భద్రత లేదు. అటువంటి భద్రత మనమీదనున్న అపారమైన ప్రేమతో మనకొరకు తండ్రి ఏర్పాటు చేస్తున్నాడు. భూమిమీద కాదు, చనిపోయిన తర్వాత కూడా అవి మనకు సేవ చేస్తాయి.
+<br><br> <font color="blue">  లూకా 16:22.</font><font color="deeppink"> ఆ దరిద్రుడు చనిపోయి “దేవదూతల" చేత అబ్రహాము రొమ్మున
+ఆనుకొనుటకు కొనిపోబడెను. </font> ఈ సందర్భాన్ని చూసి ఒక్కసారి లాజరు గారి స్థానంలో మిమ్మల్ని ఊహించుకొనండి. ఎంత రాజరికం! తండ్రి ఇష్టం నెరవేర్చిన ప్రతి ఒక్కరికీ దేవదూతలు ఇలాంటి మర్యాదనే చేస్తాయి. కారణం మనం రాజులం. అవి సేవకులు. వారసులం అయిన మన మీదనున్న ప్రేమాభిమానాలతో మన సంరక్షణ కోసం ఇంకేం చేస్తున్నాయో చూడండి.
+<br><br> <font color="blue">  మత్తయి 18:10</font><font color="deeppink"> ఈ చిన్న వానిలో ఒక్కరినైనా తృణీకరింపకుండా చూచుకొనుడి. వీరి
+దూతలు పరలోకమందున్న నాతండ్రి ముఖంను ఎల్లప్పుడూ పరలోకమందు చూచుచుందురని మీతో చెప్పుచున్నాను.</font> దేవుని ముఖాన్ని పరిశీలిస్తూ, ఎప్పుడు, ఏ ఆజ్ఞను పొంది యజమానుని పిల్లల దగ్గరకు పోవలెనని ఎదురుచూస్తున్నాయి. అందుకే మన అన్నయైన క్రీస్తు ఒక మాట అంటున్నారు.
+<br><br> <font color="blue">  మత్తయి. 26:53 </font><font color="deeppink">ఈ సమయమున నాతండ్రిని వేడుకొనవలెననియూ, వేడుకొనిన యెడల ఆయన పన్నెండు సేవా వ్యూహములకంటే ఎక్కువమంది దూతలను నాకు ఇప్పుడే పంపడనియూ</font> <br>   
+న నేను కనుక నా తండ్రిని వేడుకొంటే సేనా వ్యుహములు అనగా 6000 కంటే ఎక్కువ దూతలను పంపిస్తాడు. ఎందుకంటే అవి ఎదురు చూస్తున్నాయి. ఎప్పుడు, ఎవరికి సేవ చేయాలని కారణం అది తండ్రి వారికి ఇచ్చిన బాధ్యత. అయితే కొన్ని దేవదూతలు బాధ్యతా రహితంగా ఉంటాయి. అలాంటి వారికి తండ్రి శిక్షను కూడా అమలు చేస్తాడు.<br><br>
+<font color="green">తండ్రి దేవదూతలకు వేసే శిక్ష :</font>
+<br><br> <font color="blue">  2 పేతురు 2:4 </font><font color="deeppink">దేవదూతలు పాపము చేసినప్పుడు దేవుడు వాటిని విడిచి పెట్టక పాతాళ లోకమందలి కటిక చీకటిగల బిలములోనికి త్రోసి తీర్పుకు కావలిలో ఉంచుటకు వారిని అప్పగించెను. </font> కుమారులు తప్పుచేస్తే వారికొరకు నరకాన్ని ఏ విధంగా సిద్ధపరిచాడో అదే విధంగా సేవకులు కూడా తప్పు చేస్తే అగాధం ఏర్పాటు చేసాడు. ఆ అగాధానికి అడుగుపెట్టిన మొట్టమొదట ఒక దేవదూత ఉంది, మరి అది ఏ నేరం చేసింది అని ఆలోచిస్తే..
+<br><br> <font color="blue">  యెషయా 14:12-16</font><font color="deeppink"> మన్నతునితో నన్ను నమానంగా చేసికొందునని నీ మనస్సులో
+అనుకొంటివి కదా! పాతాళములో ఒక మూలకు త్రోయబడితివే</font> 
+దేవుని సింహాసనాన్ని అధిష్టించాలనే దురాలోచన కలిగి అగాధంలో వ్రాయబడింది, తానుచెడిన కోతి వనమంతా చెడిపినట్లు ఇది కూడా కొందరు దేవదూతలను తనవశం చేసికొనినది. అందుకే ఆ దూతలు కూడా దానితో అగాధంలోనికి త్రోయబడెను  <font color="blue"> (ప్రకటన:12:7). </font>  ఇంతకీ ఇది ఎవరో తెలుసా? అభిషేకం నొందిన కెరూబు (యెహెజ్కేలు 28:14) అపవాది దాని అనుచరులు 
+
+<br> &emsp;ఇప్పటి వరకు దేవదూతల పుట్టుక గూర్చియు తెలుసుకున్నాము. ఇక మన జననం ఏ విధంగా జరిగిందో తెలుసుకొందాము. దేవుడైన యెహోవా నేలమంటితో నరుని నిర్మించి వాని నాసికారంధ్రములలో జీవవాయువును ఊదగా నరుడు జీవాత్మ ఆయెను <font color="blue"> (ఆది
+ 2:7).</font>    
+<br><br> <font color="blue">  ఆదికాండము 1:26. </font><font color="deeppink">దేవుడు - మన స్వరూపమందు, మన పోలిక చొప్పున నరులను చేయుదము.</font> కోటానుకోట్ల సేవకులనందరినీ దేవుడు మాట ద్వారా కలిగించెను. మనమైతే దేవుని ఆత్మ నుండి వచ్చినవారమైన కన్న పిలల్లము. మనం ఆయన భాగం  <font color="blue">  (కీర్తన 16:5)</font><br><br>
+మనము కుమారులమై యుండగా దేవదూతలు సేవకులైన ఆత్మలుగా ఉన్నారు.  మన శరీరంలో
+భాగాలు చూస్తే, మనలో కూడా పంచ భూతాలున్నాయి. ఎలా అనుకొనుచున్నారా? శరీరంలో మట్టి ఉంది. నీరు ఉంది. నేల మంటితో నిర్మించానన్నారు. అనగా మట్టి, నీరు, గాలి, అగ్ని,
+శూన్యం కూడా ఉన్నాయి. ఈ పంచభూతములు అనగా అయిదుగురు దేవదూతలు ఏకమై శరీరముగా ఉన్నారు. మనకు సేవ చేయడానికి పంపబడిన సేవకులని అర్థం చేసుకోవాలి. కానీ ఈ ఆత్మ పైనున్న తన సేవకుల కోరికలకు బానిస కాకుండా శరీరాన్ని అదుపు చేసుకోవాలి.
+ <br><br> <font color="blue">  రోమా 8:12, 13</font><font color="deeppink"> ఏలయనగా శరీరానుశారముు మనము శరీరమునకు ఋణస్థులము కాదు. </font>  ఈ సంగతి తెలుపుటకు గల తండ్రి ఉద్దేశ్యం ఏమనగా...  
+ <br><br> <font color="blue">  1కొరింధి 6:3 </font><font color="deeppink"> మనము దేవదూతలకు తీర్పు తీర్చుదుమని ఎరుగరా?</font>    పరలోకపు
+వారసులమైన మనకు తీర్పు తీర్చే అధికారాన్ని ఇస్తాడు. భూమిపై ఈ పంచభూతాలనే (శరీరాన్నే) లోపరచుకొనలేని మనిషి కోటానుకోట్ల దూతలకు ఎలా తీర్పు తీర్చగలడో
+ఆలోచించండి. కనుక శరీరానికి దాసులము కాకూడదు. కాబట్టి దేవుడు పెడుతున్న చిన్న పరీక్షను గ్రహించాలి. కనుక సర్వోన్నతుని కుమారులని, చెప్పుకొనిన మన నీతికి, యజమాని సేవకులని చెప్పుకున్న దూతల నీతికి ఎంత వ్యత్యాసమున్నదో గమనించాలి. తమ పనులలో ఏ లోటు లేకుండా జరిగించుచున్నవి. సూర్యుని తేజస్సులో మార్పు లేదు. చంద్రుని కాంతిలో మార్పు లేదు. కానీ తన స్వరూపమందు చేయబడిన మనిషి సేవకులకు సేవచేస్తున్నాడు. ఇది దేవుని కుమారులుగా మనకు ఎంతవమానం? ఇది తండ్రి తట్టుకోలేరు. తన ఆస్తిని మనకు ఇవ్వాలనుకున్నాడు. దూతలకు లోపరచలేదు   <font color="blue"> (హెబ్రీ. 2:5) </font><br> కనుక నీతిగా బ్రతికి నిత్యజీవానికి  వెళ్ళాలని కోరుకొనుచున్నాము. <br>   
+<font color="green">ఈ పాఠ్య భావమేమనగా దేవుడు కనగా వచ్చిన వారు దేవుని కుమారులు. ఆయన
+మాటవలన కలిగినవి దేవదూతలు.</font>
+
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>
