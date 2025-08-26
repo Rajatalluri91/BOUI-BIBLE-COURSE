@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+       .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+			line-height:20px;
+            
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">18. బూడిదయ్యే భూమితో అంతరిక్షం అంతరిస్తుందా?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+
+
+ 
+భూమికి ఏ విధముగానైనా ప్రమాదం పొంచి ఉందని భవిష్యత్ లో ఈ భూమి నాశనమైపోతే, భూమికి దగ్గరగా వున్న మిగిలిన గ్రహాలైన ఏ చంద్రుని మీదో, అంగారకుని మీదో మనుష్యులకు నివాసాలు ఏర్పాటు చేయవచ్చు అని శాస్త్రవేత్తలు సకల ప్రయత్నాలు చేసి చివరకు ఆ గ్రహాలపై
+మనిషి మనుగడ సాధ్యమే అని చంద్రునిపై స్థలాలను అమ్మివేమటం, ఇప్పటికే చాలా మంది అక్కడ స్థలాలు కొనుక్కోవడం కూడా జరిగినది. అందులో "టాం క్రూస్” అనే హాలీవుడ్ నటుడు, మన విజయవాడకు చెందిన ఒకాయన కూడా వున్నారు. అయితే "భూమికి" ప్రమాదం ఎన్ని రకాలుగా పొంచి వున్నదో శాస్త్రవేత్తలు చెబుతూ.....
+<br><br><font color="teal">1. ప్రపంచంలో ప్రతీదేశం వాటి వాటి భద్రత కొరకు స్కడ్స్,మిసైల్స్, అణు బాంబులు లాంటివి భూమిని 100 సారు తగులబెట్టే మారణాయుధాలను కనిపెట్టి ఉంచుకోవడం జరిగినది. వాటితో గనుక 3వ ప్రపంచయుద్ధం గాని చేస్తే లేదా భూకంపాలు వస్తే, ఈ భూమి బూడిదైపోతుంది.</font>
+<br><br><font color="teal">2. గ్రహాల నుండి వెలువడే వ్యర్థ పదార్థాలు - గ్రహ శఖలాలు (ఆస్ట్రాయిడ్స్) భూమిని ఢీ కొడితే కూడా భూమికి ప్రమాదం పొంచి ఉంది.</font>
+<br><br><font color="teal">3. భూమి మీద మనుష్యులు వాడే వాహనాల నుండి, సిగరెట్ల నుండి, రకరకాల ఫ్యాక్టరీల నుండి విడుదలయ్యే పొగ, వాతావరణ కాలుష్యం వలన సూర్యుని నుండి వచ్చే కిరణాలు (Ultra Violet Rays) నేరుగా భూమి మీదకు రాకుండా రక్షణ వలయంగా వున్న "ఓజోన్” పొరకు రంధ్రం ఏర్పడడం జరిగినది. గనుక దాని వలన కూడా భూమికి నాశనం తప్పదు అన్నారు.</font>
+<br><br><font color="teal">4. ఓజోన్ పొర చినిగిపోవడంతో సూర్యకిరణాలు నేరుగా భూమి పైకి రావడంతో హిమాలయాల లోని మంచు పర్వతాలు కరిగి సముద్ర మట్టాలు పెరిగిపోవటం వలన కూడా భూమికి ప్రమాదం వుంది.</font><br><br> &emsp;గనుక భూమి ఎప్పటికైనా నాశనమైపోతుంది గనుక వేరే గ్రహాలపైకి
+వెళ్ళి అక్కడ మనం నివసించవచ్చు అని శాస్త్రవేత్తలు చెబుతున్నారు. మరి వేరే గ్రహాల మీద మనిషి మనుగడ సాధ్యమేనా? అసలు మిగిలిన గ్రహల పరిస్థితి ఏంటి? అనేది శాస్త్రవేత్తలకు తెలియదు. సృష్టినంత కలుగజేసినది దేవుడు. గనుక దేవునికే తెలుస్తుంది. దేవుడు వ్రాయించిన మహాజ్ఞాన గ్రంధమైన బైబిల్ లో దేవుడు ఆదికాండము మొదటి అధ్యాయంలోనే సృష్టిని ఎలా కలుగజేసారో వ్రాయించారు.
+<br><br> <font color="blue"> ఆదికాండము 1:1-31:- </font><font color="deeppink">ఆదియందు దేవుడు భూమ్యాకాశములను సృజించెను</font>  అని చెప్పి
+ఎలా సృజించెనో చెబుతూ... భూమి నిరాకారముగాను శూన్యముగాను ఉండెను. సృష్టంతా 6 దినాలలో దేవుడు కలుగజేసాడు. అయితే 6 దినాలు అంటే విశ్వదినాలు. భూదినాలు కాదు. ఎందుకంటే భూమిని దేవుడు 3వ రోజు చేసాడు.
+<br><br> <font color="blue"> యోబు 37:12:- </font><font color="deeppink">ఆయన వలన నడిపింపబడినవై నరులకు నివాసయోగ్యమైన భూగోళము మీద</font> 
+భూమిని మాత్రమే దేవుడు మానవ నివాస యోగ్యంగా చేసాడు. దేవుడు 6 విశ్వదినాలు కష్టపడి ఈ సృష్టనంతా చేసి 6వ దినం చివరిలో దేవుడు మనిషిని కన్నాడు. దేవుని అనాది
+సంకల్పం ఆయనకు పిల్లలు కావాలని. ఆ పిల్లలమైన మన కోసమే ఈ సృష్టనంతా చేసి మొదటి మానవులైన ఆదాము, హవ్వలను మీరు ఫలించి అభివృద్ధి పొంది, విస్తరించి భూమిని నిండించమన్నాడు. భూమి మీదే వృక్షాలు, జంతువులు, పక్షులు, పురుగులు సమస్తాన్ని చేసాడు. గనుక భూమినే లోపరుచుకోమన్నాడు. వీటన్నిటిని ఏలమని చెప్పాడు. మిగిలిన గ్రహాలలో ఇవేమి లేవు.
+<br><br> <font color="blue"> కీర్తనలు 115:16:- </font><font color="deeppink">ఆకాశములు యెహోవా వశము. భూమిని దేవుడు నరులకిచ్చి యున్నాడు.</font><br>   
+ఈ విశ్వానికి కేంద్రస్థానం "సూర్యుడు" అని " కోపర్నికస్ " శాస్త్రవేత్త చెప్పాడు. సూర్యుడు కాదు, ఈ విశ్వానికి కేంద్రస్థానంలో "భూమి" వుందని Geo-centric Theory ద్వారా "టొలమి” అనే శాస్త్రవేత్త భూమి కేంద్ర సిద్ధాంతాన్ని ప్రతిపాదించాడు. కాని టొలమి కంటే ముందు ఎప్పుడో దేవుడు చెప్పాడు. 
+<br><br> <font color="blue"> యోబు 38:33:-</font><font color="deeppink"> ఆకాశమండలపు కట్టడలను నీవెరుగుదువా? దానికి భూమి మీద గల ప్రభుత్వమును నీవు స్థాపించగలవా?</font>
+మన దేశానికి ప్రభుత్వం(government) ఢిల్లీలో ఉంది. అలాగే ఈ విశ్వమంతటికీ ప్రభుత్వం  Operating System అంతా భూమి మీదే ఉంది. ఈ విశ్వమంతటికీ కేంద్రంగా వున్నది భూమే. గనుక భూమే నాశనమైపోతే ఇంక విశ్వం ఎక్కడ వుంటుంది? ఒక Building లో Bedrooms, Hall, Kitchen, Bathrooms అన్నీ వుంటాయి. ఆ Building కి పునాది మూలం. ఆ పునాదే లేకపోతే Rooms ఇవేమి వుండవు. అలాగే ఈ విశ్వానికి పునాది భూమి. ఆ భూమే లేకపోతే ఈ విశ్వం వుండదు. విశ్వానికి కేంద్రం భూమి, ఈ భూమికి కేంద్రం మనిషి అని తెలుసుకొని భయపడాలి.
+<br><br> <font color="blue"> ఆమోసు 9:6:-</font><font color="deeppink"> ఆకాశమందు తన కొరకై మేడ గదులు కట్టుకొనువాడును, ఆకాశమండలమునకు భూమి యందు పునాదులు వేయువాడును ఆయనే. </font>   అలాంటి పునాది గల భూమే
+నాశనమైపోతే.... ఈ విశ్వం కూడా నాశనమైపోతుంది.<font color="deeppink"> (2 పేతురు 3:10)</font>   
+<br><br> <font color="blue"> కీర్తనలు 68:8:- </font><font color="deeppink">భూమి వణకెను. దేవుని సన్నిధిని అంతరిక్షము దిగజారెను. </font>   భూమి
+బూడిదైపోతే చంద్రుని మీద నివసించవచ్చు అని శాస్త్రవేత్త అనుకుంటాడు. చంద్ర మండలం ఒక చౌడు నేల. అచ్చట పంటలు పండవు. అయిన అక్కడికి వెళ్ళిపోతాము అన్న మనిషితో దేవుడు ఏమి చెబుతున్నాడంటే...
+<br><br> <font color="blue"> ఓబద్యా 1:4:-</font><font color="deeppink"> పక్షిరాజు గూడంత యెత్తున నివాసము చేసికొని నక్షత్రములలో నీవు దాని కట్టినను అచ్చటనుండియు నేను నిన్ను క్రింద పడవేతును. ఇదే యెహోవా వాక్కు.</font><br>  &emsp;  ఉదా:సైకిల్ చక్రానికి చుట్టూ ఊచలు మధ్యలో అబ్బు వుంటుంది. ఆ అబ్బు లేకపోతే చుట్టూ వున్న ఊచలు విరిగిపోతాయి. అలాగే ఈ విశ్వ చక్రానికి భూమి అబ్బులాంటిది. అలాంటి భూమే
+బూడిదైపోతే ఈ విశ్వం అంతరించిపోతుంది. అసలు ఈ విశ్వాన్నంతటిని దేవుడు కలుగజేసింది భూమి కోసమే. <font color="blue">(ఆదికాండము 1:14,15) </font>   ఆ భూమిని దేవుని పిల్లలమైన మన కోసమే చేసాడు. ఆ పిల్లలే లేకపోతే ..భూమి ఉండదు. ఆ భూమే లేకపోతే ఈ విశ్వం వుండదు. గనుక బూడిదయ్యే భూమితో - అంతరిక్షం అంతరిస్తుంది. అందుకే ప్రకృతి చక్రానికి చిచ్చుపెట్టేది మనిషే అని వాక్యం సెలవిస్తుంది. అది నరకము నుండి ఇక్కడున్న మనిషి ద్వారానే చిచ్చుపెడుతుంది. మనముండే గ్రహం నుండే మొత్తం విశ్వానికే చిచ్చు పెట్టే సామర్థ్యత మనకుందండీ..
+<font color="blue"> కీర్తనలు 78:69: - ...</font><br>    ఇలాంటి మనిషి పరిశుద్ధ మందిరంగా ఉండకపోతే భూమితో పాటు మనిషి బూడిద కాక తప్పదు.
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>

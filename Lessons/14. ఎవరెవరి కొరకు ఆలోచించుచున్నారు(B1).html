@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+            line-height:20px;
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+	a{
+       
+       color:deeppink;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">14. ఎవరెవరి కొరకు <br>&nbsp;&nbsp;&nbsp;ఆలోచించుచున్నారు?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+ 
+<p>మనం ఏదైనా కష్టం వచ్చినపుడు నా గురించి ఆలోచించేవారు ఎవరూ లేరు, నన్నెవరూ పట్టించుకోవట్లేదు అనుకుంటాము. ఇలా అనుకొని ఆత్మహత్య చేసుకొనే వారు కూడా లేకపోలేదు.
+ఇలా ప్రతీ మనిషి తన గురించే తాను ఉదయం లేచినప్పటి నుండి రాత్రి నిద్రపోయేంత వరకూ తన 60 సం||ల  జీవిత కాలమంతా ఆలోచిస్తూనే వుంటాడు. ఎలా ఆలోచిస్తారో కొన్ని  చూద్దాం ......<br>
+<br><font color="blue"> 1.</font> ఒక భర్త - భార్యను, తన కుటుంబాన్ని ఎలాగ పోషించాలి? పిల్లలను ఎలా పెంచాలి? ప్రయోజకులుగా ఎలా చేయాలని ఆలోచిస్తున్నారు, సంపాదనలో మునిగిపోతారు.<br>
+<font color="blue">2.</font> ఒక రాజకీయ నాయకుడు - మనిషికి ఆశ అనేది ఎక్కువగా వుంటుంది. అయితే రాజకీయ నాయకునికి ఇది తారా స్థాయిలో వుంటుంది. అధికార దాహం తీర్చుకొనుటకు పదవిని
+ఎలా కొనసాగించాలనే ఆలోచనతోనే వుంటాడు. పైగా తన ప్రాణం ప్రజల కోసమే అని చెబుతూ హై సెక్యూరిటీ మధ్య తిరుగుతాడు.<br><font color="blue">
+3.</font>పిల్లలు - తల్లిదండ్రుల లక్ష్యాలను నెరవేర్చి వారికి ఇష్టులుగా ఉండే పనిలో వుంటారు. బంధుత్వపు బంధం కూడా కలిగి వుంటారు. ఇది ఒక తెగ అయితే మరొక తెగవారు అయితే తమ వారు చనిపోతే వారి ఇష్టాన్ని భూమి మీద ఎలా నెరవేర్చాలని ఆలోచించి తపన
+పడతారు. ఇలా మనిషి ఆలోచించడం బైబిల్ ప్రకారం ఎంత వరకూ వాస్తవం?<br> మరి మన
+గురించి ఎవరు ఆలోచిస్తున్నారని, బైబిల్ చెబుతుందో ఆలోచిద్దాం. మరియు మనుష్యులు ఎలా ఉన్నారో, ఎలా ఆలోచిస్తున్నారో కూడా చెప్పింది. 
+<br><br><font color="green">1 పేతురు 5:7:-</font> <font color="deeppink">ఆయన మిమ్మును గూర్చి చింతించుచున్నాడు గనుక మీ చింత యావత్తు
+ఆయన మీద వేయుడి.</font> తండ్రి అయిన దేవుడు మన గురించి ఆలోచిస్తున్నాడు.
+<br><font color="green">2 పేతురు 3:9:-</font><font color="deeppink"> ఎవడునూ నశింపవలెనని యిచ్చయింపక, అందరు మారుమనస్సు
+పొందవలెనని కోరుచు, మీయెడల దీర్ఘశాంతము గలవాడై యున్నాడు.</font> మనం ఎవరం నశించకూడదని
+దేవుడు, దీర్ఘశాంతం కలిగి వున్నాడు. మనం మారు మనస్సు పొందాలని కోరుకుంటున్నారు. 
+<br><font color="green">రోమా 8:34:-</font><font color="deeppink"> మృతులలో నుండి లేచినవాడును దేవుని కుడి పార్శ్వమున ఉన్నవాడును
+మన కొరకు విజ్ఞాపనము కూడ చేయువాడును ఆయనే (యేసుక్రీస్తు).</font> యేసుక్రీస్తు వారు కూడా
+మన గురించే ఆలోచిస్తున్నారు దేవుని కుడి పార్శ్వమున ఉండి మన కొరకు విజ్ఞాపన చేస్తున్నాడు. మనము యుక్తముగా ఎలా ప్రార్థించాలో తెలియదు కనుక మన కొరకు పరలోకంలో ఉన్న క్రీస్తు ఇంకా మన కోసమే ఆలోచిస్తూ పని చేస్తున్నాడండీ. మరియు మారు మనస్సు మనం పొందకుండా దేవుని ఉగ్రతకు లోనైన మన కోసం కూడా ఆయుషును అడుగుతున్న గొప్ప అన్నే క్రీస్తు ప్రభువు.<br><br><font color="green">
+				లూకా 13:6-9.</font> ఇక్కడ ఉపమానంలో అంజూరపు చెట్టు కాయలు లేకపోవడం చూసి
+తోట యజమాని దానిని నరికి వేయమన్నప్పుడు తోటమాలి ఈ సంవత్సరం కూడా చూద్దాం
+ఉండనిమ్మని అడుగుతున్నాడు. ఆ తోటమాలే మన రక్షకుడైన యేసు అని ఎంత మందికి తెలుసండి. <br><font color="green">రోమా 8:26,27:-</font><font color="deeppink"> అటువలె ఆత్మయు మన బలహీనతను చూచి సహాయము చేయుచున్నాడు.
+ఏలయనగా మనము యుక్తముగా ఏలాగు ప్రార్థన చేయవలెనో మనకు తెలియదు గాని, ఉచ్ఛరింప శక్యము కాని మూలుగులతో ఆ ఆత్మ తానే మన పక్షముగా విజ్ఞాపనము చేయుచున్నాడు.</font> దేవుని చిత్త ప్రకారము పరిశుద్దుల కొరకు ఆత్మ తానే మన పక్షంగా విజ్ఞాపన చేస్తున్నాడు అంటే పరిశుద్దాత్మ దేవుడు కూడా మన గురించే ఆలోచిస్తున్నట్లుగా కనబడుతుంది. అలాగే
+మన దూతలు మనకు ఏ సమయంలో ఏ పరిచర్య చేయాలో అని దేవుని అనుమతి కోసం దేవుని ముఖం చూస్తున్నారని <br><font color="green">
+				మత్తయి 18:10:-</font><font color="deeppink">ఈ చిన్న వారిలో ఒకనినైననూ తృణీకరింపకుండా చూచుకొనుడి. వీరి దూతలు పరలోకమందున్న నా తండ్రి ముఖమును ఎల్లప్పుడు పరలోకమందు చూచుచుందురని మీతో చెప్పుచున్నాను.</font> అలాగే దేవుని కుమారులెవరో, అపవాది సంబందు లెవరో అన్న విషయం కూడ సృష్టి కనిపెట్టుచున్నది.
+<br><br><font color="green">రోమా 8:19 :-</font><font color="deeppink"> దేవుని కుమారుల ప్రత్యక్షత కొరకు సృష్టి మిగుల ఆశతో తేరిచూచుచు
+కనిపెట్టుచున్నది.</font> ఇకపోతే మనల్ని దేవునికి కాకుండా చేయటానికి మాత్రం సాతాను గర్జించు
+సింహం వలె ఎవరిని మ్రింగాలా అని తిరుగుచున్నదనే విషయాన్ని, మన కొరకైన దాని పుట్టుక, దాని తంత్రములు మనపై ఎలా ప్రయోగిస్తుందో ఏ విధంగా వస్తుందో, యుద్ధం
+చేస్తుందో అన్న మన కొరకు దాని ఆలోచనా సరళి అంతా దేవుడు వ్రాయించి భద్రపరిచారు అంటే మన శత్రువు కూడా మన కొరకు ఆలోచిస్తుందని తెలుస్తుంది
+<br><br><font color="green">1 పేతురు 5:8:-</font><font color="deeppink"> నిబ్బరమైన బుద్ధి గలవారై మెలకువగా ఉండుడి. మీ విరోధియైన అపవాది
+గర్జించు సింహము వలే ఎవరిని మ్రింగుదునా అని వెదకుచు తిరుగుచున్నాడు.</font> మరి
+మనుష్యులమైన మనం అన్నీ మన గురించే ఆలోచించుకోవడం స్వార్థం కాదంటారా! ఇలా
+స్వార్థంగా ఆలోచించే మనుష్యుల కోసం దేవుడు అంటున్న మాట చూస్తే.......<br><font color="green">
+ఫిలిప్పీ 2:21:-</font><font color="deeppink"> అందరును తమ సొంత కార్యములనే చూచుకొనుచున్నారు గాని, యేసు క్రీస్తు కార్యములను చూడరు.</font> ఎందుకంటే మన కొరకు ప్రాణం పెట్టిన ఆయన పనుల కోసం మన ప్రాణం పెట్టాలి. ఇది దేవుని చట్టం. ఇలా ప్రాణం పెట్టని వాని ప్రాణాన్ని తీయమని
+ఎవరు అడుగుచున్నారో దేవుడు చెప్పినది చూస్తే..........<br><font color="green"> 
+లూకా 12:16-20:-</font><font color="deeppink"> అయితే దేవుడు - వెఱ్రివాడా, యీ రాత్రి నీ ప్రాణము నడుగుచున్నారు, నీవు సిద్ధపరచినవి ఎవనివగువని అతనితో చెప్పెను.</font>
+మనం మన కొరకే ఆలోచిస్తే పరదైసులో వున్న నీతిమంతులు మన ప్రాణములను అడుగుచున్నారు అని, అదియూ ఈ రాత్రే అడుగు చున్నారని తెలియజేసినా భయపడక తిరుగుతున్న మనల్ని ఏమనాలి చెప్పండి. మనకొరకు ఆలోచించేవారు ఇంత మందుండగా
+మన కొరకు మనం ఆలోచిస్తే నరకానికి పోతామని తెలుస్తుంది.
+<br><br><font color="green">
+				ప్రకటన 6:9-11 :-</font><font color="deeppink"> నాథా! సత్యస్వరూపి, పరిశుద్ధుడా ఎందాక తీర్పు తీర్చకయు మా రక్తము నిమిత్తము భూ నివాసులకు ప్రతిదండన చేయక యుందువని బిగ్గరగా కేకలు వేసిరి.</font>
+మా రక్తము నిమిత్తము భూ నివాసులకు ప్రతిదండన చేయమని తీర్పు తీర్చమని కేకలు వేస్తున్నారని వ్రాయబడింది. దేవుని కొరకు ఆలోచిస్తేనే పరలోకం వెళ్ళగలమని మనము ఒక్కసారి పాతాళానికి పోతే ఆలోచన అన్నదానికే తావే లేదని<font color="blue"> ప్రసంగి 9:10</font> లో కలదు.
+మనం భూమి మీద ప్రాముఖ్యముగా ఆలోచించ వలసింది నిత్యమూ జీవించి వుండే ఆత్మ  కోసమని మరువకండి ఎందుకనగా నిత్యశిక్ష అనుభ వించుటకు వెళ్ళేది ఆత్మ. పాపం అంటుకునేది కూడా ఆత్మకేనని బైబిలు సెలవిస్తుంది.
+<br><font color="green">యోహాను 6:63:-</font><font color="deeppink"> ఆత్మయే జీవింప చేయుచున్నది, శరీరము కేవలము నిష్ ప్రయోజనము.</font>అనే క్రీస్తు మాట మనం చనిపోయాక అర్థం కాగలదు. అలా అర్థమైనది భూమి నుండి పాతాళానికి పోయినవాడు, మోషే కాలంలో వున్న ధనవంతుడి గూర్చి దేవుడు వ్రాయించిన మాట చూస్తే........
+<br><br><font color="green">లూకా 16:25:-</font><font color="deeppink"> అందుకు అబ్రాహాము- ధనవంతునితో కుమారుడా, నీవు నీ
+జీవిత కాలమందు నీకిష్టమైనట్టు సుఖము అనుభవించితివి, అలాగుననే లాజరు కష్టము
+అనుభవించెనని జ్ఞాపకము చేసికొనుము, ఇప్పుడైతే వాడు ఇక్కడ నెమ్మది పొందుచున్నాడు, నీవు యాతన పడుచున్నావు.</font> భూమి మీద ఏనాడు తన ఆత్మ కోసం ఆలోచించని ధనవంతుడు పాతాళానికి వెళ్ళాక మాత్రం నీటి చుక్క కోసం అర్రులు చాస్తూ, తన ఐదుగురు అన్నదమ్ముల ఆత్మలు తన యొద్దకు అనగా వేదనకరమైన స్థలంకు రాకుండా ఉండాలని అబ్రాహామును
+వేడుకుంటున్నట్లుగా చూడగలం. ఒకనాటి ఆదాము తన శరీరం కోసం ఆలోచించి ఎంత దిగజారిపోయాడో మనకు అర్థం కాగలదు దిగంబరులని తెలుసుకున్న దగ్గర నుండే ఈ రోజున్న తయారీ ఫ్యాక్టరీలు పుట్టాయి. వాటి కోసం పంటలు, వ్యాపారాలు, రవాణా, ప్రయాణాలు వీటి కోసం చదువులు వచ్చేసాయి. అన్నీ శరీరాన్ని సుఖపెట్టుట కోసమేనని చెప్పక తప్పదు. ఆత్మల బాగుకోసం ఆలోచించేవారే కరువైనారు. మనం కావాలి. తండ్రి ఆలోచన అదే. .
+<br><font color="green">యెషయా 6:8:-</font><font color="deeppink"> అప్పుడు - నేను ఎవని పంపెదను? మా నిమిత్తము ఎవడు పోవునని
+ప్రభువు సెలవియ్యగా వింటిని.</font> అని దేవుడు ఆలోచిస్తున్నట్లుగా కనబడుతుంది. మనం కావాలన్న
+ఆలోచన జగత్తు పునాది వేయబడక ముందటిది, పిమ్మట నెరవేర్చాడు. అందుకే మనం భూమి మీదకు వచ్చాము నిజంగా దేవుని విలువ తెలిస్తే దేవుని గురించే ఆలోచిస్తాం పాపముల చేతను, అపరాధముల చేతను చచ్చి వారిని అగ్నిలో నుండి లాగినట్లు రక్షిస్తాం. ఇలా తండ్రి
+ఆలోచన మేరకు భూమి మీద ఆలోచించి పని చేసిన వారిని చూస్తే....... <font color="blue">ఒక మోషే,
+అపొస్తలులు, ఒక దావీదు, ఒక నోవాహు, ఒక యోబు, ఒక క్రీస్తు</font> మరి ఎందరో ప్రవక్తలని చెప్పక తప్పదు. ఒకనాడు మోషే గారు ఇశ్రాయేలీయుల కోసం ఆలోచించకపోతే క్రీస్తు మనకు రక్షణ తెచ్చునా? చెప్పండి. అలనాటి దావీదు నా ప్రాణమా యెహోవాను సన్మానించుము అంటే ధనవంతుడేమో నా ప్రాణమా, తినుము, త్రాగుము, సుఖించుము అని వెఱ్ఱివానిగా
+మిగిలిపోయాడు.
+<br><br><font color="green">యోబు 15:8 :-</font><font color="deeppink"> నీవు దేవుని ఆలోచన సభలో చేరియున్నవాడవా?</font> దేవుడు మన గురించి నిత్యమూ తన ఆలోచన సభలో ఆలోచిస్తున్నాడని జ్ఞాపకం చేసుకుంటూ బ్రతకాలని
+కోరుకుంటున్నాము. మనకంటే ముందున్న భక్తులు తమ ప్రాణాలను అర్పించబట్టే మనకు వాక్యం అందింది అని మర్చిపోకూడదు. మరి మనం మన తరువాత తరాల కోసం ఏమి ఆలోచిస్తున్నాం చెప్పండి? ఇలా ఆలోచించకపోతే పిల్లల్ని దేవుని సేవ కొరకు ఇవ్వకపోతే
+దేవున్ని ఎరుగని తరం రాగలదు. కడకు మన పిల్లలు కూడా విశ్వ నాశనంలో రాలిపోయి నరకానికి జారిపోక తప్పదు. తస్మాత్ జాగ్రత్త.!!
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>
+

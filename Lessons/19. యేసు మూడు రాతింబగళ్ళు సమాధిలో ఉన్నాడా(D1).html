@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+       .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+			line-height:20px;
+            
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">19. యేసు మూడు రాతింబగళ్ళు సమాధిలో ఉన్నాడా?</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+  <p>  
+
+
+యేసు క్రీస్తు వారు చనిపోయి తిరిగి లేచి పరలోకానికి వెళ్ళి సుమారు 2000 సం||లు గడిచినా ఇంకా ఆయన శిలువలో మరణించలేదని ఒకరు, యేసు మూడు రాత్రింబగళ్ళు
+సమాధిలో లేడని మరొకరు... ఇలా ఆయన పై అభియోగాలు మోపుతునే ఉన్నారు. వీరిలో ముఖ్యముగా మస్లిం సోదరులు వారి ప్రామాణిక గ్రంధమైన ఖురాన్ తో పాటు బైబిల్ ను ఎక్కువగా చదువుతున్నారు. కారణం బైబిల్ ను తెలుసుకుందామనా? కాదు. బైబిల్ ను తప్పు పడదామని వారికి తలెత్తిన ప్రశ్నే యేసు మూడు రాత్రింబగళ్ళు సమాధిలో ఉన్నాడా? అని అడుగుచున్నారు. యేసు క్రీస్తు వారు శుక్రవారం మధ్యాహ్నం ఇంచుమించు 3 గంటలకు మరణించి శనివారమంతా సమాధిలో ఉన్నారు. ఆదివారం తెల్లవారుజామునే సమాధిలో నుండి లేచిపోయారు. 3 రాత్రులు, 3 పగళ్ళు ఎక్కడ ఉన్నాడు? గనుక యేసు 3 రాత్రింబగళ్ళు సమాధిలో ఉంటానన్న యేసు మాట తప్పు అంటున్నారు. ఈ ప్రశ్నకు సరైన సమాధానం చెప్పలేక క్రైస్తవ సోదరులు వీరు ఏకంగా యేసు మరణించిన రోజే మార్చేసారు. యేసు క్రీస్తు వారు శుక్రవారం కాదు గురువారమే చనిపోయారు అని చెప్పడం జరుగుతుంది. బైబిల్ లో ఒక ప్రశ్న తలెత్తితే దానికి సమాధానం కూడా బైబిల్ లోనే వెతకాలి (Bible answer to the Bible). దానికి మనుష్య జ్ఞానం జోడించి సమాధానం చెప్పకూడదు. అది తప్పు. ఇలాంటి జఠిలమైన ప్రశ్నలకు సమాధానం కేవలం BOUI వారు మాత్రమే సమాధానం చెప్పగలరు. 
+<br><br> <font color="blue"> 1పేతురు 2:15:-</font><font color="red"> ఏలయనగా మారిట్లు యుక్త ప్రవర్తన గలవారై అజ్ఞానముగా మాటలాడు
+మూర్ఖులనోరు మూయించుట దేవుని చిత్తము. </font>  క్రైస్తవుడు - హేతువడుగు ప్రతీవానికి సాత్వీకముతోను, భయముతోను సమాధానం చెప్పుటకు ఎల్లప్పుడు సిద్ధంగా ఉండాలి. <br>
+
+&emsp;మరి ఎలా లెక్క కట్టాలి? 3 రాత్రింబగళ్ళు అని బైబిల్ ను బట్టి జాగ్రత్తగా సత్యవాక్యమును సరిగా విభజిస్తూ ఆలోచిస్తే.... సమాధానం మనకు చక్కగా అర్ధమౌతుంది.
+<br><br> <font color="blue"> మార్కు 8:31:</font><font color="red"> మరియు మనుష్యకుమారుడు అనేక హింసలు పొంది పెద్దలచేతను
+ప్రధాన యాజకుల చేతను శాస్త్రుల చేతను ఉపేక్షింపబడి చంపబడి, మూడు దినములైన తరువాత లేచుట అగత్యమని ఆయన వారికి బోధింపనారంభించెను.</font>  ఇక్కడ మరొక ప్రశ్న తలెత్తుతుంది. 3దినములైన తరువాత లేస్తాను అంటే 3 దినములైపోయిన తరువాత 4వ దినము లేస్తాడు అని అపార్థం చేసుకుంటున్నారు. అదే సందర్భం మాట్లాడుతూ...... మత్తయి గారు..<br><br> <font color="blue"> మత్తయి
+ 16:21:- </font><font color="red"> అప్పటి నుండి తాను యెరూషలేమునకు వెళ్ళి పెద్దలచేతను ప్రధానయాజకుల చేతను శాస్త్రులచేతను అనేక హింసలుపొంది, చంపబడి, మూడవ దినము లేచుట అగత్యమని యేసు
+తన శిష్యులకు తెలియజేయ మొదలుపెట్టగా... </font> <br><br> <font color="blue"> లూకా: 18:33:-</font><font color="red">ఆయనను కొరడాలతో కొట్టి చంపుదురు, మూడవదినము ఆయన మరల లేచునని చెప్పెను.</font>
+ఇంతకీ ఏది నిజం? ఈ 3 సందర్భాలలో చెప్పినదీ యేసు క్రీస్తు వారే. ఆయన ఎప్పుడు తప్పు చెప్పరు. కాని మనం వాక్యాన్ని అర్ధం చేసుకొనుటలో పొరబడుచున్నాము. <br>
+
+&emsp;ఇలాంటి సందర్భమే మనం పాత నిబంధనలో చూస్తే.... <br><br> <font color="blue"> 2దినవృత్తాంతములు 10:5:- </font><font color="red">అతడు - మీరు <b>మూడు దినములు</b> తాళి మరల నాయొద్దకు రండని చెప్పెను గనుక జనులు వెళ్ళిపోయిరి.</font>
+<br><br> <font color="blue"> 2దినవృత్తాంతములు 10:12: - </font><font color="red"><b>మూడవ దినమందు</b> నాయొద్దకు తిరిగి రండని రాజుచెప్పిన ప్రకారము యరొబామును జనులందరును మూడవ దినమందు.... </font> అంటే 3 దినాలు
+ఆగి రండి అన్నా, 3వ దినమున అని అన్నా ఒక్కటే అర్ధం. అలాగే యేసు క్రీస్తు వారు కూడా 3 దినములు తరువాత లేస్తానని అన్నా ఒక్కటే భావం. <br>
+&emsp;మరొక సందర్భాన్ని మనం ఆలోచిస్తే....
+<br><br> <font color="blue"> 1సమూయేలు 30:11,12,13:-</font> ఈ సందర్భమును చూడగలిగితే..... 3 దినముల క్రిందట అన్నాడు. అంటే 3 దినములు అన్నా, 3 దినముల క్రింద అన్నా 3 దినములే అని అర్ధం. <br>
+
+
+&emsp;ఇక పాఠములోనికి వెళ్ళితే..... నేటి ముస్లిం సోదరులాగానే ఆ రోజు కూడా యేసు క్రీస్తు వారిని తప్పు పట్టాలని వెనువెంట తిరుగుతున్న శాస్త్రులు, పరిసయ్యులు అప్పటికే ఆయన ఎన్నో సూచకక్రియలు చేసినా మరలా బోధకుడా, నీ వలన ఒక సూచక క్రియ చూడగోరుచున్నామని అడుగుతున్నారు. అలాంటపుడు యేసు క్రీస్తు వారు వారికి సమాధానం చెబుతూ....
+<br><br> <font color="blue"> మత్తయి 12:38-41:- </font>ఈ సందర్భమును చూడగలిగితే.... వ్యభిచారులైన చెడ్డతరమువారు సూచక క్రియను అడుగుచున్నారు. ప్రవక్తయైన యోనా గూర్చిన సూచక క్రియయే గాని మరి ఏ సూచక క్రియయైనను వారికి అనుగ్రహింపబడదు. యోనా 3 రాత్రింబగళ్ళు భూగర్భంలో
+ఉండెను అని చెబుతున్నారు. యోనా గారి సందర్భమును కూడా మనం చూడగలిగితే.....
+<br><br> <font color="blue"> యోనా 1:1-17:-</font><font color="red"> ఈ సందర్భమును చూడగలిగితే..... </font> గొప్ప మత్స్యము ఒకటి యోనాను మింగవలెనని యెహోవా నియమించియుండగా యోనా 3 దినములు ఆ మత్స్యము యొక్క కడుపులోనుండెను. యోనా 3 రాత్రింబగళ్ళు చేప కడుపులో ఎలా వున్నాడో యేసు క్రీస్తు వారు కూడా అతనిని పోలికగా చెబుతూ... నేను కూడా భూగర్భంలో 3 రాత్రింబగళ్ళు వుంటానని చెబుతున్నారు. చెబుతున్నారు. యేసు క్రీస్తు వారు శుక్రవారం మధ్యాహ్నం చనిపోయి శనివారమంతా సమాధిలో వుండి ఆదివారం తెల్లవారు జామునే లేచిపోతే.... మధ్యలో శనివారం ఒక్క రోజే సమాధిలోవున్నట్లు, మరి 3 రాత్రింబగళ్ళు ఎలా వస్తున్నాయి? అని అడుగుతున్నారు. గనుక మనం జాగ్రత్తగా బైబిల్ బట్టి ఆలోచిస్తే..... <br><br> <font color="blue"> మత్తయి 27:45,46:-</font><font color="red">
+మధ్యాహ్నము మొదలుకొని మూడు గంటలవరకు ఆ దేశమంతటను చీకటికమ్మెను. ఇంచుమించు మూడుగంటలప్పుడు యేసు - ఏలీ, ఏలీ, లామా సబక్తానీ అని బిగ్గరగా కేకవేసెను. ఆ మాటకు నా దేవా, నా దేవా, నన్నెందుకు చెయ్యి విడిచితివని అర్ధము.</font> యేసు క్రీస్తు వారు మధ్యాహ్నం ఇంచుమించు మూడుగంటలకు చనిపోయాడు అంటే శుక్రవారం వెలుగుండగానే చనిపోయాడు. గనుక 
+<br><br> <font color="blue"> 1) శుక్రవారం పగలు వచ్చింది. శుక్రవారం సాయంత్రం 6:00 గంటలకు నుండి అర్ధరాత్రి 12:00 గంటలకు వరకు అది శుక్రవారం రాత్రిలోనికి వస్తుంది.<br> అంటే శుక్రవారం పగలు, రాత్రి వచ్చింది. అంటే ఒక రాత్రింబగలు tally అయ్యింది.</font>
+<br><br> <font color="green"> 2) శుక్రవారం అర్ధరాత్రి 12:00 గంటలు దాటిన తర్వాత అది శనివారం రాత్రి.<br>
+మరలా శనివారం ఉదయం 6:00 గంటల నుండి సాయంత్రం 6:00 గంటల వరకు అది శనివారం పగలు,<br>మరలా శనివారం సాయంత్రం 6:00 గంటల నుండి అర్ధరాత్రి 12:00 గంటల వరకు అది శనివారం రాత్రి.</font><br>గమనిక:- రోజు 24 గంటలైతే 12 గంటలు పగలు + 12 గంటలు రాత్రి. <br>అంటే రోజు ఎలా ప్రారంభమౌతుంది?<br>
+12 గంటలు పగలు ఉదయం 6:00 గంటలకు నుండి సాయంత్రం 6:00 గంటలకు వరకు పగలు వరుసగా వచ్చేస్తుంది. కాని రాత్రి మాత్రం 2 భాగాలుగా విడిపోతుంది. ముందు 6:00 గంటలకు రాత్రి (అంటే అర్ధరాత్రి 12:00 గంటలకు నుండి ఉదయం 6:00 గంటలకు వరకు) ముందు వచ్చేస్తుంది. ఆ తర్వాత మధ్యలో 12 గంటలు పగలు తర్వాత మిగిలిన రాత్రి సాయంత్రం 6:00 గంటలకు నుండి మరలా అర్ధరాత్రి 12:00 గంటలకు వరకు వుంటుంది. అంటే.... ఒక రోజు (24గంటలు) ఎలా ప్రారంభం అవుతుందంటే........6:00 గంటలు చీకటి (అర్ధరాత్రి 12:00 గంటలకు నుండి ఉదయం 6:00 గంటలకు వరకు) 12 గంటలు వెలుగు(ఉదయం 6:00 గంటలకు నుండి సాయంత్రం 6:00 గంటలకు వరకు) – 6:00 గంటలు చీకటి (సాయంత్రం 6:00 గంటలకు నుండి మరలా అర్ధరాత్రి 12:00 గంటలకు వరకు) <br>అంటే యేసు శుక్రవారం మధ్యాహ్నం చనిపోయాడు. <br>
+1)అంటే శుక్రవారం పగలు, రాత్రి వచ్చింది.<br>
+2) శనివారం పగలు,రాత్రి పూర్తిగా సమాధిలోవున్నారు.<br>
+3) ఇక 3వ రాత్రి, పగలు అంటే ఆదివారం రాత్రి, పగలు తేలాలి.....?<br>
+శనివారం అర్ధరాత్రి 12:00 గంటలకు దాటిన తర్వాత ఇక అది ఏ రాత్రి? ఆదివారం రాత్రి. కారణం రోజు అనేది మొదట 6:00 గంటలు రాత్రితో ప్రారంభమౌతుంది గనుక.
+<br><br> <font color="brown"> ఉదా:- 31st night New Year కొరకు ఎదురు చూసి అర్ధరాత్రి 12:00 గంటలు దాటగానే అంటే 12:00 గంటలు దాటి 1 నిమి|| గడిచినా అది Jan 1st New Year వచ్చేసినట్టే. అంటే రోజు ముందు రాత్రితో ప్రారంభమౌతుంది. అంటే శనివారం అర్ధరాత్రి 12:00గంటలకు దాటిన తర్వాత నుండి 6:00 గంటలకు వరకు అది ఆదివారం రాత్రిలోనికి వస్తుంది.</font><br> అంటే ఆదివారం రాత్రి కూడా మనకు తేలిపోయింది. ఇక ఆదివారం పగలు రావాలి. ఆదివారం ఉదయం 6:00 గంటలకు నుండి ఆదివారం ఉదయంలోనికి వస్తుంది. అనగా యేసు క్రీస్తు వారు ఆదివారం ఉదయం లేచిపోయారు. అంటే పగలు సూర్యుడు వచ్చాడా? లేదా?.... 
+<br><br> <font color="blue"> మార్కు 16:1-3:-</font><font color="red"> ఈ సందర్భమును చూడగలిగితే..... వారు ఆదివారమున పెందలకడ లేచి బయలుదేరి సూర్యోదయమైనప్పుడు సమాధి యొద్దకు వచ్చుచుండగా..... </font> అంటే సూర్యుడు
+వచ్చేసాడు. అంటే అది ఆదివారం పగలు. ఇప్పుడు ఆదివారం పగలు కూడా మనకు సరిపోయింది.
+<br><br> <font color="red"> ఒక రోజు 24 గంటలు 12:00 గంటలు పగలు 12:00 గంటలు రాత్రి</font>
+<font color="green">(ఉదయం 6:00 గంటలకు నుండి సాయంత్రం 6:00 గంటలకు వరకు)- (అర్ధరాత్రి 12:00 గంటలకు నుండి ఉదయం 6:00 గంటలకు వరకు) +(సాయంత్రం 6:00 నుండి మరలా అర్ధరాత్రి 12:00 వరకు మిగిలిన రాత్రి)</font><br>
+గనుక యేసు క్రీస్తు వారు మూడు రాత్రింబగళ్ళు సమాధిలో కచ్చితంగా ఉన్నారు. యోనా తిమింగలం కడుపులో ఎలాగైతే మూడు రాత్రింబగళ్ళు వున్నాడో అలాగే మనుష్యకుమారుడు
+మూడు రాత్రింబగళ్ళు సమాధిలో వుంటాడు అని చెప్పాడు తప్ప 3 పూర్తి రాత్రింబగళ్ళు వుంటానని చెప్పలేదు. ఆదివారం సూర్యోదయమై 1 నిమి|| గడిచినా అది ఆదివారం
+ఉదయం లెక్కలోనికి వస్తుంది. గనుక యేసు క్రీస్తు వారు ...
+
+<br><br> <font color="deeppink">1) శుక్రవారం - పగలు, రాత్రి సమాధిలో ఉన్నారు.<br>
+2) శనివారం - పూర్తి రాత్రింబగళ్ళు ఉన్నారు.<br>
+3) ఆదివారం - పగలు, రాత్రి సమాధిలో ఉన్నారు.<br>
+ఆదివారం ఉదయాన్నే సమాధిలో నుండి తిరిగి 3వ రోజున లేచిపోయారు.</font><br> ఆయనే గనుక ఆదివారం ఉదయాన్నే లేవకపోతే తిరిగి సమాధిలో శాశ్వతంగా పాతి పెట్టేస్తారని ఉదయాన్నే లేచిపోయాడు. యేసు క్రీస్తు వారు శుక్రవారం మధ్యాహ్నం 3 గంటలకు చనిపోతే వెంటనే సమాధిలో పెట్టకపోతే ఆ రోజు సాయంత్రం 6:00 గంటలు దాటితే వారికి విశ్రాంతి దినము వచ్చేసినట్టు అందుకే తాత్కాలికంగా, త్వరగా దగ్గరలోనున్న అరిమతయి యోసేపు క్రొత్త సమాధిలో పెట్టేశారు. శనివారం విశ్రాంతి దినము గనుక ఆ రోజంతా తీరికగా వున్నారు
+ <font color="blue">(లూకా 23:54-56). <br><br>ఆదివారం తెల్లవారుచుండగా ఆ స్త్రీలు సుంగధ ద్రవ్యాలు తీసుకొని వచ్చారు. </font><br> ఎందుకనగా యేసు క్రీస్తు వారుని శాశ్వతంగా పాతిపెట్టేయడానికి. అలా చేస్తే యేసు దేహం కుళ్ళు పట్టకూడదనే ప్రవచనం  <font color="blue">(అపో 2:27)</font> నెరవేరదు గనుక యేసు క్రీస్తు వారు ఆదివారం ఉదయాన్నే సమాధిలో నుండి లేచారు. గనుక యేసు క్రీస్తు వారు మూడు రాత్రింబగళ్ళు సమాధిలో ఉన్నారు. ఆయన చెప్పిన మాటలు 100% ఎప్పుడూ కరక్టే. గానీ అర్ధం చేసుకోలేని మూర్ఖులు అపార్ధం చేసుకుని అనేకులను తప్పులో నడిపిస్తున్నారు. ఇది
+అర్ధం చేసుకుంటే మనం కూడా క్రీస్తువలె పునరుత్థానంలో లేచి పరలోకానికి క్రీస్తుతో చేరగలము.
+
+
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@421&family=Mallanna&family=Mandali&display=swap" rel="stylesheet">
+    <title>Lesson Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        /* Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:30px;
+            background-color: #aeaeae;
+            color: #4500ae;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .lesson-name {
+            font-size: 20px;
+            font-weight:bold;
+            font-family: "Mandali", serif;
+            line-height:20px;
+        }
+
+
+        /* Toggle button styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle {
+            position: relative;
+            margin-right:50px;
+            width: 50px;
+            height: 25px;
+            background: #ccc;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 19px;
+            height: 19px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle.active {
+            background: #03dac5;
+        }
+
+        .toggle.active::before {
+            transform: translateX(25px);
+        }
+
+        /* Content styling */
+        .content {
+            margin-top: 60px;
+            padding:10px;
+            font-size: 16px; /* Default font size */
+            line-height: 2.0;
+        }
+
+        /* Footer with seekbar */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:50px;
+            width: 100%;
+            background-color:#aeaeae;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer label {
+            font-size: 10px;
+            margin-right: 5px;
+            color:black;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #6200ea;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+   div.a {
+  text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       }
+   div.e{
+       text-align: center;
+       color:#5000ff;
+       font-family: "Anek Telugu", serif;
+       background:#bdbdbd8c;
+       border-radius: 20px;
+       max-width: 100%;
+       line-height: 40px;
+       font-weight: bold;
+       }
+	a{
+       
+       color:deeppink;
+       }
+   c{
+       
+       color:deeppink;
+       }
+   d{
+       font-size:35px;
+       
+       }
+       p{
+       
+       text-align: justify;
+       line-height: 30px;
+       
+  font-family: 'Mandali', sans-serif;
+  width:100%;
+  font-weight: 500;
+  font-style: normal;
+
+
+   }
+   img{
+       
+   }
+ 
+ b{
+     color:deeppink;
+ }      
+    </style>
+</head>
+<body class="light-mode">
+    <!-- Header with fixed title -->
+    <div class="header">
+        <div class="lesson-name">17. హెవెన్లీ సేఫ్టీ లాకర్</div>
+        <div class="toggle-container">
+            <div class="toggle" onclick="toggleMode()"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="content">
+        
+
+<p> మనిషి తన పెంపుడు కుక్కలకు అయినా తన డబ్బు పెడతాడేమో గానీ, లేదా తనపెంపుడు పిల్లికైనా పెడతాడేమో గానీ లేదా వదిలిపెట్టి వెళ్ళిపోడానికి ఇష్టపడుతున్నాడు గానీ బ్రతికున్నపుడే దేవుని పనికి తన ధనాన్ని వాడదామని అనుకోరు. ఇంకనూ అనాధ శరణాలయాలకు, స్వచ్చంద సంస్థలకు వారి ఆస్థిని వ్రాస్తారు. ఈ సంస్థల వారు ఈ డబ్బును
+ఏం చేయాలో తెలియక ఎకరాలకు ఎకరాలు కొనుక్కుని చివరకు వీళ్ళలో కూడా కుమ్ములాటలు ప్రారంభించు కుంటున్నారు. దేవుని ఆస్తుల పరిరక్షణ సంఘం అని అన్ని మతాల వారు పెట్టుకొని ఆస్తుల కోసం కోర్టులకు వెళుతూ కక్షలతో ఒకరినొకరు కడకు చంపుకుంటున్నారు.<br>
+<br><font color="green">మత్తయి 19:20,21:-</font><font color="deeppink"> అందుకు ఆ యౌవనుడు - ఇవన్నియూ అనుసరించుచునే యున్నాను.
+ఇకను నాకు కొదువ ఏమని ఆయనను అడిగెను. అందుకు యేసు - నీవు పరిపూర్ణుడ వగుటకు
+కోరినయెడల, పోయి నీ ఆస్తిని అమ్మి బీదలకిమ్ము, అప్పుడు పరలోకమందు నీకు ధనము కలుగును, నీవు వచ్చి నన్ను వెంబడించుమని అతనితో చెప్పెను. నిన్ను వలె నీ పొరుగువానిని ప్రేమింపవలెను అను ఆజ్ఞలో ఇది కూడా ఇమిడి వుందని చెప్పెను.</font> మొట్టమొదట జీతం దేవునికే అంటారు ఎందుకంటే అప్పుడు తక్కువగా వుంటుంది కాబట్టి అదే రిటైర్మెంట్ అప్పుడు వచ్చే డబ్బు ఇస్తామా? మధ్యలో వచ్చే అలవెన్స్, బోనస్లు ఇవ్వరు. అలాగే తమ ప్రధమ ఫలాలని దేవునికి తొలి పంట, తొలి గుడ్డు ఇస్తారు తప్ప తరువాత వచ్చినవి అన్నీ వారే తినేస్తారండి. క్రీస్తు దగ్గరకు వచ్చిన ఆ యవ్వనుడైన
+ధనవంతునితో ముందే అన్ని ఆజ్ఞలు నెరవేర్చి వచ్చేసిన వానితో మరలా వెళ్ళి నీ ఆస్తిని అమ్మి బీదలకిమ్ము అని అన్నాడంటే ఆ యవ్వనుడికి ఈ మాటకు వ్యసనపడుచు వెళ్ళిపోయాడంట కారణం మన ధనమెక్కడ వుండునో
+మన హృదయమక్కడే వుంటుంది అన్న మాట సరిపోయింది వీనికి కదండీ, అంటే ఈ ధనవంతుడైన యవ్వనుడు పరలోకం ద్వారం వరకూ వచ్చి వెళ్ళిపోయాడండీ. క్రీస్తు అసలు వానిని కొట్టారా? తిట్టారా? ఆస్తిని వదిలేయ మన్నందుకే దు:ఖపడుచూ వెళ్ళిపోయాడు. చనిపోతే మొత్తం వదిలేయాలి కదా అదే బ్రతికున్నపుడే ఇచ్చేస్తే వీడికి ఎంత లాభం ఈ మాట విన్నందుకే వీడు భాదపడాడు. బహుశా కొన్ని గంటలేనేమో గానీ వీడు శాశ్వత కాలం భాదపడతాడు కదా. ఇది వీడు తెలుసుకోలేక పోయాడు.<br><br><font color="blue">
+1.</font> కోట్ల రూపాయల ఆస్తి కలిగిన దేశాధినేత - ఇందిరా తన సొంత అంగరక్షకుల చేత కాల్చబడి ఆస్తి వదిలేసి వెళ్ళిపోయింది.<br><font color="blue">
+2.</font> కోట్ల రూపాయల ఆస్తి కలిగిన ఒకనాటి దేశాధినేత రాజీవ్ గాంధీ చంపబడి వెళ్ళిపోయారు. <br><font color="blue">
+3.</font> కోట్లాస్తికి సోనియా అధినేత ఆమె కూడా వదిలి వెళ్ళాలి.
+ప్రతీ కోటీశ్వరుడు చిల్లర మీద వేసుకొని పాడిమీద పడుకొని నరకానికి వెళ్ళిపోతున్నాడు.<br> 
+  
+ వాక్యమనే ఐశ్వర్యం లేనివారు - బీదలు అంటే వీరికి సువార్త ప్రకటింపబడుట కొరకు ఇవ్వాలి. దేవుని కార్యక్రమాలకు డబ్బు ఇవ్వమంటే బ్రదర్ ఈ నెల ఆర్ధికంగా చాలా ఇబ్బందిగా వుందని చెబుతారు. మరి ఎప్పుడు ఆ ఇబ్బందులు తీరుతాయి దేవునికి ఇవ్వలేనంత సేపు ఎప్పుడూ ఆర్ధిక ఇబ్బందులు వస్తూనే ఉంటాయి. దేవుని కార్యక్రమాలు అయితే విరాళపు రసీదు పుస్తకాలు
+ముద్రించి మరీ దండి అప్పుడు పెడతారు. అదే ఇంట్లో కూతురు పెళ్ళైతే మాత్రం తన సొంత డబ్బు తీసి ఖర్చు పెడతాడు అంటే దేవుడు పరాయి వాడా చెప్పండి. దేవుని కార్యంను నీ ఇంటో కార్యం అని అనుకోవాలి. దండుకునే వాడిని అడుక్కునేవాడు అంటారు ఇలా దండి దేవునికి ఇస్తున్నారంటే దేవుడు అడుక్కునే వాడనా? నేడు సంఘాలలో 5 రూ/, 10రూ/, గుడ్డు, కోడిపెట్ట అని చదువుతారు. మరలా ప్రత్యేక కానుక అని చదువుతారు ఎంత అంటే 10రూ/- 100రూ/, 50రూ/, అదే ఒంటి మీద కట్టుకున్న చీర 1000రూ/, అయితే మన కానుక
+మాత్రం చాలా హీనంగా ఇస్తాం. చరస్థిరాస్తులు తెచ్చి అపొస్తలుల పాదాల దగ్గర పడేశారు ఆనాటి మొదటి శతాబ్దపు సంఘపు వారు. సువార్త ప్రకటనకు ఆ సొమ్ము వాడబడాలని ఇలా పాదాల దగ్గర పడేశాడు ఆనాడు బర్నబా, ప్రత్యేకంగా తెచ్చి ఇవ్వలేదు నేడున్న క్రైస్తవులవలె.<br><br><font color="green">
+ఫిలిప్పీ 4:3:-</font><font color="deeppink"> ఆ సహకారుల పేరులు జీవగ్రంథమందు వ్రాయబడి యున్నవి.</font> 
+బిన్ లాడెన్, వీరప్పన్ లాంటి వాడు వెళితే ఒక్క శిక్షే వుంటుంది. అదే మనం వెళితే మాత్రం మనకు మంటతో పాటు గుండె మంట ఎక్కువైపోతుంది ఎందుకంటే ఇన్ని లేఖనాలు, పరిశోధనలు విని ఏ దేవుని పని చేయక, దేవునికి ఇవ్వము కనుక అక్కడకు వెళ్ళాక మనం అయ్యో ఇస్తే బాగుండు, చేస్తే బాగుండు ఇక్కడకు రామే అనుకొని తెగ బాధపడిపోతాము అయినా ప్రయోజనం లేదు.
+మనము తప్పులు చేయము, అలాగని దేవునికి ఇవ్వము దేవుని పని చేయము కనుక ఇలా జరుగుతుంది. <br><font color="green">మార్కు 10:30:-</font><font color="deeppink"> ఇప్పుడు ఇహమందు హింసలతో పాటు నూరంతలుగా ఇండ్లను
+అన్నదమ్ములను అక్కచెల్లెండ్రను తల్లులను, పిల్లలను, భూములను, రాబోవు లోకమందు నిత్యజీవమును పొందునని మీతో నిశ్చయముగా చెప్పుచున్నాను.</font> అమెరికన్ డాలర్ కు, ఇండియాలో విలువ ఎక్కువ అవుతుంది. అదే మనం భూమి మీద తండ్రి కొరకు ఖర్చు పెట్టినది పరలోకంలో 100 రెట్లు అవుతుందన్నాడు. మరియకు క్రీస్తు విలువ తెలియబట్టే మిక్కిలి విలువ గల అత్తరు బుడ్డి తెచ్చి అభిషేకించింది. దేవుడు తన పట్ల చూపిన ప్రేమకు గుర్తుగా ఆమె జ్ఞాపకార్థంగా ప్రశంసించ బడునని, చెప్పి తన గ్రంథములో వ్రాయించారు. ఇంకనూ ఆయన నామమున బట్టి చూపిన ప్రేమను మరచుటకు దేవుడు అన్యాయస్థుడు కాడు <font color="green">మత్తయి 26:13, హెబ్రీ 6:10.</font>
+మనం దేవుని కోసం వాడింది నష్టం కాదు. అబ్రాహాము గారు గుడారము వేసుకొని బ్రతికితే చాలు అనుకున్నాడు. అంబానీ Family లో నలుగురు సభ్యులు వుంటే వీరు ఉంటున్న గదులు 500-26 ఫ్లోర్స్ అంటే అంత Luxuary గా ఉంటున్నారు అవసరమా చెప్పండి. భూమి పై
+దేవుని కొరకు ఖర్చు పెడితేనే మనకు పరలోకంలో ధనం జమ అవుతుంది. పరలోకంలో అడుగుపెట్టగానే మనం చిన్నదే కదా దేవుని కోసం చేసాం, దేవుడు ఇంత ఇచ్చేసాడేంటి అనుకుంటాం. లాజరు బ్రతికుండగా భిక్షగాడిగా వున్నాడు అదే పరలోకం వెళ్ళాక కోటీశ్వరుడు
+అయిపోయినట్లుగా చెప్పవచ్చు ఎందుకంటే దేవదూతలు వచ్చి ఆర్భాటంగా తీసుకువెళ్ళాయి కాబట్టి. <br><br><font color="green">1 తిమోతి 6:17-20:-</font><font color="deeppink"> ఇహమందు ధనవంతులైన వారు గర్విష్టులు కాక, అస్థిరమైన ధనము నందు నమ్మికయుంచక, సుఖముగా అనుభవించుటకు సమస్తమును మనకు ధారాళముగ
+దయచేయు దేవుని యందే నమ్మిక యుంచుడని ఆజ్ఞాపించుము. వారు వాస్తవమైన జీవమును
+సంపాదించుకొను నిమిత్తము, రాబోవు కాలమునకు మంచి పునాది తమ కొరకు వేసుకొనుచు, మేలుచేయు వారును, సత్ క్రియలు అను ధనము గలవారును, ఔదార్యము గలవారును, తమ ధనములో ఇతరులకు పాలిచ్చువారునై యుండవలెనని వారికి ఆజ్ఞాపించుము.</font> మీ ధనం
+కాస్తా సత్ క్రియలుగా మారిపోవాలి అంటే మన డబ్బు కరపత్రాలుగా మారిపోవాలి. చివరకు డబ్బుతో పాటు ప్రాణమే పెట్టాలి. ధనమే ఇవ్వలేని వారు ప్రాణం ఎలా పెట్టగలరు? చెప్పండి. ఈ రోజు జీతగాళ్ళకు భీమా చేయండి ధీమాగా వుండండి అని అంటారు (LIC వాళ్ళు). మనం మందులు కొన్నప్పుడు బేరాలాడము వాడు అడిగినంత ఇవ్వాలి. అదే దేవుని జ్ఞానం
+గల CD'S గానీ, బుక్స్ గానీ కొన్నప్పుడు బేరాలాడుతాము. పాపాత్మురాలైన స్త్రీకు ఒక్కసారే చెప్పారు క్రీస్తు, ఇంకెప్పుడు పాపము చేయకమ్మా అనగానే మారిపోయింది. మరి మనం ఎన్ని ప్రసంగాలు విన్నా మారము అన్నీ కలిగి వున్న మనం ఇంకెంత మారిపోవాలో చెప్పండి. LIC చేయిస్తాము, Pearless చేయిస్తాము, Medical Policy చేయిస్తాము. జీతమంతా Cuttings కే వెచ్చిస్తాం. అసత్యం విస్తరించడానికి ఈ నామకార్ద క్రైస్తవులు కోట్లను వెచ్చిస్తున్నారు. ప్రేమ విందులు అని చెప్పి చాలా గొప్పగా చేసుకున్నామని చెప్పుకుని దేవుని సొమ్మును బాగా
+తినేస్తారు. ఈ రోజు సంఘాలలో ప్రహారి గోడలకు, గొప్ప గంటలకు, గదులకు A.C చేయించాలని ఆలోచిస్తున్నారు గానీ అక్కడ చెప్పబడిన వాక్యం వినరు పైగా నిద్రపోతారు.
+ఇలాంటి పనులకు సహకరిస్తే మన పెట్టుబడులను కోల్పోతాం, పరలోకంలో జమకాదు. వారి దుష్టక్రియలలో పాలివారమై పోతాం జాగ్రత్త! <br><font color="green">సామెతలు 11:28:-</font><font color="deeppink"> ధనమును నమ్ముకొనువాడు
+పాడైపోవును అని క్రీస్తు పూర్వమే వ్రాయించాడు.</font><br><font color="green"> మత్తయి 6:19:-</font><font color="deeppink"> భూమి మీద మీకొరకు ధనమును కూర్చుకొనవద్దు, ఇక్కడ చిమ్మెటయు, తుప్పును తినివేయును, పైగా దొంగలు కన్నము వేసి దొంగిలెదరు.</font> మరి ఎక్కడ కూర్చుకోమన్నాడంటే... <br><font color="green">మత్తయి 6:20:-</font><font color="deeppink"> పరలోకమందు
+మీకొరకు ధనమును కూర్చుకొనుడి, అచ్చట చిమ్మెటయైనను, తుప్పైనను దాని తినివేయదు,
+దొంగలు కన్నము వేసి దొంగిలరు.</font> అంటే పరలోకమే Safety place అని భూమి మీద ఏ
+Bank lockers లో దాచినా safe కాదని, అంటే పరలోకం రాదని తెలుస్తుంది. అందుకే మన
+పాఠం పేరు Heavenly safety locker (పరలోకపు ధననిధి), ధనం కూృర మృగమని దేవుడు
+<font color="green">ప్రకటన 13:11-17 లో</font> సంబోధించాడు. దీన్ని ఆశించిన వారు ఎలా మారిపోతారో దేవుడు మన కొరకు జాగ్రత్తలు ఏం చెప్పారో చూద్దాం... <br><font color="green">
+				1 తిమోతి 6:9,10:-</font><font color="deeppink"> క్రైస్తవులైన వారు అన్యజనుల వలె ధనవంతులగుటకు ఆపేక్షించువారు శోధనలోను, ఉరిలోను, అవివేక యుక్తములును
+హానికరములునైన అనేక దురాశలలోను పడుదురు. అట్టివి మనుష్యులను నష్టములోను, నాశనములోను ముంచివేయును.</font> ఎందుకనగా ధనాపేక్ష సమస్తమైన కీడులకు మూలము, కొందరు దానిని ఆశించి విశ్వాసము నుండి తొలగిపోయి నానా బాధలతో తమ్మును తామే పొడుచుకొనిరి.<br> <font color="blue"> ఉదా:</font> ఇస్కరియోతు యూదా 30 వెండి నాణాలకు ఆశపడి ఉరిపోసుకు చచ్చి
+పాతాళం పాలైనాడు. అననీయ, సప్పీర అదే ధనాన్ని ఆశించి దాచుకొని మరణం పొంది పాతాళంనకు పోయారు. ఆస్తిని కూడబెట్టుకునే వారు చెప్పే పదం మాకు దేవుని దీవెన అంటారు. ఇలాంటి వారి కోసం క్రీస్తు చెప్పిన మాట చూస్తే.....<br><br><font color="green"> లూకా 12:15,16:-</font><font color="deeppink"> ఒకని కలిమి విస్తరించుట వాని జీవమునకు మూలము కాదనెను.</font> దేవుడు ఇచ్చి నీ ప్రాణం తీస్తాడా? మరి దేవుడు ఇచ్చాడనడం తప్పు కాదంటారా? మన జేబులో డబ్బు ఎక్కువున్నా, మన ఒంటి మీద
+బంగారమున్న, locker లో డబ్బున్నా మన జీవానికే ముప్పు అన్న క్రీస్తు మాట ఎంత వాస్తవమో మనకు బాగా తెలుసు. ధనం మనకొరకు కూర్చుకోవడం తప్పు, ధనం దేవుని కోసం కూర్చాలి. పరలోకానికి సంబంధించిన Banks ఈ భూమి మీద ఎక్కడుందంటే
+<font color="blue">ONE “N” ONLY BIBLE OPEN UNIVERSITY INDIA INTERNATIONAL</font>
+అనేక Branches open చేసారు. ఈ Branches లో మనం ఎక్కడ ధనం వేసినా పరలోకపు ధననిధిలో జమ అవుతుంది అని ఖచ్చితంగా చెప్పగలం. భూమి మీద నేనే ధనవంతునిగా ఉండకూడదు గానీ పరలోకంలో అందరికంటే ఎక్కువ ధనవంతునిగా ఉండాలనుకోవాలి.
+ఇలా పరలోకంలో దాచుకున్న వారికే పరలోక ప్రవేశం కలుగుతుంది. మరి అక్కడ దాచుకుంటారో! భూమిమీద మీ సుఖం కోసం దోచుకొని దాచుకుంటారో నిర్ణయం మీదే!
+<br><font color="green">మత్తయి 25:29:-</font><font color="deeppink"> కలిగిన ప్రతీ వానికి ఇయ్యబడును అతనికి సమృద్ది కలుగును. లేనివాని
+యొద్ద నుండి వానికి కలిగినదియు తీసి వేయబడును.</font> ఇక్కడ దేవుడిచ్చిన తలాంతులను దేవునికై వాడి దాన్ని రెట్టింపు చేయాలి లేకపోతే ఉన్నది మన యొద్ద నుండి తీసివేసి మండుగుండంలో (వెలుపటి చీకటిలోనికి) నికి త్రోసివేస్తానన్నారు.
+</font>
+</p>
+<br><br><br>
+    </div>
+
+    
+
+
+    <script>
+    const content = document.querySelector('.content');
+
+    let initialDistance = null;
+    let initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+    let initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+
+    // Ratio of line-height to font-size
+    let lineHeightRatio = initialLineHeight / initialFontSize;
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    content.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            initialDistance = getDistance(e.touches);
+            initialFontSize = parseFloat(getComputedStyle(content).fontSize);
+            initialLineHeight = parseFloat(getComputedStyle(content).lineHeight);
+            lineHeightRatio = initialLineHeight / initialFontSize;
+        }
+    }, { passive: false });
+
+    content.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2 && initialDistance !== null) {
+            e.preventDefault(); // Prevent scrolling
+            const newDistance = getDistance(e.touches);
+            const scale = newDistance / initialDistance;
+
+            // Clamp font size
+            const newFontSize = Math.max(14, Math.min(30, initialFontSize * scale));
+            const newLineHeight = newFontSize * lineHeightRatio;
+
+            content.style.fontSize = `${newFontSize}px`;
+            content.style.lineHeight = `${newLineHeight}px`;
+        }
+    }, { passive: false });
+
+    // Theme toggle
+    function toggleMode() {
+        const body = document.body;
+        const toggle = document.querySelector('.toggle');
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggle.classList.toggle('active');
+    }
+</script>
+
+
+
+</body>
+</html>
